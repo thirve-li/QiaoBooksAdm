@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>作品列表</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="__PUBLIC__/css/bootstrap.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/datepicker3.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/daterangepicker-bs3.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/font-awesome.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/ionicons.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/AdminLTE.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/_all-skins.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/base.css">
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+    <!-------------头部模板 header.html main-header begin-->
+    <include file="./Public/Tpl/header.html" />
+    <!-------------头部模板 header.html main-header end-->
+
+
+    <!------------- 左侧菜单栏 leftMenu.html aside begin-->
+    <include file="./Public/Tpl/leftMenu.html" />
+    <!------------- 左侧菜单栏 leftMenu.html aside end-->
+
+    <!-- 所有内容部分 -->
+    <div class="content-wrapper">
+
+
+
+        <!-- 主要内容 -->
+        <section class="content" id="fixed">
+            <div class="box border-box">
+
+                <div class="box-body box-profile">
+                    <form class="form-inline"  action="{$Think.config.QS_BASE_PATH}/Book/bookList" method="post" id="bookForm" name="bookForm">
+
+                        <input name="lids" id="lids" type="hidden" value="{$lids}">
+                        <input name="lidsName" id="lidsName" type="hidden" value="{$lidsName}">
+                        <input name="scoreIds" id="scoreIds" type="hidden" value="{$scoreIds}">
+                        <input name="scoreName" id="scoreName" type="hidden" value="{$scoreName}">
+                        <input name="sort" id="sort" type="hidden" value="{$sort}">
+                        <input id="uid" name="uid" type="hidden" placeholder="作者ID" >
+						
+                        <input name="recorderCnt" id="recorderCnt" type="hidden" value="{$recorderCnt}">
+                        <input name="pageCnt" id="pageCnt" type="hidden" value="{$pageCnt}">
+                        <input name="gotoPage" id="gotoPage" type="hidden" value="{$gotoPage}">
+
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-lg-6 col-xs-6 mb-10">
+                                    <input id="name" name="name" value="{$name}" type="text" class="form-control input_style mr-5" placeholder="作品名称">
+                                    <input class="form-control input_style mr-5" name="nick_name" type="text" placeholder="&nbsp;&nbsp;作者昵称" value="{$nick_name}">
+                                     <div class="form-group">
+						                <div class="input-group">
+						                  <input type="text" name="upTime"  class="form-control pull-right time_width" id="daterange-btn" placeholder="发布时间" value="{$upTime}">
+							                   <span></span>
+						                </div>
+						             </div>
+
+
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <select class="form-control select2 input_style1" name="bookType" onchange="doSearch()" placeholder="作品分类">
+                                                <option value="" <if condition="$bookType == '' "> selected </if> >全部显示</option>
+
+                                                <volist name="bookTypeList" id="type" >
+                                                    <option value="{$type.id}" <if condition="$bookType ==  $type.id  "> selected </if> >{$type.name}</option>
+                                                </volist>
+                                            </select>
+                                        </div>
+                                    </div>
+
+						              <div class="form-group ">
+                                        <div class="input-group">
+                                            <select class="form-control select2 input_style1" name="isup" onchange="doSearch()" placeholder="是否已发布">
+                                                <option value="" <if condition="$isup == 'ALL' "> selected </if> >全部显示</option>
+                                                <option value="1" <if condition=" $isup == '1' "> selected </if>  >已发布</option>
+                                                <option value="0" <if condition=" $isup == '0' "> selected </if> >未发布</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <!--用户评分-->
+                                <div class="col-lg-2 col-xs-6">
+                                    <div class="box dropdown_input collapsed-box">
+                                        <div class="box-header with-border box_content">
+                                            <span class="work_score">&nbsp;&nbsp;作品评分</span>
+                                            <div class="box-tools">
+                                                <button type="button" class="btn btn-box-tool re" data-widget="collapse"><i class="fa fa-plus incre"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="box-body box_close">
+                                            <ul class="nav nav-pills nav-stacked">
+                                                <li class="text-center">
+                                                    <button type="btn" class="btn_style score_btn2" onclick="allScore()">全部评分</button>
+                                                    <button type="btn" class="btn_style score_btn2" onclick="noScore()">没有评分</button>
+                                                </li>
+                                                <volist name="scoreLabelList" id="row">
+                                                    <li class="m10" id='{$row.name}'>
+                                                        <span class="display1">{$row.name}</span>
+									                	<span class="btn_style score_btn3 mr-1" a='{$row.id}' s='1'>1分</span>
+									                	<span class="btn_style score_btn3 mr-1" a='{$row.id}' s='2'>2分</span>
+									                	<span class="btn_style score_btn3 mr-1" a='{$row.id}' s='3'>3分</span>
+									                	<span class="btn_style score_btn3 mr-1" a='{$row.id}' s='4'>4分</span>
+									                	<span class="btn_style score_btn3" a='{$row.id}' s='5'>5分</span>
+                                                    </li>
+                                                </volist>
+                                                    <li class="text-center m10">
+                                                        <span id='sure_score' class="btn_style score_btn2">确定</span>
+				                						<span class="btn_style score_btn2 no-margin" id="cancel_score">取消</span>
+                                                    </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div><!--/.用户评分-->
+                                <!--用户标签-->
+                                <div class="col-lg-2 col-xs-6">
+                                    <div class="box dropdown_input collapsed-box">
+                                        <div class="box-header with-border tag_content">
+                                            <span class="workTag">&nbsp;&nbsp;标签</span>
+                                            <div class="box-tools">
+                                                <button type="button" class="btn btn-box-tool re" data-widget="collapse"><i class="fa fa-plus incre"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="box-body box_close">
+                                            <ul class="nav nav-pills nav-stacked">
+                                                <li class="text-center">
+                                                    <button type="btn" class="btn_style score_btn2">全部标签</button>
+                                                    <button type="btn" class="btn_style score_btn2">没有标签</button>
+                                                </li>
+                                                
+                                                <li class="m10 text-center">
+								                	<volist name="bookLabelList" id="row">
+								                		<span class="tag_btn m10 tagNs" a='{$row.id}' id='{$row.name}'>{$row.name}</span>
+								                	</volist>
+		                					    </li>
+
+                                                <li class="text-center m10">
+                                                    <span id='sure_tag' class="btn_style score_btn2">确定</span>
+				            						<span class="btn_style score_btn2 no-margin" id="cancel_tag">取消</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- /.box-body -->
+                                    </div>
+                                </div><!--/.用户标签-->
+
+
+                            </div>
+                            <div class='row'>
+                                <div class="col-lg-8 col-xs-12 text-left m5">
+                                	<div class="btn-group pull-left mr-10">
+                                        <button type="button" class="btn_style search1 f14" onclick="$('#gotoPage').val(1);doSearch()">搜索</button>
+                                    </div>
+                                	
+                                    <div class="pull-left">
+                                        <span>排序</span>
+
+                                        <if condition="$sort=='utime'">
+                                            <button type="button" class="btn_style btn_style1 active1" onclick="setSort('utime')">按发布时间</button>
+                                            <else/>
+                                            <button type="button" class="btn_style btn_style1" onclick="setSort('utime')">按发布时间</button>
+                                        </if>
+
+                                        <if condition="$sort=='read_cnt'">
+                                            <button type="button" class="btn_style btn_style1 active1" onclick="setSort('read_cnt')">按阅读数</button>
+                                            <else/>
+                                            <button type="button" class="btn_style btn_style1" onclick="setSort('read_cnt')">按阅读数</button>
+                                        </if>
+
+
+                                        <if condition="$sort=='mark_cnt'">
+                                            <button type="button" class="btn_style btn_style1 active1" onclick="setSort('mark_cnt')">按收藏数</button>
+                                        <else/>
+                                            <button type="button" class="btn_style btn_style1" onclick="setSort('mark_cnt')">按收藏数</button>
+                                        </if>
+
+                                        <if condition="$sort=='buy_cnt'">
+                                            <button type="button" class="btn_style btn_style1 active1" onclick="setSort('buy_cnt')">按购买数</button>
+                                        <else/>
+                                            <button type="button" class="btn_style btn_style1" onclick="setSort('buy_cnt')">按购买数</button>
+                                        </if>
+
+                                        <if condition="$sort=='money_cnt'">
+                                            <button type="button" class="btn_style btn_style1 active1" onclick="setSort('money_cnt')">按收益数</button>
+                                        <else/>
+                                            <button type="button" class="btn_style btn_style1" onclick="setSort('money_cnt')">按收益数</button>
+                                        </if>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-lg-4 col-xs-12 text-right">
+                                    <ul class="pagination">
+										<li><a href="###" onclick="gotoPage({$gotoPage-1})">上一页</a></li>
+				
+			                            <!--<for start="0" end="$pageCnt">-->
+			                            	<!--<if condition="$i+1 eq $gotoPage">-->
+			                                   <!--<li class="active"><a href="###" onclick="gotoPage({$i+1})">{$i+1}</a></li>-->
+			                                <!--<else/>-->
+			                                	<!--<li><a href="###" onclick="gotoPage({$i+1})">{$i+1}</a></li>-->
+			                                <!--</if>	-->
+			                            <!--</for>-->
+
+
+                                        <li>跳至<select name="aGoPage" id="aGoPage" >
+                                            <option value=""> </option>
+                                            <for start="0" end="$pageCnt">
+                                                <if condition="$i+1 eq $gotoPage">
+                                                    <option value="{$gotoPage}" selected >{$i+1}</option>
+                                                    <else/>
+                                                    <option value="{$gotoPage}">{$i+1}</option>
+                                                </if>
+                                            </for>
+                                        </select>页<li>
+				
+										<li><a href="###" onclick="gotoPage({$gotoPage+1})">下一页</a></li>
+									</ul>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="content" id="alert_user">
+					<div class="box box-style">
+
+                        <volist name="bookList" id="book"  key="k">
+						<div <if condition="$k%2== '0'"> style="background-color:#FFFFF0;"</if> class="row user_list_bor box_hover" id="userInfo">
+        					<div class="col-lg-4 col-xs-6 re alert_box">
+         						 <div class="pull-left details_bottom">
+
+                                     <if condition="$book['bookInfo'][0]['isup'] eq 1">
+                                         <div class="author_name fb c3 l20 pull-left mr-20">
+                                             <a href="http://www.qiaobooks.com/read/{$book['bookInfo'][0]['id']}" target="_blank">{$book['bookInfo'][0]['name']}</a>
+                                         </div><a href="####" value="0" bid="{$book['bookInfo'][0]['id']}" class="a0 details pull-left detail_change">修改书名</a>
+                                     </if>
+                                     <if condition="$book['bookInfo'][0]['isup'] eq 0">
+                                         <div class="author_name fb c3 l20 pull-left mr-20">
+                                             {$book['bookInfo'][0]['name']}
+                                         </div>
+                                     </if>
+
+
+         						 	<div class="clear"></div>
+				 					<ul class="c2">
+                                        <li class="c2 f12">作者ID：<a target="_blank" href="http://adm.qiaobooks.com/User/listUser/uid/{$book['bookInfo'][0]['uid']}">{$book['bookInfo'][0]['uid']}</a></li>
+				 						<li class="c2 f12">作者：<span class="c3"><a  target="_blank" href="http://adm.qiaobooks.com/User/listUser/uid/{$book['bookInfo'][0]['uid']}">{$book['bookInfo'][0]['authorname']}</a></span></li>
+                                        <li class="c2 f12">创建时间：{:date('Y-m-d H:i:s' ,$book['bookInfo'][0]['ctime'])}  </li>
+                                        <if condition="$book['bookInfo'][0]['isup'] eq 1">
+                                            <li class="c2 f12">发布时间：{:date('Y-m-d H:i:s' ,$book['bookInfo'][0]['uptime'])}  </li>
+                                        <else/>
+                                            <li class="c2 f12">最后保存：{:date('Y-m-d H:i:s' ,$book['bookInfo'][0]['lutime'])}  </li>
+                                        </if>
+
+                                        <li class="c2 f12">作品ID：{$book['bookInfo'][0]['id']}</li>
+						 				<li class="c2 f12">OR数：{$book['bookInfo'][0]['or_cnt']}个</li>
+
+                                        <if condition="$book['bookInfo'][0]['isup'] eq 1">
+                                            <if condition="$book['bookInfo'][0]['price'] eq 0">
+                                                <li class="c2 f12 re">免费<i class="price_tip">i</i>
+                                            <else/>
+                                                <li class="c2 f12">收费节点：第{$book['bookInfo'][0]['price_or_node']}个OR</span></li>
+                                                <li class="c2 f12 re">收费价格：<b>¥{$book['bookInfo'][0]['price']}</b><i class="price_tip">i</i>
+                                            </if>
+                                        <else/>
+                                            <li class="c2 f12 re">免费<i class="price_tip">i</i>
+                                        </if>
+
+						 					<div class="re price_height p_price">
+						 					<ul>
+                                                <volist name="book['priceInfo'][0]" id="row">
+                                                	<li class="valer">第{$i}次（{$row['time']}）:<b class="c2">¥{$row['price']}</b></li>
+                                                </volist>
+						 					</ul>
+						 					<div class="sign ab"></div>
+								 			</div>
+						 				</li>
+						 				
+						 				
+				 					</ul>
+			 					</div>
+			 					
+					 			<ul class="pull-right">
+					 				<li>
+                                        <if condition="$book['bookInfo'][0]['isup'] eq 1">
+                                            <a id="showDetail_{$book['bookInfo'][0]['id']}" href="###" class="a0 details mb-65 check" onclick="showDetail({$book['bookInfo'][0]['id']})">查看详情</a>
+                                        </if>
+                                        <if condition="$book['bookInfo'][0]['isup'] eq 0">
+                                            <a id="showDetail_{$book['bookInfo'][0]['id']}" href="###" class="a0 details mb-65 check">未发布</a>
+                                        </if>
+                                    </li>
+
+                                    <li>
+                                        <a href="http://www.qiaobooks.com/Fix/book/id/{$book['bookInfo'][0]['id']}" class="a0 details mb-65 check" style="background-color: #ac2925" target="_blank" >检查错误</a>
+                                    </li>
+
+                                    <li>
+
+                                        <if condition="$book['bookInfo'][0]['isup'] eq 1">
+                                            <a href="javaScript:void(0);" t="{$book['bookInfo'][0]['id']}" s="{$book['bookInfo'][0]['isup']}" class="a0 details isup">下架</a>
+                                        </if>
+
+                                        <if condition="$book['bookInfo'][0]['isup'] eq 0">
+                                            <a href="javaScript:void(0);" t="{$book['bookInfo'][0]['id']}" s="{$book['bookInfo'][0]['isup']}" class="a0 details isup">上架</a>
+                                        </if>
+
+                                    </li>
+					 			</ul>
+       						</div>
+        					<!-- ./用户信息 -->
+        					<!--作品信息-->
+					        <div class="col-lg-2 col-xs-6">
+					          			<div>
+								 				<p class="f14 c2">作品信息</p>
+								 			<ul class="pull-left">
+								 				<li class="mb-5 f12">字数：</li>
+								 				<li class="mb-5 f12">阅读数：</li>
+								 				<li class="mb-5 f12">收藏数：</li>
+								 				<li class="mb-5 f12">购买数：</li>
+								 				<li class="mb-5 f12">分享数：</li>
+								 				<li class="f12">收益数：</li>
+								 			</ul>
+								 			<ul class="ml-48 pull-left">
+								 				<li class="number"><b>{$book['bookInfo'][0]['word_cnt']|default=0}</b></li>
+								 				<li class="number"><b>{$book['bookInfo'][0]['read_cnt']|default=0}</b></li>
+								 				<li class="number"><b>{$book['bookInfo'][0]['mark_cnt']|default=0}</b></li>
+								 				<li class="number"><b> {$book['bookInfo'][0]['buy_cnt']|default=0}</b></li>
+								 				<li class="number"><b> {$book['bookInfo'][0]['share_cnt']|default=0}</b></li>
+								 				<li class="number"><b>¥{$book['bookInfo'][0]['money_cnt']|default=0}</b></li>
+								 			</ul>
+								 		</div>
+					        </div>
+					        <!--/.作品信息-->
+                            <if condition="$book['bookInfo'][0]['isup'] eq 1">
+                            <!--作品标签 -->
+                            <if condition="!empty($book['labelInfo'][0])">
+					        <div class="col-lg-2 col-xs-6 alert_box">
+					         	<div>
+								 			<p class="f14 c2">作品标签</p>
+								 			<ul class="pull-left tag-nav" id="bookLabelUL_{$book['bookInfo'][0]['id']}">
+								 				<php>$s=1;</php>
+                                                <volist name="book['labelInfo'][0]" id="row">
+                                             		<li class="tag light_blue f12 tag_hover re" {$s>3?'style="display:none"':''}>
+                                                        {$key}
+                                                            <div class="manager ab">
+                                                                <span>
+                                                                    <volist name="row" id="item">
+                                                                        {$item}&nbsp;
+                                                                    </volist>
+                                                                </span>
+                                                                    <div class="sign ab"></div>
+
+                                                            </div>
+                                                    </li>
+                                                    <php>$s++;</php>
+                                                </volist>
+				 									<li class="tag a0 f12 c2 addtag">添加标签</li>
+				 								<if condition="$s gt 3">
+				 									<li class="tag a0 f12 c2 showAll">显示全部</li>
+				 								</if>	
+								 			</ul>
+								</div>
+					        </div><!-- ./作品标签 -->
+							<else/>
+        					<!--无数据--用户标签-->	
+							<div class="col-lg-2 col-xs-6 alert_box">
+						 			<div>
+							 			<p class="f14 c2">作品标签</p>
+							 			<ul>
+							 				<li class="f12 mb-11 c2">无标签</li>
+							 				<li><a href="javaScript:void(0);" class="a0 details c-l add_label">添加标签</a></li>
+							 			</ul>
+							 		</div>
+							 </div>
+							</if>
+							
+        					<if condition="!empty($book['scoreInfo'][0])">
+						        <div class="col-lg-4 col-xs-6 alert_box">
+						         			<div>
+									 			<p class="f14 c2">作品评分</p>
+	                                            <ul class="progress_score" id="bookScoreUL_{$book['bookInfo'][0]['id']}">
+	                                            <volist name="book['scoreInfo'][0]" id="row">
+	                                                <li>
+	                                                    <span class="pull-left w60 f12">{$row['name']}</span>
+	
+	                                                    <div class="progress progress_style">
+	                                                        <div class="progress-bar purple" role="progressbar"
+	                                                             aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+	                                                             style="width: {$row['score']/5*100}%;">
+	                                                        </div>
+	                                                    </div>
+	                                                    <span class="f18 pull-left ml-20">{$row['score']}</span>
+	                                                </li>
+	                                            </volist>
+	                                            	<li ><a href="javaScript:void(0);" class="a0 details c-l add_score ml-230">评分</a></li>
+	                                            </ul>
+									 		</div>
+						        </div><!--作品评分 end-->
+					        <else/>
+					        <!--作品评分无数据-->
+
+					        <div class="col-lg-4 col-xs-6 alert_box">
+						 			<div>
+							 				<p class="f14 c2">作品评分</p>
+							 			<ul>
+							 				<li class="f12 mb-11 c2">尚未评分</li>
+							 				<li><a href="javaScript:void(0);"  class="a0 details c-l add_score">评分</a></li>
+							 			</ul>
+							 		</div>
+						  </div>
+						  </if>
+                        </if>
+						  <!--------弹窗部分------->
+						  	<div class="col-lg-8 col-xs-6 author_box">
+							<i></i>
+							<div class="close_btn" id="close_btn"><span bid="{$book['bookInfo'][0]['id']}">关闭</span></div>
+							<ul class="top_list" id="top_list">
+								<li class="tag_border" value="{$book['bookInfo'][0]['id']}">作品标签</li>
+								<li onclick="getBookScore({$book['bookInfo'][0]['id']})" value="{$book['bookInfo'][0]['id']}">作品评分</li>
+								<li onclick="getBookBuy({$book['bookInfo'][0]['id']})">购买记录</li>
+							</ul>
+							<div class="clear"></div>
+							<div class="tag_list_box">
+							<!--作品标签弹窗-->
+								<div class="tag_list m20 tag_show">
+
+                                    <ul class="tag_name labelcont" id="bookType_{$book['bookInfo'][0]['id']}"></ul>
+                                    <ul ><li class="m20 nihao" id="bookTypeLi_{$book['bookInfo'][0]['id']}"></li></ul>
+
+									<ul ><li class="m20 nihao" id="labelUL_{$book['bookInfo'][0]['id']}"></li></ul>
+								</div>
+
+								<!--作品评分弹窗-->
+								<div class="tag_list" id="getBookScore_{$book['bookInfo'][0]['id']}">
+									
+						 			<!-----无评分样式------>
+						 			<!--<if condition="empty($book['scoreInfo'][0])">
+						 			<div class="score">
+						 				<p>大家还没有评分，赶快添加你的评分吧！</p>
+							 			<p class="f14 c2">我的评分</p>
+							 			<ul class="progress_score">
+							 				<li>
+							 					<span class="pull-left w60 f12">创作</span>
+							 					<div class="progress progress_style">
+													<div class="progress-bar purple" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+												</div>
+												<div class="score1">
+													<input type="text" class="f18 pull-right myscore fraction" value="3.5" id="my_score"/>
+												</div>
+							 				</li>
+							 				<li>
+							 					<span class="pull-left w60 f12">知识面</span>
+							 					<div class="progress progress_style">
+													<div class="progress-bar purple" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+												</div>
+												<div class="score1">
+													<input type="text" class="f18 pull-right myscore fraction" value="4" id="my_score"/>
+												</div>
+		
+							 				</li>
+							 				<li>
+							 					<span class="pull-left w60 f12">沟通能力</span>
+							 					<div class="progress progress_style">
+													<div class="progress-bar purple" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+												</div>
+												<div class="score1">
+													<input type="text" class="f18 pull-right myscore fraction" value="3" id="my_score"/>
+												</div>
+		
+							 				</li>
+							 				<li>
+							 					<span class="pull-left w60 f12">形象</span>
+							 					<div class="progress progress_style">
+													<div class="progress-bar purple" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+												</div>
+												<div class="score1">
+													<input type="text" class="f18 pull-right myscore fraction" value="2" id="my_score"/>
+												</div>
+		
+							 				</li>
+							 			</ul>
+						 			</div>
+						 		<if/>	-->
+								</div>
+								<!----------购买记录------------->
+								<div class="tag_list" id="bookBuy_{$book['bookInfo'][0]['id']}">
+		
+								</div>
+
+						</div><!------/.tag_list_box------>
+						</div><!-------/.#popup------->
+
+						</div><!--row user_list_bor-->
+					    </volist>
+                    </div><!-- ./box-style -->
+		</section>
+        <!-- /.content -->
+
+    </div>
+
+    <!------ 设置的滑动菜单 recent.html aside begin------>
+    <include file="./Public/Tpl/recent.html" />
+    <!------- 设置的滑动菜单 recent.html  aside end----->
+
+
+    <div class="control-sidebar-bg"></div>
+
+</div>
+
+<script src="__PUBLIC__/js/jQuery-2.2.0.min.js"></script>
+<script src="__PUBLIC__/js/bootstrap.js"></script>
+<script src="__PUBLIC__/js/app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+<script src="__PUBLIC__/js/daterangepicker.js"></script>
+<script src="__PUBLIC__/js/bootstrap-datepicker.js"></script>
+<script src="__PUBLIC__/js/bookList.js"></script>
+<script>
+
+    if('{$scoreIds}' == 'NO_SCORE'){
+        $('.work_score').html('没有评分');
+    }
+
+    if('{$scoreIds}' == ''){
+        $('.work_score').html('全部评分');
+    }
+
+    if('{$lids}' == 'NO_LABEL'){
+        $('.workTag').html('没有标签');
+    }
+
+    if('{$lids}' == ''){
+        $('.workTag').html('全部标签');
+    }
+
+$(function(){
+	$('#daterange-btn').daterangepicker(
+        {
+          ranges: {
+            '今天': [moment(), moment()],
+            '昨天': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+            '前七天': [moment().subtract(6, 'days'), moment()],
+            '前三十天': [moment().subtract(29, 'days'), moment()],
+            '这个月': [moment().startOf('month'), moment().endOf('month')],
+            '上个月': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+          },
+          startDate: moment().subtract(29, 'days'),
+          endDate: moment()
+          
+        },
+        function (start, end) {
+          $('#daterange-btn').html(start.format('yyyy/MM/dd') + ' - ' + end.format('yyyy/MM/dd'));
+        }
+   );
+});
+
+
+/**
+ * 刷新作品标签
+ */
+function refreshBookLabel(bid,clos){
+
+    var _url = '{$Think.config.QS_BASE_PATH}/Book/refreshBookLabel';
+    var param = {
+        'bid': bid
+    };
+    $.ajax({
+        method: "POST",
+        url: _url,
+        data: param,
+        dataType: 'json',
+        success: function(data) {
+            var html = "";
+
+            var cnt = 0;
+            $.each(data, function(i, item) {
+                html +='<li class="tag light_blue f12 tag_hover re">';
+                html += item.lname+'<div class="manager ab" style="display: none;">';
+                html +='<span>';
+                html +=item.username+'&nbsp;</span>';
+                html +='<div class="sign ab"></div>';
+
+                html +='</div>';
+                html +='</li>  ';
+                cnt++;
+            });
+
+            if(cnt==0){
+                html ='<li class="f12 mb-11 c2">无标签</li>';
+            }
+
+            html +='<li class="tag a0 f12 c2 addtag">添加标签</li>';
+
+            $("#bookLabelUL_"+bid).empty();
+            $("#bookLabelUL_"+bid).append(html); 
+			addtagObj.addtagDome(bid);
+        }
+    });
+
+}
+
+/**
+ * 刷新作品评分
+ */
+function refreshBookScore(bid,clos){
+
+    var _url = '{$Think.config.QS_BASE_PATH}/Book/refreshBookScore';
+    var param = {
+        'bid': bid
+    };
+    $.ajax({
+        method: "POST",
+        url: _url,
+        data: param,
+        dataType: 'json',
+        success: function(data) {
+            var html = "";
+            var cnt = 0;
+            $.each(data, function(i, item) {
+                html +='<li>';
+                html +='<span class="pull-left w60 f12">'+item.name+'</span>';
+                html +='<div class="progress progress_style">';
+                var par = (item.score/5)*100
+                html +='<div class="progress-bar purple" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: '+par+'%;">';
+                html +='</div>';
+                html +='</div>';
+                html +='<span class="f18 pull-left ml-20">'+item.score+'</span>';
+                html +='</li>';
+                cnt++;
+            });
+
+            if(cnt==0){
+                html ='<li class="f12 mb-11 c2">尚未评分</li>';
+            }
+
+            html +=' <li><a href="javaScript:void(0);" class="a0 details c-l add_score ml-230">评分</a></li>';
+
+            $("#bookScoreUL_"+bid).empty();
+            $("#bookScoreUL_"+bid).append(html);
+            addtagObj.addscoreDom(bid);
+        }
+    });
+
+}
+
+
+    /**
+ *
+ * 显示作品被打标签和所有标签
+ * @param id 作品ID
+ **/    
+    
+ function getBookLabel(id) {
+
+    getBookType(id);
+
+	var _url = '{$Think.config.QS_BASE_PATH}/Book/getBookLabel';
+	var param = {
+		'id': id
+	};
+	$.ajax({
+		method: "POST",
+		url: _url,
+		data: param,
+		dataType: 'json',
+        async: false,
+		success: function(data) {
+			var html = "";
+			$.each(data.bookLabel, function(i, item) {
+				html += '<li style="display:inline">';
+				html += '<label class="tag light_blue f12 mb-11 mr-10">' + i + '</label>';
+				$.each(item, function(k, item2) {
+					html += '<span class="mr-20">' + item2 + '</span>';
+				});
+				html += '</li>';
+			});
+			html += '<div class="clear"></div>';
+			html += '<span class="span_title">选择标签</span>';
+			html += '<div class="clear"></div>';
+			
+			$.each(data.allLabel, function(i, item) {
+
+                if(item.selected == 1){
+                    html += ' <button type="btn" class="tag light_blue f12 mr-10 mb-11" onclick="cancelLabel(' + item.id + ',' + id + ')">' + item.name + '</button>';
+                }else{
+                    html += '<button type="btn" class="btn_style tag_btn tag_btn1 mb-10" onclick="labelBook(' + item.id + ',' + id + ')">' + item.name + '</button>';
+                }
+
+			});
+
+			$("#bookLabel_"+id).empty();
+			$("#bookLabel_"+id).append(html);
+			$("#labelUL_"+id).empty();
+			$("#labelUL_"+id).append(html);
+		}
+	});
+}
+
+
+    /**
+     *
+     * 显示作品被打标签和所有标签
+     * @param id 作品ID
+     **/
+
+    function getBookType(id) {
+
+        var bookTypeId = 0;
+        var _url = '{$Think.config.QS_BASE_PATH}/Book/getBookById';
+        var param = {
+            'id': id
+        };
+
+        $.ajax({
+            method: "POST",
+            url: _url,
+            data: param,
+            async: false,
+            dataType: 'json',
+            success: function(data) {
+                bookTypeId = data.type;
+            }
+        });
+
+
+
+        var _url = '{$Think.config.QS_BASE_PATH}/Book/getBookType';
+        var param = {
+            'id': id
+        };
+
+
+        $.ajax({
+            method: "POST",
+            url: _url,
+            data: param,
+            async: false,
+            dataType: 'json',
+            success: function(data) {
+
+                var html = "";
+
+                html += '<div class="clear"></div>';
+                html += '<span class="span_title">选择类别</span>';
+                html += '<div class="clear"></div>';
+                var html2= "";
+                $.each(data, function(i, item) {
+
+                    if(item.id == bookTypeId){
+                        html += ' <button type="btn" class="tag light_blue f12 mr-10 mb-11" onclick="setBookType(' + item.id + ',' + id + ')">' + item.name + '</button>';
+                    }else{
+                        html += '<button type="btn" class="btn_style tag_btn tag_btn1 mb-10" onclick="setBookType(' + item.id + ',' + id + ')">' + item.name + '</button>';
+                    }
+
+                });
+
+
+                $("#bookTypeLi_"+id).empty();
+                $("#bookTypeLi_"+id).append(html );
+                $("#bookTypeLi_"+id).append("<hr>");
+            }
+        });
+    }
+
+    function setBookType(typeId,bid){
+        var _url = '{$Think.config.QS_BASE_PATH}/Book/setBookType';
+        var param = {
+            'id': bid,
+            'type': typeId
+        };
+
+
+        $.ajax({
+            method: "POST",
+            url: _url,
+            data: param,
+            async: false,
+            dataType: 'json',
+            success: function(data) {
+                if(data == true){
+                    alert("选择作品分类成功！");
+                    getBookType(bid);
+                }
+
+            }
+        });
+    }
+
+    /**
+ * 给作品取消打标签
+ * @param uid 用户ID
+ * @param lid 标签ID
+ */
+function cancelLabel(lid, bid) {
+    var _url = '{$Think.config.QS_BASE_PATH}/Book/cancelLabel';
+    var param = {
+        'bid': bid,
+        'lid': lid
+    };
+
+//    if(window.confirm("你确定要取消吗？")){
+        $.ajax({
+            method: "POST",
+            url: _url,
+            data: param,
+            dataType: 'json',
+            success: function(data) {
+                if(data > 0) {
+                    alert("取消成功");
+                    getBookLabel(bid);
+                } else {
+                    alert("取消失败！");
+                }
+            }
+        });
+//    }
+}
+/**
+ * 给作品打标签
+ * @param bid 作品ID
+ * @param lid 标签ID
+ */
+function labelBook(lid, bid) {
+	var _url = '{$Think.config.QS_BASE_PATH}/Book/labelBook';
+	var param = {
+		'lid': lid,
+		'bid': bid
+	};
+
+//    if(window.confirm("你确定要打该标签吗？")) {
+        $.ajax({
+            method: "POST",
+            url: _url,
+            data: param,
+            dataType: 'json',
+            success: function (data) {
+                if (data == -1) {
+                    alert("您已经对该作品打过该标签！");
+                } else {
+                    alert("打标签成功");
+                    getBookLabel(bid);
+                    refreshBookLabel(bid);
+                }
+            }
+        });
+//    }
+}
+
+
+/**
+ * 修改作品名称
+ */
+function editBookName(com) {
+    var _url = '{$Think.config.QS_BASE_PATH}/Book/editBookName';
+
+    var bid=$(com).attr("bid");
+    var bookName = $("#bookName_"+bid).val();
+
+    var param = {
+        'bid': bid,
+        'bookName': bookName
+    };
+
+    var flag=0;
+    if(window.confirm("你确定要修改吗？")){
+
+        $.ajax({
+            method: "POST",
+            sync:false,
+            url: _url,
+            data: param,
+            dataType: 'json',
+            success: function(data) {
+                flag=data;
+                if(flag==1){
+                    alert("修改成功！");
+                    var vl=$(".author_name").children("input").val();
+                    $(com).text("修改书名").siblings(".author_name").html(vl);
+                }else{
+                    alert("修改失败！");
+                }
+            }
+        });
+
+    }
+}
+
+
+
+/**
+ *
+ * 显示作品评分
+ * @param uid 用户ID
+ * @param id  作品ID
+ **/
+function getBookScore(id) {
+	var _url = '{$Think.config.QS_BASE_PATH}/Book/getBookScore';
+	var param = {
+		'id': id
+	};
+	$.ajax({
+		method: "POST",
+		url: _url,
+		data: param,
+		dataType: 'json',
+		success: function(data) {
+			var html = "";
+			$.each(data, function(userName, item) {
+
+				if('{$_SESSION["LOGIN_USER"]["Profile"]["name"]}' != userName && $.trim(userName)!="") {
+
+					html += '<div class="score">';
+					html += '<p class="f14 c2">' + userName + '的评分</p>';
+					html += '<ul class="progress_score">';
+
+					$.each(item, function(key, item2) {
+						html += '<li>';
+						html += '<span class="pull-left w60 f12">' + item2.labelname + '</span>';
+						html += '<div class="progress progress_style">';
+                        var width = (item2.score/5)*100;
+						html += '<div class="progress-bar purple" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: ' + width + '%;"></div>';
+						html += '</div>';
+						html += '<span class="f18 pull-right">' + item2.score + '</span>';
+						html += '</li>';
+					});
+					html += '</ul>';
+					html += '</div>';
+
+				} else {
+					html += '<div class="score">';
+					html += '<p class="f14 c2">我的评分</p>';
+					html += '<ul class="progress_score">';
+					$.each(item, function(key, item2) {
+						html += '<li>';
+						html += '<span class="pull-left w60 f12">' + item2.labelname + '</span>';
+						html += '<div class="progress progress_style">';
+                        var width = (item2.score/5)*100;
+						html += '<div class="progress-bar purple" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: ' + width + '%;"></div>';
+						html += '</div>';
+						html += '<div class="score1">';
+						html += '<input id="s_' + id + '_' + item2.lid + '"   type="number"  min="1" max="5"   class="f18 pull-right myscore" value="' + item2.score + '" onblur="scoreBook(this)" />';
+						html += '</div>';
+						html += '</li>';
+					});
+					html += '</ul>';
+					html += '</div>';
+					html +='<div class="clear"></div>';
+				}
+			});
+
+			$("#getBookScore_"+id).empty();
+			$("#getBookScore_"+id).append(html);
+		}
+	});
+}
+
+/**
+ * 给作品打分
+ * @param item
+ */
+function scoreBook(item) {
+
+	var id = item.id;
+	var ary = item.id.split("_");
+	var bid = ary[1];
+	var lid = ary[2];
+	var score = item.value;
+
+	if(score > 5) {
+		alert("请输入不大于5的数字");
+		item.focus();
+		return;
+	}
+
+	var _url = '{$Think.config.QS_BASE_PATH}/Book/scoreBook';
+	var param = {
+		'bid': bid,
+		'lid': lid,
+		'score': score
+	};
+	$.ajax({
+		method: "POST",
+		url: _url,
+		data: param,
+		dataType: 'json',
+		success: function(data) {
+			if(data != -1) {
+				alert("打分成功");
+				getBookScore(bid);
+				refreshBookScore(bid);
+			} else {
+				alert("打分失败");
+			}
+		}
+	});
+}
+/**
+ * 获取购买记录
+ * @param id
+ */
+function getBookBuy(id) {
+	var _url = '{$Think.config.QS_BASE_PATH}/Book/getBookBuy';
+	var param = {
+		'id': id,
+	};
+	$.ajax({
+		method: "POST",
+		url: _url,
+		data: param,
+		dataType: 'json',
+		success: function(data) {
+			var html = "";
+			 
+			html += '<div class="clear"></div>';
+			html += '<div class="f14 c2">作品收益 <b>'+data.amt+'</b></div>';
+			 
+			html += '<div class="box-body">'
+			html += '<table id="example" class="table table-bordered">';
+		    html += '<thead>';            
+		    html += '<tr>';            
+		    html += ' <th class="col-md-2">时间</th>';             
+		    html += ' <th>购买者</th>';             
+		    html += ' <th>金额</th>';             
+		    html += '</tr>';            
+		    html += ' </thead>';           
+		    html += '<tbody>';
+            var flag = true;
+			$.each(data.buyHistory, function(i, item) {
+				      
+			    html += ' <tr>';           
+			    html += ' <td>'+item.pay_time+'</td>';
+			    html += '<td class="c3"><a target="_blank" href="{$Think.config.QS_BASE_PATH}/User/listUser/uid/'+item.uid+'">'+item.name+'</a></td>';
+			    html += ' <td>'+item.money+'</td>';             
+			    html += '</tr>';
+                flag = false;
+			});
+
+            if(flag){
+                html += ' <tr>';
+                html += '<td colspan="3" >未查询到相关记录</td>';
+                html += '</tr>';
+            }
+
+			html += '</tbody>';            
+		    html += '</table>'; 
+		    html += '</div>';
+			$("#bookBuy_"+id).empty();
+			$("#bookBuy_"+id).append(html);	
+		}
+	});
+}
+
+$("#aGoPage").change(function(){
+    var pageNum = $("#aGoPage option:selected").text();
+    $('#gotoPage').val(pageNum);
+    doSearch();
+});
+/**
+ * 搜索
+ */
+function doSearch(){
+    $("#bookForm").submit();
+}
+/**
+ * 排序
+ * @param fieldName
+ */
+function setSort(fieldName){
+    $('#gotoPage').val(1);
+    $('#sort').val(fieldName);
+    doSearch();
+
+}
+
+/**
+ * 跳转页
+ * @param com
+ */
+function setPageNum(pageNum){
+    $('#gotoPage').val(pageNum);
+    doSearch();
+}
+
+/**
+ * 选择标签页
+ * @param lid
+ */
+function setLabel(lid){
+    $('#lids').val(lid);
+    doSearch();
+}
+
+/**
+ * 选择所有标签页
+ * @param lid
+ */
+function allLabel(){
+    $('#gotoPage').val(1);
+    $('#lids').val("");
+    doSearch();
+}
+
+/**
+ * 选择所有标签页
+ * @param lid
+ */
+function noLabel(){
+    $('#gotoPage').val(1);
+    $('#lids').val("NO_LABEL");
+    doSearch();
+}
+
+/**
+ * 选择评分
+ * @param lid
+ * @param score
+ */
+function setScore(lid,score){
+    $('#gotoPage').val(1);
+    $('#scoreIds').val(lid+"_"+score);
+    doSearch();
+}
+
+
+/**
+ * 选择有评分
+ */
+function allScore(){
+    $('#gotoPage').val(1);
+    $('#scoreIds').val("");
+    doSearch();
+}
+/**
+ * 没评分
+ */
+function noScore(){
+    $('#gotoPage').val(1);
+    $('#scoreIds').val("NO_SCORE");
+    doSearch();
+}
+
+/**
+ * 跳转页
+ */
+function gotoPage(pageNum){
+    $('#gotoPage').val(pageNum);
+    doSearch();
+}
+    
+</script>
+<script>
+//	$(function(){
+//		//作者昵称筛选事件
+//		$('.inputTag').keyup(function(){
+//            $('#tagNsd').empty();
+//
+//			var _url = "{$Think.config.QS_BASE_PATH}/Book/getUserByName";
+//			var nick_name = $('.inputTag').val();
+//			$.ajax({
+//				type:"post",
+//				url:_url,
+//				data:{
+//					nick_name:nick_name
+//				},
+//				dataType:"JSON",
+//				success:function(data){
+//					console.log(data)
+//                    $.each(data, function(i, item) {
+//						var html="";
+//						html+="<span class='tag_btn m10 nickName'  id='"+item.id+"' nickName='"+item.nick_name+"'>"+item.nick_name+"</span>";
+//						$('#tagNsd').append(html);
+//						$('.nickName').click(function(){
+//							var nik = $(this).text();
+//							var id = $(this).attr('id');
+//							$('input.inputTag').val(nik);
+//							$('#uid').val(id);
+//							doSearch();
+//						})
+//					});
+//				}
+//			});
+//		})
+//
+//
+//	})
+</script>
+</body>
+</html>

@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>巧书后台首页</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+   <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/ionicons.min.css">
+  <link rel="stylesheet" href="../css/select2.css">
+  <link rel="stylesheet" href="../css/AdminLTE.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/daterangepicker-bs3.css">
+  <link rel="stylesheet" href="../css/_all-skins.css">
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+    <!-------------头部模板 header.html main-header begin-->
+    <header class="main-header">
+
+    <a href="index2.html" class="logo">
+      <span class="logo-mini"><img src="../img/Oval 1.png"/></span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><img src="../img/Oval 1.png"/>&nbsp;<b>巧书后台管理</b></span>
+    </a>
+
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+			<a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+     </a>
+     
+     <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <!-- User Account: style can be found in dropdown.less -->
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="../img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <span class="hidden-xs">Alexander Pierce</span>
+            </a>
+            <!--用户信息-->
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="../img/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+                <p>
+                  <span>袁敏</span>
+                  <small>ID:3721</small>
+                  <small>权限：3</small>
+                </p>
+              </li>
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="#" class="btn btn-default btn-flat btn-border">设置</a>
+                </div>
+                <div class="pull-right">
+                  <a href="#" class="btn btn-default btn-flat btn-border">退出</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+  </header>
+    <!-- 左侧菜单栏 -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu">
+        <li class="header">主导航</li>
+        <li class="treeview">
+          <a href="#">
+            <i class="glyphicon glyphicon-user"></i> <span>用户管理</span> <i class="fa fa-angle-left pull-right"></i>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#"><i class="fa fa-circle-o"></i>作者列表</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i>读者列表</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="glyphicon glyphicon-book"></i>
+            <span>作品管理</span>
+            <i class="fa fa-angle-left pull-right"></i>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#"><i class="fa fa-circle-o"></i> 已发布作品</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> 未发布作品</a></li>
+          </ul>
+        </li>
+         <li class="treeview">
+          <a href="#">
+            <i class="glyphicon glyphicon-star"></i>
+            <span>日常推荐</span>
+            <i class="fa fa-angle-left pull-right"></i>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#"><i class="fa fa-circle-o"></i> banner更换</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> 最新推荐</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="glyphicon glyphicon-wrench"></i>
+            <span>常规维护</span>
+            <i class="fa fa-angle-left pull-right"></i>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#"><i class="fa fa-circle-o"></i> 作者评分</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> 作者标签</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> 作品评分</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> 作品标签</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-laptop"></i>
+            <span>网站服务</span>
+            <i class="fa fa-angle-left pull-right"></i>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#"><i class="fa fa-circle-o"></i> 用户反馈</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> 评论</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="glyphicon glyphicon-briefcase"></i> <span>工具中心</span>
+            <i class="fa fa-angle-left pull-right"></i>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#"><i class="fa fa-circle-o"></i> 账号中心</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> 退出</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-pie-chart"></i> <span>数据中心</span>
+            <i class="fa fa-angle-left pull-right"></i>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#"><i class="fa fa-circle-o"></i> 数据1</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> 数据2</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </aside>
+    <!------------- 左侧菜单栏-->
+
+    <!-- 所有内容部分 -->
+    <div class="content-wrapper">
+		     <section class="content">
+		   		  <div class="box border-box">
+		   		  <div class="box-body box-profile">
+		   		  <form class="form-inline">
+		   		  	<div class="form-group">
+		   		  	<div class="row">
+		   		  		<div class="col-lg-5 col-xs-6 mb-10">
+		   		  			<input type="text" class="form-control input_style mr-10" placeholder="作品名称">
+		   		  			 <div class="form-group">
+				                <div class="input-group">
+				                  <select class="form-control pull-righ w h30" id="daterange-btn">
+							     
+							      </select>
+				                </div>
+              				</div> <!-- /.input group -->
+		   		  		</div>
+		   		  		<!--用户评分-->
+		   		  	<div class="col-lg-3 col-xs-6"> 
+		            <div class="box dropdown_input">
+		           	<div class="box-header with-border">
+		              	<span>&nbsp;&nbsp;用户评分</span>
+		              <div class="box-tools">
+		                <button type="button" class="btn btn-box-tool re" data-widget="collapse"><i class="fa fa-minus incre"></i>
+		                </button>
+		              </div>
+		            </div>
+		            <div class="box-body" style="display:none">
+		              <ul class="nav nav-pills nav-stacked">
+		                <li class="text-center">
+		                	<button type="btn" class="btn_style score_btn2">全部显示</button>
+		                	<button type="btn" class="btn_style score_btn2">没有评分</button>
+		                </li>
+		                <li class="m10">创作</li>
+		                <li class="m10">
+		                	<button type="btn" class="btn_style score_btn1 mr-5">1分</button>
+		                	<button type="btn" class="btn_style score_btn1 mr-5">2分</button>
+		                	<button type="btn" class="btn_style score_btn1 mr-5">3分</button>
+		                	<button type="btn" class="btn_style score_btn1 mr-5">4分</button>
+		                	<button type="btn" class="btn_style score_btn1 no-margin">5分</button>
+		                </li>
+		                <li class="m10">知识面</li>
+		                <li class="m10">
+		                	<button type="btn" class="btn_style score_btn1 mr-5">1分</button>
+		                	<button type="btn" class="btn_style score_btn1 mr-5">2分</button>
+		                	<button type="btn" class="btn_style score_btn1 mr-5">3分</button>
+		                	<button type="btn" class="btn_style score_btn1 mr-5">4分</button>
+		                	<button type="btn" class="btn_style score_btn1 no-margin">5分</button>
+		                </li>
+		                <li class="m10">沟通能力</li>
+		                <li class="m10">
+		                	<button type="btn" class="btn_style score_btn1 mr-5">1分</button>
+		                	<button type="btn" class="btn_style score_btn1 mr-5">2分</button>
+		                	<button type="btn" class="btn_style score_btn1 mr-5">3分</button>
+		                	<button type="btn" class="btn_style score_btn1 mr-5">4分</button>
+		                	<button type="btn" class="btn_style score_btn1 no-margin">5分</button>
+		                </li>
+		                <li class="m10">形象</li>
+		                <li class="m10">
+		                	<button type="btn" class="btn_style score_btn1 mr-5">1分</button>
+		                	<button type="btn" class="btn_style score_btn1 mr-5">2分</button>
+		                	<button type="btn" class="btn_style score_btn1 mr-5">3分</button>
+		                	<button type="btn" class="btn_style score_btn1 mr-5">4分</button>
+		                	<button type="btn" class="btn_style score_btn1 no-margin">5分</button>
+		                </li>
+		                <li class="text-center m10">
+		                	<button type="btn" class="btn_style score_btn2">确定</button>
+		                	<button type="btn" class="btn_style score_btn2 no-margin">取消</button>
+		                </li>
+		              </ul>
+		            </div>
+		          </div>
+		          </div><!--/.用户评分-->
+		          <!--用户标签-->
+		          <div class="col-lg-3 col-xs-6">
+		 				<div class="box dropdown_input">
+		            <div class="box-header with-border">
+		              <span>&nbsp;&nbsp;标签</span>
+		              <div class="box-tools">
+		                <button type="button" class="btn btn-box-tool re" data-widget="collapse"><i class="fa fa-minus incre"></i>
+		                </button>
+		              </div>
+		            </div>
+		            <div class="box-body" style="display:none">
+		              <ul class="nav nav-pills nav-stacked">
+		                <li class="text-center">
+		                	<button type="btn" class="btn_style score_btn2">全部显示</button>
+		                	<button type="btn" class="btn_style score_btn2">没有标签</button>
+		                </li>
+		                <li class="m10">类型</li>
+		                <li class="m10 text-center">
+		                	<button type="btn" class="btn_style tag_btn">二次元</button>
+		                	<button type="btn" class="btn_style tag_btn">武侠</button>
+		                	<button type="btn" class="btn_style tag_btn no-margin">科幻</button>
+		                </li>	
+		                <li class="m10 text-center">
+		                	<button type="btn" class="btn_style tag_btn">玄幻</button>
+		                	<button type="btn" class="btn_style tag_btn">职场</button>
+		                	<button type="btn" class="btn_style tag_btn no-margin">都市</button>
+		                </li>
+		                <li class="m10 text-center">
+		                	<button type="btn" class="btn_style tag_btn">历史</button>
+		                	<button type="btn" class="btn_style tag_btn">军事</button>
+		                	<button type="btn" class="btn_style tag_btn no-margin">游戏</button>
+		                </li>	
+		               <li class="m10">情绪</li>
+		                <li class="m10 text-center">
+		                	<button type="btn" class="btn_style tag_btn">二次元</button>
+		                	<button type="btn" class="btn_style tag_btn">武侠</button>
+		                	<button type="btn" class="btn_style tag_btn no-margin">科幻</button>
+		                </li>	
+		                <li class="m10 text-center">
+		                	<button type="btn" class="btn_style tag_btn">玄幻</button>
+		                	<button type="btn" class="btn_style tag_btn">职场</button>
+		                	<button type="btn" class="btn_style tag_btn no-margin">都市</button>
+		                </li>
+		                <li class="m10 text-center">
+		                	<button type="btn" class="btn_style tag_btn">历史</button>
+		                	<button type="btn" class="btn_style tag_btn">军事</button>
+		                	<button type="btn" class="btn_style tag_btn no-margin">游戏</button>
+		                </li>	
+		                <li class="m10">作者印象</li>
+		                <li class="m10 text-center">
+		                	<button type="btn" class="btn_style tag_btn">二次元</button>
+		                	<button type="btn" class="btn_style tag_btn">武侠</button>
+		                	<button type="btn" class="btn_style tag_btn no-margin">科幻</button>
+		                </li>	
+		                <li class="m10 text-center">
+		                	<button type="btn" class="btn_style tag_btn">玄幻</button>
+		                	<button type="btn" class="btn_style tag_btn">职场</button>
+		                	<button type="btn" class="btn_style tag_btn no-margin">都市</button>
+		                </li>
+		                <li class="m10 text-center">
+		                	<button type="btn" class="btn_style tag_btn">历史</button>
+		                	<button type="btn" class="btn_style tag_btn">军事</button>
+		                	<button type="btn" class="btn_style tag_btn no-margin">游戏</button>
+		                </li>	
+		                <li class="text-center m10">
+		                	<button type="btn" class="btn_style score_btn2">确定</button>
+		                	<button type="btn" class="btn_style score_btn2 no-margin">取消</button>
+		                </li>
+		                </li>
+		              </ul>
+		            </div>
+		            <!-- /.box-body -->
+		          </div>
+		 		</div><!--/.用户标签-->
+		 		<!--搜索按钮-->
+		 		<div class="col-lg-1 col-xs-6">
+	          		<div class="btn-group">
+	          			<button type="button" class="btn_style search1 f14">搜索</button>
+	          		</div>
+		        </div>
+		   	</div>	
+		          <div class='row'>
+		          	<div class="col-lg-6 col-xs-12 text-left m5">
+		          		<div>
+		          			<span>排序</span>
+				          	<button type="button" class="btn_style btn_style1">按发布时间</button>
+				          	<button type="button" class="btn_style btn_style1">按阅读数</button>
+				          	<button type="button" class="btn_style btn_style1">按收藏数</button>
+				          	<button type="button" class="btn_style btn_style1">按购买数</button>
+				          	<button type="button" class="btn_style btn_style1">按收益数</button>
+		          		</div>
+		          	</div>
+		          	<div class="col-lg-6 col-xs-12 text-right">
+		          		<ul class="pagination">
+									  <li><a href="#">上一页</a></li>
+									  <li><a href="#">1</a></li>
+									  <li><a href="#">2</a></li>
+									  <li><a href="#">3</a></li>
+									  <li><a href="#">4</a></li>
+									  <li><a href="#">5</a></li>
+									  <li><a href="#">下一页</a></li>
+									</ul>
+		          	</div>
+		          </div>
+		   		  </div>
+		   		  </form>	
+		        </div>
+		   		</div>
+		</section>
+		
+		<section class="content" id="alert_user">
+					<div class="box box-style">
+						<div class="row user_list_bor box_hover" id="userInfo">
+        					<div class="col-lg-4 col-xs-6 re alert_box">
+         						 <div class="pull-left details_bottom">
+         						 	<div class="author_name c3 l20 pull-left mr-10"><b>君士坦丁堡的陷落</b></div><a href="#" class="a0 details pull-left">修改书名</a>
+				 					<ul class="c2">
+				 						<li class="c2 f14">ID:12651</li>
+				 						<li class="c2 f12">作者：<span class="c3">TT大神</span></li>
+				 						<li class="c2 f12">ID:12651</li>
+				 						<li class="c2 f12">发布时间：2016/02/23&nbsp;&nbsp;13:34:45</li>
+						 				<li class="c2 f12">OR数：20个</li>
+						 				<li class="c2 f12">收费节点：第6个OR</span></li>
+						 				<li class="c2 f12 re">
+						 					收费价格：<b>¥1.2</b><i class="price_tip">i</i>
+						 					<div class="re price_height p_price">
+						 					<ul>
+						 						<li>第一次（2016/03/06）:<b class="c2">¥3.2</b></li>
+						 						<li>第二次（2016/04/26）:<b class="c2">¥0</b></li>
+						 						<li>现在（2016/06/29）:<b class="c2">¥1.2</b></li>
+						 					</ul>
+						 					<div class="sign ab"></div>
+								 			</div>
+						 				</li>
+						 				
+						 				
+				 					</ul>
+			 					</div>
+			 					
+					 			<ul class="pull-right">
+					 				<li><a href="#" class="a0 details mb-65 check">查看详情</a></li>
+					 				<li><a href="#" class="a0 details">修改书名</a></li>
+					 				<li><a href="#" class="a0 details">下架</a></li>
+					 			</ul>
+       						</div>
+        					<!-- ./用户信息 -->
+        					<!--作品信息-->
+					        <div class="col-lg-2 col-xs-6">
+					          			<div>
+								 				<p class="f14 c2">作品信息</p>
+								 			<ul>
+								 				<li class="mb-5 f12">字数：<span class="number pull-right"> <b>32544</b></span></li>
+								 				<li class="mb-5 f12">阅读数：<span class="number pull-right"> <b>2312</b></span></li>
+								 				<li class="mb-5 f12">收藏数：<span class="number pull-right"><b>120</b></span></li>
+								 				<li class="mb-5 f12">购买数：<span class="number pull-right"><b> 20</b></span></li>
+								 				<li class="mb-5 f12">分享数：<span class="number pull-right"><b> 20</b></span></li>
+								 				<li class="f12">收益数：<span class="number pull-right"><b>¥1234</b></span></li>
+								 			</ul>
+								 		</div>
+					        </div>
+					        <!--/.作品信息-->
+       					     <!--作品标签 -->
+					        <div class="col-lg-2 col-xs-6">
+					         	<div>
+								 			<p class="f14 c2">作品标签</p>
+								 			<ul class="pull-left mr-10 tag-nav">
+								 				<li class="tag light_blue f12 tag_hover">
+								 					潜力
+								 					
+									 					<div class="manager re">
+										 					<span>邵皙智,徐程刚</span>
+										 					<div class="sign ab"></div>
+									 					</div>
+								 					
+								 				</li>
+								 				<li class="tag light_blue f12 tag_hover">
+								 					逻辑性强
+								 					<div class="manager re">
+										 					<span>邵皙智,徐程刚</span>
+										 					<div class="sign ab"></div>
+									 				</div>
+								 				</li>
+								 				<li class="tag light_blue f12 tag_hover">
+								 					有思想
+								 					
+									 					<div class="manager re">
+										 					<span>邵皙智,徐程刚</span>
+										 					<div class="sign ab"></div>
+									 					</div>
+
+								 				</li>
+								 				<li class="tag light_blue f12 tag_hover">
+								 					思维活跃
+
+									 					<div class="manager re">
+										 					<span>邵皙智,徐程刚</span>
+										 					<div class="sign ab"></div>
+									 					</div>
+
+								 				</li>
+								 			</ul>
+								 			<ul class="pull-left tag-nav">
+								 				<li class="tag light_blue f12 tag_hover">
+								 					高产
+								 					
+									 					<div class="manager re">
+										 					<span>邵皙智,徐程刚</span>
+										 					<div class="sign ab"></div>
+									 					</div>
+
+								 				</li>
+								 				<li class="tag light_blue f12 tag_hover">
+								 					潜力
+								 					
+									 					<div class="manager re">
+										 					<span>邵皙智,徐程刚</span>
+										 					<div class="sign ab"></div>
+									 					</div>
+
+								 				</li>
+								 				
+								 				<li class="tag light_blue f12 tag_hover">
+								 					逻辑性强
+								 					
+									 					<div class="manager re">
+										 					<span>邵皙智,徐程刚</span>
+										 					<div class="sign ab"></div>
+									 					</div>
+
+								 				</li>
+								 				<li class="tag a0 f12 c2">显示全部</li>
+								 			</ul>
+								</div>
+					        </div><!-- ./作品标签 -->
+        					<!--无数据--用户标签-->	
+							<div class="col-lg-2 col-xs-6 no-data">
+						 			<div>
+							 				<p class="f14 c2">用户标签</p>
+							 			<ul>
+							 				<li class="f12 mb-11 c2">无标签</li>
+							 				<li><a href="#" class="a0 details c-l">添加标签</a></li>
+							 			</ul>
+							 		</div>
+							 </div>
+        
+					        <div class="col-lg-4 col-xs-6">
+					         			<div>
+								 			<p class="f14 c2">作品评分</p>
+								 			<ul class="progress_score">
+								 				<li>
+								 					<span class="pull-left w60 f12">创作</span>
+								 					<div class="progress progress_style">
+					   							<div class="progress-bar purple" role="progressbar" 
+					      					aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" 	
+					      					style="width: 70%;">
+												   </div>
+													</div>
+												<span class="f18 pull-right">3.5</span>
+								 				</li>
+								 				<li>
+								 					<span class="pull-left w60 f12">知识面</span>
+								 					<div class="progress progress_style">
+					   							<div class="progress-bar purple" role="progressbar" 
+					      					aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" 	
+					      					style="width: 80%;">
+												   </div>
+												</div>
+												<span class="f18 pull-right">4</span>
+								 				</li>
+								 				<li>
+								 					<span class="pull-left w60 f12">沟通能力</span>
+								 					<div class="progress progress_style">
+					   							<div class="progress-bar purple" role="progressbar" 
+					      					aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" 	
+					      					style="width: 30%;">
+												   </div>
+												</div>
+													<span class="f18 pull-right">4</span>
+								 				</li>
+								 				<li>
+								 					<span class="pull-left w60 f12">形象</span>
+								 					<div class="progress progress_style">
+					   							<div class="progress-bar purple" role="progressbar" 
+					      					aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" 	
+					      					style="width: 15%;">
+												   </div>
+													</div>
+													<span class="f18 pull-right">2</span>
+								 				</li>
+								 				
+								 			</ul>
+								 		</div>
+					        </div><!--作品评分 end-->
+					        <!--作品评分无数据-->
+					        <div class="col-lg-2 col-xs-6 no-data">
+						 			<div>
+							 				<p class="f14 c2">用户评分</p>
+							 			<ul>
+							 				<li class="f12 mb-11 c2">尚未评分</li>
+							 				<li><a href="#" class="a0 details c-l">评分</a></li>
+							 			</ul>
+							 		</div>
+						  </div>
+						  <!--------弹窗部分------->
+						  	<div class="col-lg-8 col-xs-6 author_box" id="popup">
+							<i></i>
+							<div class="close_btn" id="close_btn"><span>关闭</span></div>
+							<ul class="top_list" id="top_list">
+								<li class="tag_border">作品标签</li>
+								<li>作品评分</li>
+								<li>购买记录</li>
+							</ul>
+							<div class="clear"></div>
+							<div class="tag_list_box">
+							<!--用户标签弹窗-->
+								<div class="tag_list m20 tag_show">
+								<ul class="tag_name labelcont">
+									<li>
+										
+										<label class="tag light_blue f12 mb-11 mr-10">高产</label>
+										<span class="mr-20">张永妍</span>
+									</li>
+									<li>
+										
+										<label class="tag light_blue f12 mr-10">思维活跃</label>
+										<span class="mr-20">邵皙智，徐程刚</span>
+									</li>
+									<li>
+										<label class="tag light_blue f12 mr-10">有思想</label>
+										<span class="mr-20">赵侃</span>
+									</li>
+								</ul>
+								<div class="clear"></div>
+								<span class="span_title">选择标签</span>
+								<div class="clear"></div>
+								<div class="btn_box">
+									<div class="row">
+									  <div class="col-md-2">类型</div>
+									  <div class="col-md-10 btnType">
+									  	<button type="button" class="btn_style tag_btn tag_btn1">二次元</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">武侠</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">科幻</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">言情</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">科幻</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">武侠</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">二次元</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">武侠</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">科幻</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">言情</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">科幻</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">武侠</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">二次元</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">武侠</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">科幻</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">言情</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">科幻</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">武侠</button>
+									  </div>
+									</div>
+									<div class="row">
+									  <div class="col-md-2 emotion">情绪</div>
+									 <div class="col-md-10 .btnType">
+							        	<button type="button" class="btn_style tag_btn tag_btn1">武侠</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">科幻</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">言情</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">科幻</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">武侠</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">二次元</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">武侠</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">科幻</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">言情</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">科幻</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">武侠</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">二次元</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">武侠</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">科幻</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">言情</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">科幻</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">武侠</button>
+									  </div>
+									</div>
+									<div class="row">
+									  <div class="col-md-2">剧情</div>
+									 <div class="col-md-10 plot">
+									  	<button type="button" class="btn_style tag_btn tag_btn1">二次元</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">武侠</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">科幻</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">言情</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">科幻</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">武侠</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">二次元</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">武侠</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">科幻</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">言情</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">科幻</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">武侠</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">二次元</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">武侠</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">科幻</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">言情</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">科幻</button>
+							        	<button type="button" class="btn_style tag_btn tag_btn1">武侠</button>
+									  </div>
+									</div>
+									<button type="button" class="sbt">确定</button>
+								</div>
+						</div>
+			
+						<!--作品评分弹窗-->	
+						<div class="tag_list">
+							<div class="score">
+								<p class="f14 c2">张永妍的评分</p>
+								<ul class="progress_score">
+					 				<li>
+					 					<span class="pull-left w60 f12">创作</span>
+					 					<div class="progress progress_style">
+											<div class="progress-bar purple" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+										</div>
+										<div class="f18 pull-right fraction">3.5</div>
+					 				</li>
+					 				<li>
+					 					<span class="pull-left w60 f12">知识面</span>
+					 					<div class="progress progress_style">
+											<div class="progress-bar purple" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+										</div>
+										<span class="f18 pull-right fraction">4</span>
+					 				</li>
+					 				<li>
+					 					<span class="pull-left w60 f12">沟通能力</span>
+					 					<div class="progress progress_style">
+											<div class="progress-bar purple" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 30%;"></div>
+									    </div>
+										<span class="f18 pull-right fraction">4</span>
+					 				</li>
+					 				<li>
+					 					<span class="pull-left w60 f12">形象</span>
+					 					<div class="progress progress_style">
+											<div class="progress-bar purple" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 15%;"></div>
+										</div>
+										<span class="f18 pull-right fraction">2</span>
+					 				</li>
+						
+								</ul>
+							</div>
+					 		<div class="score">
+					 			<p class="f14 c2">邵皙智的评分</p>
+					 			<ul class="progress_score">
+					 				<li>
+					 					<span class="pull-left w60 f12">创作</span>
+					 					<div class="progress progress_style">
+											<div class="progress-bar purple" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+										</div>
+										<span class="f18 pull-right fraction">3.5</span>
+					 				</li>
+					 				<li>
+					 					<span class="pull-left w60 f12">知识面</span>
+					 					<div class="progress progress_style">
+											<div class="progress-bar purple" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+										</div>
+										<span class="f18 pull-right fraction">4</span>
+					 				</li>
+					 				<li>
+					 					<span class="pull-left w60 f12">沟通能力</span>
+					 					<div class="progress progress_style">
+											<div class="progress-bar purple" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 30%;"></div>
+										</div>
+										<span class="f18 pull-right fraction">4</span>
+					 				</li>
+					 				<li>
+					 					<span class="pull-left w60 f12">形象</span>
+					 					<div class="progress progress_style">
+											<div class="progress-bar purple" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 15%;"></div>
+										</div>
+										<span class="f18 pull-right fraction">2</span>
+					 				</li>
+					 				
+					 			</ul>
+					 		</div>
+				 		  	<div class="score">
+					 			<p class="f14 c2">我的评分</p>
+					 			<ul class="progress_score">
+					 				<li>
+					 					<span class="pull-left w60 f12">创作</span>
+					 					<div class="progress progress_style">
+											<div class="progress-bar purple" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+										</div>
+										<div class="fraction pull-right">
+											<span class="f18">3.5</span>
+										</div>
+										
+					 				</li>
+					 				<li>
+					 					<span class="pull-left w60 f12">知识面</span>
+					 					<div class="progress progress_style">
+											<div class="progress-bar purple" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+										</div>
+										<div class="fraction pull-right">
+											<span class="f18">3.5</span>
+										</div>
+								
+					 				</li>
+					 				<li>
+					 					<span class="pull-left w60 f12">沟通能力</span>
+					 					<div class="progress progress_style">
+											<div class="progress-bar purple" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 30%;"></div>
+										</div>
+										 <div class="fraction pull-right">
+											<span class="f18">3.5</span>
+										</div>
+					 				</li>
+					 				<li>
+					 					<span class="pull-left w60 f12">形象</span>
+					 					<div class="progress progress_style">
+											<div class="progress-bar purple" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 15%;"></div>
+										</div>
+										 <div class="fraction pull-right">
+											<span class="f18">3.5</span>
+										</div>
+					 				</li>
+					 			</ul>
+				 			</div>
+				 			<!-----无评分样式------>
+				 			<div class="score">
+				 				<p>大家还没有评分，赶快添加你的评分吧！</p>
+					 			<p class="f14 c2">我的评分</p>
+					 			<ul class="progress_score">
+					 				<li>
+					 					<span class="pull-left w60 f12">创作</span>
+					 					<div class="progress progress_style">
+											<div class="progress-bar purple" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+										<div class="score1">
+											<input type="text" class="f18 pull-right myscore fraction" value="3.5" id="my_score"/>
+										</div>
+					 				</li>
+					 				<li>
+					 					<span class="pull-left w60 f12">知识面</span>
+					 					<div class="progress progress_style">
+											<div class="progress-bar purple" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+										<div class="score1">
+											<input type="text" class="f18 pull-right myscore fraction" value="4" id="my_score"/>	
+										</div>
+										
+					 				</li>
+					 				<li>
+					 					<span class="pull-left w60 f12">沟通能力</span>
+					 					<div class="progress progress_style">
+											<div class="progress-bar purple" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+										<div class="score1">
+											<input type="text" class="f18 pull-right myscore fraction" value="3" id="my_score"/>	
+										</div>
+										
+					 				</li>
+					 				<li>
+					 					<span class="pull-left w60 f12">形象</span>
+					 					<div class="progress progress_style">
+											<div class="progress-bar purple" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+										<div class="score1">
+											<input type="text" class="f18 pull-right myscore fraction" value="2" id="my_score"/>	
+										</div>
+										
+					 				</li>
+					 			</ul>
+				 			</div>
+					</div>
+					<!----------购买记录------------->
+						<div class="tag_list">
+							<div class="clear"></div>
+								<div class="f14 c2">作品收益：<b>¥3254.45</b></div>
+								<div class="box-body">
+						              <table id="example1" class="table table-bordered">
+						                <thead>
+						                <tr>
+						                  <th class="col-md-2">时间</th>
+						                  <th>购买者</th>
+						                  <th>金额</th>
+						                </tr>
+						                </thead>
+						                <tbody>
+						                <tr>
+						                  <td>2016.02.21</td>
+						                  <td class="c3">TT大神</td>
+						                  <td>¥2.4</td>
+						                </tr>
+						                <tr>
+						                  <td>2016.02.25</td>
+						                  <td class="c3">时光的旅者</td>
+						                  <td>¥2.4</td>
+						                </tr>
+						                <tr>
+						                  <td>2016.02.25</td>
+						                  <td class="c3">开心大麻花</td>
+						                  <td>¥2.4</td>
+						                </tr>
+						                </tbody>
+						              </table>
+						          </div>
+			
+														
+							</div>
+			
+						</div><!------/.tag_list_box------>
+				</div><!-------/.#popup------->		
+
+						</div><!--row user_list_bor-->
+					</div><!-- ./box-style -->	
+		</section>
+		<div class="load_more">
+			<span>更多用户加载中...</span>
+		</div>
+		
+<!--弹窗部分-->
+
+   </div><!--/.content-wraper-->
+</div><!--/.wraper-->
+
+<script src="../js/jQuery-2.2.0.min.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/app.js"></script>
+<script src="../js/daterangepicker.js"></script>
+<script src="../js/bootstrap-datepicker.js"></script>
+<script src="../js/bootstrap-timepicker.js"></script>
+<script src="../js/listUser1.js"></script>
+<script>
+  
+</script>
+</body>
+</html>

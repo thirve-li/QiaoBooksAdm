@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>巧书后台购买列表</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="__PUBLIC__/css/bootstrap.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/font-awesome.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/ionicons.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/AdminLTE.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/_all-skins.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/base.css">
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+    <!-------------头部模板 header.html main-header begin-->
+    <include file="./Public/Tpl/header.html" />
+    <!-------------头部模板 header.html main-header end-->
+
+
+    <!------------- 左侧菜单栏 leftMenu.html aside begin-->
+    <include file="./Public/Tpl/leftMenu.html" />
+    <!------------- 左侧菜单栏 leftMenu.html aside end-->
+
+    <!-- 所有内容部分 -->
+    <div class="content-wrapper">
+
+        <!-- 内容顶部模板 topSection.html 开始-->
+        <include file="./Public/Tpl/topSection.html" />
+        <!-- 内容顶部模板 topSection.html 结束-->
+
+        <!-- 主要内容 -->
+        <section class="content">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="box">
+                        <!-- /.box-header -->
+                        <br/>
+                        <ul class="top_list" id="top_list">
+                            <li <if condition="$status eq 1"> class="tag_border" </if> ><a href="{$Think.config.QS_BASE_PATH}/UserPay/listPay/status/1">已支付</li>
+                            <li <if condition="$status eq 0"> class="tag_border" </if> ><a href="{$Think.config.QS_BASE_PATH}/UserPay/listPay/status/0">待支付</a></li>
+                        </ul>
+
+                        <div class="box-body">
+                            <table id="example2" class="table table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>序号</th>
+                                    <th>手机</th>
+                                    <th>姓名</th>
+                                    <th>金额</th>
+                                    <th>作品名</th>
+                                    <th>收费OR节点</th>
+                                    <th>订单号</th>
+                                    <th>下单时间</th>
+                                    <th>付款时间</th>
+                                    <th>交易流水号</th>
+                                    <th>状态</th>
+                                    <th width="180">操作&nbsp;<a href="{$Think.config.QS_BASE_PATH}/UserPay/entry" class="a0 btn_style btn1">添加</a></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+
+                                <volist name="payList" id="pay">
+                                    <tr>
+                                        <td>{$key+1}</td>
+                                        <td>{$pay.mobile}</td>
+                                        <td>{$pay.user_name}</td>
+                                        <td>{$pay.money}</td>
+                                        <td>{$pay.bookname}</td>
+                                        <td>{$pay.or_id}</td>
+                                        <td>{$pay.order_no}</td>
+                                        <td>{$pay.order_time}</td>
+                                        <td>{$pay.pay_time}</td>
+                                        <td>{$pay.transaction_no}</td>
+                                        <td>
+                                            <if condition="$pay['status'] eq 0">待支付</if>
+                                            <if condition="$pay['status'] eq 1">已支付</if>
+                                        </td>
+                                        <td>
+                                            <a href="{$Think.config.QS_BASE_PATH}/UserPay/entry/id/{$pay.id}" class="a0 btn_style btn1">详细</a>
+                                        </td>
+                                    </tr>
+                                </volist>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- /.box-body -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /.content -->
+    </div>
+
+    <!--底部文字-->
+    <!--<footer class="main-footer">
+      <div class="pull-right hidden-xs">
+
+      </div>
+
+    </footer>
+    -->
+
+
+    <!------ 设置的滑动菜单 recent.html aside begin------>
+    <include file="./Public/Tpl/recent.html" />
+    <!------- 设置的滑动菜单 recent.html  aside end----->
+
+
+    <div class="control-sidebar-bg"></div>
+
+</div>
+
+<script src="__PUBLIC__/js/jQuery-2.2.0.min.js"></script>
+<script src="__PUBLIC__/js/bootstrap.js"></script>
+<script src="__PUBLIC__/js/app.js"></script>
+<script src="__PUBLIC__/js/jquery.slimscroll.js"></script>
+</body>
+</html>

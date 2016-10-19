@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>巧书后台提现申请列表</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="__PUBLIC__/css/bootstrap.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/font-awesome.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/ionicons.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/AdminLTE.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/_all-skins.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/base.css">
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+    <!-------------头部模板 header.html main-header begin-->
+    <include file="./Public/Tpl/header.html" />
+    <!-------------头部模板 header.html main-header end-->
+
+
+    <!------------- 左侧菜单栏 leftMenu.html aside begin-->
+    <include file="./Public/Tpl/leftMenu.html" />
+    <!------------- 左侧菜单栏 leftMenu.html aside end-->
+
+    <!-- 所有内容部分 -->
+    <div class="content-wrapper">
+
+        <!-- 内容顶部模板 topSection.html 开始-->
+        <include file="./Public/Tpl/topSection.html" />
+        <!-- 内容顶部模板 topSection.html 结束-->
+
+        <!-- 主要内容 -->
+        <section class="content">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="box">
+
+                        <br/>
+                        <ul class="top_list" id="top_list">
+                            <li <if condition="$status eq 0"> class="tag_border" </if> ><a href="{$Think.config.QS_BASE_PATH}/UserPay/listApply/status/0">已申请</a></li>
+                            <li <if condition="$status eq 1"> class="tag_border" </if> ><a href="{$Think.config.QS_BASE_PATH}/UserPay/listApply/status/1">已付款</a></li>
+                            <li <if condition="$status eq 2"> class="tag_border" </if> ><a href="{$Think.config.QS_BASE_PATH}/UserPay/listApply/status/2">已拒绝</a></li>
+
+                        </ul>
+
+                        <!-- /.box-header -->
+                        <div class="box-body">
+                            <table id="example2" class="table table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>序号</th>
+                                    <th>巧书账号</th>
+                                    <th>巧书用户名</th>
+                                    <th>提现金额</th>
+                                    <th>支付宝账号</th>
+                                    <th>收款人姓名</th>
+                                    <th>申请时间</th>
+                                    <!--<th>申请原因</th>-->
+                                    <th>审批人</th>
+                                    <th>审批原因</th>
+                                    <th>付款账号</th>
+                                    <th>交易流水号</th>
+                                    <th>审批时间</th>
+                                    <th>审批结果</th>
+                                    <th width="180">操作&nbsp;  <!--<a href="{$Think.config.QS_BASE_PATH}/UserPay/entry" class="a0 btn_style btn1">添加</a>--></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+
+                                <volist name="payList" id="pay">
+                                    <tr>
+                                        <td>{$key+1}</td>
+                                        <td>{$pay.mobile}</td>
+                                        <td>{$pay.apply_name}</td>
+                                        <td>{$pay.money}</td>
+                                        <td>{$pay.receive_account}</td>
+                                        <td>{$pay.receiver_name}</td>
+                                        <td>{$pay.apply_date}</td>
+                                        <!--<td>{$pay.apply_reason}</td>-->
+                                        <td>{$pay.approver_name}</td>
+                                        <td>{$pay.opt_reason}</td>
+                                        <td>{$pay.pay_account}</td>
+                                        <td>{$pay.transaction_no}</td>
+                                        <td>{$pay.pay_time}</td>
+                                        <td>
+                                            <if condition="$pay['approvve_status'] eq 0">已申请</if>
+                                            <if condition="$pay['approvve_status'] eq 1">已付款</if>
+                                            <if condition="$pay['approvve_status'] eq 2">已拒绝</if>
+                                        </td>
+                                        <td>
+                                            <a href="{$Think.config.QS_BASE_PATH}/UserPay/entry/id/{$pay.id}" class="a0 btn_style btn1">详细</a>
+                                        </td>
+                                    </tr>
+                                </volist>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- /.box-body -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /.content -->
+    </div>
+
+    <!--底部文字-->
+    <!--<footer class="main-footer">
+      <div class="pull-right hidden-xs">
+
+      </div>
+
+    </footer>
+    -->
+
+
+    <!------ 设置的滑动菜单 recent.html aside begin------>
+    <include file="./Public/Tpl/recent.html" />
+    <!------- 设置的滑动菜单 recent.html  aside end----->
+
+
+    <div class="control-sidebar-bg"></div>
+
+</div>
+
+<script src="__PUBLIC__/js/jQuery-2.2.0.min.js"></script>
+<script src="__PUBLIC__/js/bootstrap.js"></script>
+<script src="__PUBLIC__/js/app.js"></script>
+<script src="__PUBLIC__/js/jquery.slimscroll.js"></script>
+</body>
+</html>

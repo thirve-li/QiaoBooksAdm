@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>巧书后台提现申请</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="__PUBLIC__/css/bootstrap.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/font-awesome.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/ionicons.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/AdminLTE.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/_all-skins.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/base.css">
+</head>
+<script>
+    function setPrice(v){
+        $("#optType").val(v);
+        $("#applyForm").submit();
+    }
+</script>
+<body class="hold-transition skin-blue sidebar-mini" >
+<div class="wrapper">
+
+    <!-------------头部模板 header.html main-header begin-->
+    <include file="./Public/Tpl/header.html" />
+    <!-------------头部模板 header.html main-header end-->
+
+
+    <!------------- 左侧菜单栏 leftMenu.html aside begin-->
+    <include file="./Public/Tpl/leftMenu.html" />
+    <!------------- 左侧菜单栏 leftMenu.html aside end-->
+
+    <!-- 所有内容部分 -->
+    <div class="content-wrapper">
+
+        <!-- 内容顶部模板 topSection.html 开始-->
+        <include file="./Public/Tpl/topSection.html" />
+        <!-- 内容顶部模板 topSection.html 结束-->
+
+        <!-- 主要内容 -->
+        <section class="content">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="box pl-20 pt-20">
+                        <form id="applyForm" class="form-horizontal" role="form" action="{$Think.config.QS_BASE_PATH}/UserPay/save" method="post">
+
+                            <input type="hidden" name="id" value="{$payHistory['id']}" />
+                            <input type="hidden" name="optType" id="optType" value="{$payHistory['status']}" />
+
+
+                            <div class="form-group">
+                                <label class="col-sm-1 control-label text-left">巧书账号</label>
+                                <div class="col-sm-4">
+                                    {$payHistory['mobile']}
+                                    <!--<input type="text" name="receive_account" id="receive_account" required="required" value="{$payHistory['receive_account']}" >-->
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-1 control-label text-left">巧书用户名</label>
+                                <div class="col-sm-4">
+                                    {$payHistory['apply_name']}
+                                    <!--<input type="text" name="receive_account" id="receive_account" required="required" value="{$payHistory['receive_account']}" >-->
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-1 control-label text-left">提现金额</label>
+                                <div class="col-sm-4">
+                                    <!--<input type="text" name="money" id="money" required="required" value="{$payHistory['money']}" >-->
+                                    {$payHistory['money']}
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label class="col-sm-1 control-label text-left">支付宝账号</label>
+                                <div class="col-sm-4">
+                                    {$payHistory['receive_account']}
+                                    <!--<input type="text" name="receive_account" id="receive_account" required="required" value="{$payHistory['receive_account']}" >-->
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-1 control-label text-left">收款人姓名</label>
+                                <div class="col-sm-4">
+                                    {$payHistory['receiver_name']}
+                                    <!--<input type="text" name="name" id="name" required="required" value="{$payHistory['name']}" >-->
+                                </div>
+                            </div>
+
+
+                            <!--<div class="form-group">-->
+                                <!--<label class="col-sm-1 control-label text-left">账户说明</label>-->
+                                <!--<div class="col-sm-4">-->
+                                    <!--{$payHistory['account_desc']}-->
+                                    <!--&lt;!&ndash;<input type="text" name="account_desc" id="account_desc" required="required" value="{$payHistory['account_desc']}" >&ndash;&gt;-->
+                                <!--</div>-->
+                            <!--</div>-->
+
+                            <div class="form-group">
+                                <label class="col-sm-1 control-label text-left">申请时间</label>
+                                <div class="col-sm-4">
+                                    {$payHistory['apply_date']}
+                                    <!--<input type="text" name="apply_reason" id="apply_reason" required="required" value="{$payHistory['apply_reason']}" >-->
+                                </div>
+                            </div>
+
+
+                            <if condition="!empty($payHistory['id'])">
+                                <div class="form-group">
+                                    <label class="col-sm-1 control-label text-left">付款账号</label>
+                                    <div class="col-sm-4">
+                                        <input type="text" name="pay_account" id="pay_account" required="required" value="{$payHistory['pay_account']}" >
+                                    </div>
+                                </div>
+
+                                <!--<div class="form-group">-->
+                                    <!--<label class="col-sm-1 control-label text-left">支付方式</label>-->
+                                    <!--<div class="col-sm-4">-->
+                                        <!--<select name="pay_type"  >-->
+                                            <!--<option value="" <if condition="$payHistory['pay_type'] eq '' "> selected</if>>未知</option>-->
+                                            <!--<option value="0" <if condition="$payHistory['pay_type'] eq 0"> selected</if>>支付宝</option>-->
+                                            <!--<option value="1" <if condition="$$payHistory['pay_type'] eq 1"> selected</if>>微信</option>-->
+                                        <!--</select>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+
+                                <div class="form-group">
+                                    <label class="col-sm-1 control-label text-left">交易流水号</label>
+                                    <div class="col-sm-4">
+                                        <input type="text" name="transaction_no" id="transaction_no" required="required" value="{$payHistory['transaction_no']}" >
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-1 control-label text-left">付款人</label>
+                                    <div class="col-sm-4">{$payHistory['approver_name']}</div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-1 control-label text-left">付款时间</label>
+                                    <div class="col-sm-4">{$payHistory['pay_time']}</div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-1 control-label text-left">原因</label>
+                                    <div class="col-sm-4">
+                                        <textarea rows="3" cols="40" name="opt_reason">{$payHistory['opt_reason']}</textarea>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-1 control-label text-left">状态</label>
+                                    <div class="col-sm-4">
+                                        <if condition="$payHistory['status'] eq 0">已申请</if></option>
+                                        <if condition="$payHistory['status'] eq 1">已付款</if></option>
+                                        <if condition="$payHistory['status'] eq 2">已拒绝</if></option>
+                                    </div>
+                                </div>
+
+                            </if>
+
+                            <div class="form-group">
+                                <div class="col-sm-5 text-right">
+                                    <div class="btn-group m20 mb-20">
+                                        <if condition="$payHistory['status']==0">
+                                            <button id="btnApprove" type="button" onclick="setPrice(1)"  class="btn_style btn1">同 意</button>
+                                            <button id="btnReject" type="button" onclick="setPrice(2)" class="btn_style btn1">拒 绝</button>
+                                        </if>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </div>
+
+
+    <!------ 设置的滑动菜单 recent.html aside begin------>
+    <include file="./Public/Tpl/recent.html" />
+    <!------- 设置的滑动菜单 recent.html  aside end----->
+
+
+    <div class="control-sidebar-bg"></div>
+
+</div>
+
+<script src="__PUBLIC__/js/jQuery-2.2.0.min.js"></script>
+<script src="__PUBLIC__/js/bootstrap.js"></script>
+<script src="__PUBLIC__/js/app.js"></script>
+<script src="__PUBLIC__/js/jquery.slimscroll.js"></script>
+
+</body>
+</html>

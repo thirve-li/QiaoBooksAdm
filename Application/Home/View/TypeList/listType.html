@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>巧书后台基础数据</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="__PUBLIC__/css/bootstrap.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/font-awesome.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/ionicons.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/AdminLTE.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/_all-skins.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/base.css">
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+    <!-------------头部模板 header.html main-header begin-->
+    <include file="./Public/Tpl/header.html" />
+    <!-------------头部模板 header.html main-header end-->
+
+
+    <!------------- 左侧菜单栏 leftMenu.html aside begin-->
+    <include file="./Public/Tpl/leftMenu.html" />
+    <!------------- 左侧菜单栏 leftMenu.html aside end-->
+
+    <!-- 所有内容部分 -->
+    <div class="content-wrapper">
+
+        <!-- 内容顶部模板 topSection.html 开始-->
+        <include file="./Public/Tpl/topSection.html" />
+        <!-- 内容顶部模板 topSection.html 结束-->
+
+        <!-- 主要内容 begin-->
+        <section class="content">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="box">
+                        <br>
+                        <!-- /.box-header -->
+                        <if condition="$type eq 8">
+                            <ul class="top_list" id="top_list">
+                                    <li <if condition="$status eq 1"> class="tag_border" </if> ><a href="{$Think.config.QS_BASE_PATH}/TypeList/listType/type/8/status/1">正在使用</li>
+                                    <li <if condition="$status eq 0"> class="tag_border" </if> ><a href="{$Think.config.QS_BASE_PATH}/TypeList/listType/type/8/status/0">已下架</a></li>
+                            </ul>
+                        </if>
+
+                        <if condition="$type eq 10">
+                            <ul class="top_list" id="top_list">
+                                <li <if condition="$status eq 1"> class="tag_border" </if> ><a href="{$Think.config.QS_BASE_PATH}/TypeList/listType/type/10/status/1/showMenu/ADMIN_BANNER">正在使用</li>
+                                <li <if condition="$status eq 0"> class="tag_border" </if> ><a href="{$Think.config.QS_BASE_PATH}/TypeList/listType/type/10/status/0/showMenu/ADMIN_BANNER">未启用</a></li>
+                            </ul>
+                        </if>
+
+                        <div class="box-body">
+                            <if condition="$type eq 1">书籍分类</if>
+                            <if condition="$type eq 2">作品标签</if>
+                            <if condition="$type eq 3">作者评分标准</if>
+                            <if condition="$type eq 4">作品评分标准</if>
+                            <if condition="$type eq 5">国家</if>
+                            <if condition="$type eq 6">省份</if>
+                            <if condition="$type eq 7">城市</if>
+                            <if condition="$type eq 8">首页banner</if>
+                            <if condition="$type eq 9">作者标签</if>
+                            <if condition="$type eq 10">推荐作品</if>
+
+                            <table id="example2" class="table table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>序号</th>
+                                    <th><if condition="$type eq 1">书籍分类名称</if>
+                                        <if condition="$type eq 2">作品标签名称</if>
+                                        <if condition="$type eq 3">作者评分标准名称</if>
+                                        <if condition="$type eq 4">作品评分标准名称</if>
+                                        <if condition="$type eq 5">国家</if>
+                                        <if condition="$type eq 6">省份</if>
+                                        <if condition="$type eq 7">城市</if>
+                                        <if condition="$type eq 8">首页banner</if>
+                                        <if condition="$type eq 9">作者标签</if>
+                                        <if condition="$type eq 10">作品ID+名称 </if></th>
+                                    <th>排序</th>
+                                    <th>备注</th>
+                                    <if condition="$type eq 8"><th>显示位置</th></if>
+
+                                    <th>状态</th>
+                                    <th width="180">操作&nbsp;<a href="{$Think.config.QS_BASE_PATH}/TypeList/entry/type/{$type}" class="a0 btn_style btn1">添加</a></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <volist name="dataList" id="data">
+                                    <tr>
+                                        <td>{$key+1}</td>
+
+                                        <if condition="$type eq 10"><td><a href="{$Think.config.QS_BASE_PATH}/Book/bookList/bid/{$data.url}" target="_blank">{$data.url}.{$data.name}</a></td></if></th>
+                                        <if condition="$type neq 10"><td>{$data.name}</td></if></th>
+
+                                        <td>{$data.sort_num}</td>
+                                        <td>{$data.remark}</td>
+
+                                        <if condition="$type eq 8">
+                                            <td>
+                                                <if condition="$data['mobile_or_pc'] eq 0">PC</if>
+                                                <if condition="$data['mobile_or_pc'] eq 1">H5</if>
+                                                <if condition="$data['mobile_or_pc'] eq 2">全部</if>
+                                            </td>
+                                        </if>
+
+
+                                        <td>
+                                            <if condition="$type eq 10">
+                                                <if condition="$data['status'] eq 1">正在使用<else/>未启用</if>
+                                             <else/>
+                                                <if condition="$data['status'] eq 0">无效<else/>有效</if>
+                                            </if>
+
+
+                                        </td>
+                                        <td>
+                                            <div class="btn-group">
+                                                <if condition="$data['status'] eq 1">
+                                                    <a href="{$Think.config.QS_BASE_PATH}/TypeList/entry/id/{$data.id}" class="a0 edit">编辑</a>&nbsp;
+                                                </if>
+                                                <if condition="$data['status'] eq 0">
+                                                    <a href="#"  class="a0 forbid" onclick="if(window.confirm('你确定要启用吗？')){window.location.href='{$Think.config.QS_BASE_PATH}/TypeList/del/id/{$data.id}/status/1' }">启用</a>
+                                                    <else/>
+                                                    <a href="#"  class="a0 forbid"  onclick="if(window.confirm('你确定要禁用吗？')){window.location.href='{$Think.config.QS_BASE_PATH}/TypeList/del/id/{$data.id}status/0' }">禁用</a>
+                                                </if>
+
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </volist>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- /.box-body -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 主要内容 end -->
+    </div>
+
+    <!--底部文字-->
+    <!--<footer class="main-footer">
+      <div class="pull-right hidden-xs">
+
+      </div>
+
+    </footer>
+    -->
+
+
+    <!------ 设置的滑动菜单 recent.html aside begin------>
+    <include file="./Public/Tpl/recent.html" />
+    <!------- 设置的滑动菜单 recent.html  aside end----->
+
+
+    <div class="control-sidebar-bg"></div>
+
+</div>
+
+<script src="__PUBLIC__/js/jQuery-2.2.0.min.js"></script>
+<script src="__PUBLIC__/js/bootstrap.js"></script>
+<script src="__PUBLIC__/js/app.js"></script>
+<script src="__PUBLIC__/js/jquery.slimscroll.js"></script>
+</body>
+</html>

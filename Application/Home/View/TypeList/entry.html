@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>巧书后台首页</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="__PUBLIC__/css/bootstrap.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/font-awesome.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/ionicons.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/AdminLTE.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/_all-skins.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/base.css">
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+    <!-------------头部模板 header.html main-header begin-->
+    <include file="./Public/Tpl/header.html" />
+    <!-------------头部模板 header.html main-header end-->
+
+
+    <!------------- 左侧菜单栏 leftMenu.html aside begin-->
+    <include file="./Public/Tpl/leftMenu.html" />
+    <!------------- 左侧菜单栏 leftMenu.html aside end-->
+
+    <!-- 所有内容部分 -->
+    <div class="content-wrapper">
+
+        <!-- 内容顶部模板 topSection.html 开始-->
+        <include file="./Public/Tpl/topSection.html" />
+        <!-- 内容顶部模板 topSection.html 结束-->
+
+        <!-- 主要内容 -->
+        <section class="content">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="box pl-20 pt-20">
+                        <if condition="$type eq 1">书籍分类</if>
+                        <if condition="$type eq 2">作品标签</if>
+                        <if condition="$type eq 3">作者评分标准</if>
+                        <if condition="$type eq 4">作品评分标准</if>
+                        <if condition="$type eq 5">国家</if>
+                        <if condition="$type eq 6">省份</if>
+                        <if condition="$type eq 7">城市</if>
+                        <if condition="$type eq 8">首页banner</if>
+                        <if condition="$type eq 9">作者标签</if>
+                        <form class="form-horizontal" role="form" action="{$Think.config.QS_BASE_PATH}/TypeList/save" method="post" enctype="multipart/form-data">
+                            <input type="hidden" name="id" value="{$data['id']}" >
+                            <input type="hidden" name="type" value="{$type}" >
+
+
+                            <if condition="$type eq 10 && $data['id'] !='' ">
+                                <div class="form-group">
+                                    <label class="col-sm-1 control-label text-left"><if condition="$type eq 1">书籍分类</if>
+                                        <if condition="$type eq 2">作品标签名称</if>
+                                        <if condition="$type eq 3">作者评分标准名称</if>
+                                        <if condition="$type eq 4">作品评分标准名称</if>
+                                        <if condition="$type eq 5">国家</if>
+                                        <if condition="$type eq 6">省份</if>
+                                        <if condition="$type eq 7">城市</if>
+                                        <if condition="$type eq 8">首页banner名称</if>
+                                        <if condition="$type eq 9">作者标签名称</if>
+                                        <if condition="$type eq 10">推荐作品名称</if></label>
+                                    <div class="col-sm-4">
+                                        <input type="text" name="name" value="{$data['name']}"   <if condition="$type neq 10 "> required="required" </if> class="w300">
+                                    </div>
+                                </div>
+                            </if>
+
+                            <if condition="$type neq 10 ">
+                                <div class="form-group">
+                                    <label class="col-sm-1 control-label text-left"><if condition="$type eq 1">书籍分类</if>
+                                        <if condition="$type eq 2">作品标签名称</if>
+                                        <if condition="$type eq 3">作者评分标准名称</if>
+                                        <if condition="$type eq 4">作品评分标准名称</if>
+                                        <if condition="$type eq 5">国家</if>
+                                        <if condition="$type eq 6">省份</if>
+                                        <if condition="$type eq 7">城市</if>
+                                        <if condition="$type eq 8">首页banner名称</if>
+                                        <if condition="$type eq 9">作者标签名称</if>
+                                        <if condition="$type eq 10">推荐作品名称</if></label>
+                                    <div class="col-sm-4">
+                                        <input type="text" name="name" value="{$data['name']}"   <if condition="$type neq 10 "> required="required" </if> class="w300">
+                                    </div>
+                                </div>
+                            </if>
+
+                            <div class="form-group">
+                                <label class="col-sm-1 control-label text-left">排序</label>
+                                <div class="col-sm-4">
+                                    <input type="text" name="sort_num" value="{$data['sort_num']}" required="required" style="width:40px;text-align:center" maxlength="3">
+                                </div>
+                            </div>
+
+                            <if condition="$type eq 6 ">
+                                <div class="form-group">
+                                    <label class="col-sm-1 control-label text-left">所属国家</label>
+                                    <div class="col-sm-4">
+                                        <select name="pid" required="required" >
+                                            <option>请选择</option>
+                                            <volist name="countryList" id="country">
+                                            <option value="{$country.id}" <if condition="$data['pid'] eq $country['id']"> selected</if>>{$country.name}</option>
+                                            </volist>
+                                        </select>
+                                    </div>
+                                </div>
+                            </if>
+
+                            <if condition="$type eq 7 ">
+                                <div class="form-group">
+                                    <label class="col-sm-1 control-label text-left">所属省份</label>
+                                    <div class="col-sm-4">
+
+                                        <select name="pid" required="required" >
+                                            <option>请选择</option>
+                                            <volist name="provinceList" id="province">
+                                                <option value="{$province.id}" <if condition="$data['pid'] eq $province['id']"> selected</if>>{$province.name}</option>
+                                            </volist>
+                                        </select>
+
+                                    </div>
+                                </div>
+                            </if>
+
+
+                            <if condition="$type eq 8 ">
+                                <div class="form-group">
+                                    <label class="col-sm-1 control-label text-left">URL</label>
+                                    <div class="col-sm-4">
+                                        <input type="text" name="url" value="{$data['url']}" class="w400">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-1 control-label text-left">显示位置</label>
+                                    <div class="col-sm-4">
+                                        <select name="mobile_or_pc" required="required">
+                                            <option value="2" <if condition="$data['mobile_or_pc']  eq 2 ">selected </if> >全部</option>
+                                            <option value="0" <if condition="$data['mobile_or_pc']  eq 0 ">selected </if> >PC</option>
+                                            <option value="1" <if condition="$data['mobile_or_pc']  eq 1 ">selected </if>  >H5</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-1 control-label text-left">图片</label>
+                                    <div class="col-sm-4">
+                                        <input type="file" name="img" value="{$data['img']}" class="w300">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-1 control-label text-left">图片</label>
+                                    <div class="col-sm-4">
+                                        <img src="http://img.qiaobooks.com/{$data['img']}" />
+                                    </div>
+                                </div>
+
+                            </if>
+
+                            <if condition="$type eq 10 ">
+                                <div class="form-group">
+                                    <label class="col-sm-1 control-label text-left">作品ID</label>
+                                    <div class="col-sm-4">
+                                        <input type="text" name="url" value="{$data['url']}" class="w400">
+                                    </div>
+                                </div>
+                            </if>
+
+
+                            <div class="form-group">
+                                <label class="col-sm-1 control-label text-left">备注</label>
+                                <div class="col-sm-4">
+                                    <input type="text" name="remark" value="{$data['remark']}" class="w400">
+                                </div>
+                            </div>
+
+
+                            <if condition="$data['id'] neq ''">
+                                <div class="form-group">
+                                    <label class="col-sm-1 control-label text-left">创建人</label>
+                                    <div class="col-sm-4"> {$data['creater_name']}</div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-1 control-label text-left">创建时间</label>
+                                    <div class="col-sm-4"> {$data['create_time']}</div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-1 control-label text-left">更新人</label>
+                                    <div class="col-sm-4">{$data['updater_name']}</div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-1 control-label text-left">更新时间</label>
+                                    <div class="col-sm-4">{$data['update_time']}</div>
+                                </div>
+                            </if>
+                                <div class="form-group">
+                                    <div class="col-sm-5 text-right">
+                                        <div class="btn-group m20 mb-20">
+                                            <button type="submit" class="btn_style btn1">提 交</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- /.content -->
+    </div>
+
+
+    <!------ 设置的滑动菜单 recent.html aside begin------>
+    <include file="./Public/Tpl/recent.html" />
+    <!------- 设置的滑动菜单 recent.html  aside end----->
+
+
+    <div class="control-sidebar-bg"></div>
+
+</div>
+
+<script src="__PUBLIC__/js/jQuery-2.2.0.min.js"></script>
+<script src="__PUBLIC__/js/bootstrap.js"></script>
+<script src="__PUBLIC__/js/app.js"></script>
+<script src="__PUBLIC__/js/jquery.slimscroll.js"></script>
+</body>
+</html>

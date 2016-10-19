@@ -1,0 +1,159 @@
+#bannerBox {
+	padding: 8px 12px;
+	background: #5582E4;
+	color: #FFFFFF;
+	margin-top: 15px;
+}
+
+.sortable {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.sortable.grid {
+	overflow: hidden;
+}
+.sortable.grid li{
+	float: left;
+	width:33%;
+	min-height: 380px;
+}
+ h3{
+	padding-left:15px;
+}
+.white{
+	height:35px;
+}
+.sortable dt button {
+	margin-right: 3%;
+	width: 80px;
+	height: 32px;
+	line-height:32px;
+	background: #FFFFFF;
+	border: 1px solid #999999;
+	float: right;
+	display: block;
+}
+
+.sortable dt img {
+	width: 100%;
+}
+
+input {
+	line-height: normal;
+}
+
+.sortable dt input[type="file"] {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+
+.sortable dt input[type="text"],
+.sortable dt input[type="url"],
+.sortable dt input[type="datetime-local"] {
+	width: 70%;
+}
+
+.sortable dt span {
+	text-align: right;
+	width: 25%;
+	margin-right:15px;
+	display: block;
+	float: left;
+	
+}
+.toggleUse .uses{ display:none;}
+.uses a{ color: red !important;}
+
+.handle {
+	cursor: move;
+}
+
+.sortable.connected {
+    width:33.33333333%;
+	min-height: 380px;
+	float:left;
+}
+#sortable2,#sortable3{
+	min-height: 380px;
+}
+.sortable-placeholder {
+	width:33%;
+	min-height:380px;
+	border: 1px dashed #CCC;
+	background: #FAFAFA;
+}
+dt{margin-bottom:15px;}
+.open {
+	position: absolute;
+	background: #001A35;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.open .delete {
+	padding: 32px 40px;
+	width: 352px;
+	line-height: 29px;
+	color: #FFFFFF;
+	font-size: 1.6rem;
+	height: 186px;
+	text-align: center;
+	background: #FF4444;
+	margin: 20% auto;
+	box-shadow: 0 0 1000px rgba(255, 255, 255, 0.5);
+}
+
+.open .delete span {
+	font-weight: bold;
+}
+
+.open .delete .btn {
+	position: relative;
+	width: 100%;
+}
+
+.open .delete .btn button {
+	width: 110px;
+	height: 30px;
+	border-radius: 50px;
+	outline: inherit;
+}
+
+.open .delete .btn button.btn_lefts {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: none;
+	border: 1px solid #FFFFFF;
+	color: #FFFFFF;
+}
+
+.open .delete .btn button.btn_right {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: #FFFFFF !important;
+	color: #FF4444;
+}
+
+.open .delete .btn button.btn_lefts:hover {
+	color: #FFFFFF !important;
+}
+
+.open .delete .btn button.btn_right:hover {
+	color: #ff4444 !important;
+}
+.imgboxs{ width: 100%; position: relative;}
+.imgboxs img{ width: 100%;}
+.imgboxs>.newsimgbox{ position: absolute; overflow: hidden; width: 100%; height: 100%; top: 0; left: 0; background: #FFFFFF;}
+.imgboxs>.newsimgbox>img{ width: 100%;}
+
+	

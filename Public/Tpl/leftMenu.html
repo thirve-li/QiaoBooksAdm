@@ -1,0 +1,174 @@
+<!-- 左侧菜单栏 -->
+<aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+        <!-- sidebar menu: : style can be found in sidebar.less -->
+        <ul class="sidebar-menu">
+            <li class="header">主导航</li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="glyphicon glyphicon-user"></i> <span>用户管理</span> <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <if condition="$SHOW_MENU == 'ADMIN_USER' ">
+                    <ul class="treeview-menu menu-open" style="display: block;">
+
+                <else />
+                    <ul class="treeview-menu" style="display: none;">
+                 </if>
+                    <li><a href="{$Think.config.QS_BASE_PATH}/User/listUser" class="selecter"><i class="fa fa-circle-o"></i>用户列表</a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="glyphicon glyphicon-book"></i>
+                    <span>作品管理</span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <if condition="$SHOW_MENU == 'ADMIN_BOOK' ">
+                    <ul class="treeview-menu menu-open" style="display: block;">
+                <else />
+                        <ul class="treeview-menu" style="display: none;">
+                </if>
+                    <li><a href="{$Think.config.QS_BASE_PATH}/Book/bookList" class="selecter"><i class="fa fa-circle-o"></i>作品列表</a></li>
+                    <!--<li><a href="{$Think.config.QS_BASE_PATH}/Book/bookList/isup/0"><i class="fa fa-circle-o"></i> 未发布作品</a></li>-->
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="glyphicon glyphicon-star"></i>
+                    <span>日常推荐</span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <if condition="$SHOW_MENU == 'ADMIN_BANNER' ">
+                    <ul class="treeview-menu menu-open" style="display: block;">
+                <else />
+                    <ul class="treeview-menu" style="display: none;">
+                </if>
+                <if condition="$type == 8 ">
+                    <li><a href="{$Think.config.QS_BASE_PATH}/TypeList/listType/type/8" class="selecter"><i class="fa fa-circle-o"></i>首页Banner</a></li>
+                <else/>
+                    <li><a href="{$Think.config.QS_BASE_PATH}/TypeList/listType/type/8"><i class="fa fa-circle-o"></i>首页Banner</a></li>
+                </if>
+                <if condition="$type == 10 ">
+                    <li><a href="{$Think.config.QS_BASE_PATH}/TypeList/listType/type/10/showMenu/ADMIN_BANNER" class="selecter"><i class="fa fa-circle-o"></i>首页作品推荐</a></li>
+                <else/>
+                    <li><a href="{$Think.config.QS_BASE_PATH}/TypeList/listType/type/10/showMenu/ADMIN_BANNER"><i class="fa fa-circle-o"></i>首页作品推荐</a></li>
+                </if>
+
+                    <!--<li><a href="#"><i class="fa fa-circle-o"></i> 最新推荐</a></li>-->
+                </ul>
+            </li>
+
+
+        <li class="treeview">
+            <a href="#">
+                <i class="glyphicon glyphicon-usd"></i>
+                <span>常规维护</span>
+                <i class="fa fa-angle-left pull-right"></i>
+            </a>
+            <if condition="$SHOW_MENU == 'ADMIN_PAY' ">
+                <ul class="treeview-menu menu-open" style="display: block;">
+            <else />
+                <ul class="treeview-menu" style="display: none;">
+            </if>
+
+            <if condition="$showMenu == 'apply' ">
+                <li><a href="{$Think.config.QS_BASE_PATH}/UserPay/listApply/status/0/showMenu/apply" class="selecter"><i class="fa fa-circle-o"></i>提现申请</a></li>
+                <else/>
+                <li><a href="{$Think.config.QS_BASE_PATH}/UserPay/listApply/status/0/showMenu/apply"><i class="fa fa-circle-o"></i>提现申请</a></li>
+            </if>
+
+            <if condition="$showMenu == 'buyList' ">
+                <li><a href="{$Think.config.QS_BASE_PATH}/UserPay/listPay/showMenu/buyList"  class="selecter"><i class="fa fa-circle-o"></i>购买历史</a></li>
+            <else/>
+                <li><a href="{$Think.config.QS_BASE_PATH}/UserPay/listPay/showMenu/buyList"><i class="fa fa-circle-o"></i>购买历史</a></li>
+            </if>
+
+
+            </ul>
+        </li>
+
+            <li class="treeview">
+                <a href="#">
+                    <i class="glyphicon glyphicon-wrench"></i>
+                    <span>内容设置</span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <if condition="$SHOW_MENU == 'ADMIN_MST' ">
+                    <ul class="treeview-menu menu-open" style="display: block;">
+                <else />
+                    <ul class="treeview-menu" style="display: none;">
+                </if>
+
+                <if condition="$type == 1 ">
+                    <li><a href="{$Think.config.QS_BASE_PATH}/TypeList/listType/type/1" class="selecter"><i class="fa fa-circle-o"></i>作品分类</a></li>
+                <else/>
+                    <li><a href="{$Think.config.QS_BASE_PATH}/TypeList/listType/type/1"><i class="fa fa-circle-o"></i>作品分类</a></li>
+                </if>
+
+                <if condition="$type == 2 ">
+                    <li><a href="{$Think.config.QS_BASE_PATH}/TypeList/listType/type/2" class="selecter"><i class="fa fa-circle-o"></i>作品标签</a></li>
+                <else/>
+                    <li><a href="{$Think.config.QS_BASE_PATH}/TypeList/listType/type/2"><i class="fa fa-circle-o"></i>作品标签</a></li>
+                </if>
+
+                <if condition="$type == 9 ">
+                    <li><a href="{$Think.config.QS_BASE_PATH}/TypeList/listType/type/9" class="selecter"><i class="fa fa-circle-o"></i>作者标签</a></li>
+                <else/>
+                    <li><a href="{$Think.config.QS_BASE_PATH}/TypeList/listType/type/9"><i class="fa fa-circle-o"></i>作者标签</a></li>
+                </if>
+
+                <if condition="$type == 3 ">
+                    <li><a href="{$Think.config.QS_BASE_PATH}/TypeList/listType/type/3"  class="selecter"><i class="fa fa-circle-o"></i>作者评分标准</a></li>
+                <else/>
+                    <li><a href="{$Think.config.QS_BASE_PATH}/TypeList/listType/type/3"><i class="fa fa-circle-o"></i>作者评分标准</a></li>
+                </if>
+
+                <if condition="$type == 4 ">
+                    <li><a href="{$Think.config.QS_BASE_PATH}/TypeList/listType/type/4"  class="selecter"><i class="fa fa-circle-o"></i>作品评分标准</a></li>
+                <else/>
+                    <li><a href="{$Think.config.QS_BASE_PATH}/TypeList/listType/type/4"><i class="fa fa-circle-o"></i>作品评分标准</a></li>
+                </if>
+
+
+
+                </ul>
+            </li>
+
+
+            <li class="treeview">
+                <a href="#">
+                    <i class="glyphicon glyphicon-record"></i>
+                    <span>管理中心</span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <if condition="$SHOW_MENU == 'ADMIN_MNG' ">
+                    <ul class="treeview-menu menu-open" style="display: block;">
+                 <else />
+                    <ul class="treeview-menu" style="display: none;">
+                </if>
+
+                <if condition="$showMenu == 1 ">
+                    <li><a href="{$Think.config.QS_BASE_PATH}/User/listAdmin/showMenu/1" class="selecter"><i class="fa fa-circle-o"></i>管理员列表</a></li>
+                <else/>
+                    <li><a href="{$Think.config.QS_BASE_PATH}/User/listAdmin/showMenu/1" ><i class="fa fa-circle-o"></i>管理员列表</a></li>
+                </if>
+
+                <if condition="$showMenu == 2 ">
+                    <li><a href="{$Think.config.QS_BASE_PATH}/AuthGroup/listGroup/showMenu/2" class="selecter"><i class="fa fa-circle-o"></i>用户组管理</a></li>
+                <else/>
+                    <li><a href="{$Think.config.QS_BASE_PATH}/AuthGroup/listGroup/showMenu/2" ><i class="fa fa-circle-o"></i>用户组管理</a></li>
+                </if>
+
+                <if condition="$showMenu == 3">
+                    <li><a href="{$Think.config.QS_BASE_PATH}/AuthRule/listRule/showMenu/3" class="selecter"><i class="fa fa-circle-o"></i>权限管理</a></li>
+                <else/>
+                    <li><a href="{$Think.config.QS_BASE_PATH}/AuthRule/listRule/showMenu/3" ><i class="fa fa-circle-o"></i>权限管理</a></li>
+                </if>
+
+                </ul>
+            </li>
+
+        </ul>
+    </section>
+</aside>

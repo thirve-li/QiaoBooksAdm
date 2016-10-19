@@ -1,0 +1,52 @@
+/*常规维护-评分管理样式*/
+#append_mark_cont{
+	padding-top:30px;
+	padding-left:50px;
+	background:#FFFFFF;
+}
+.append_mark input{
+	width:200px;
+	height:34px;
+}
+button.add-submit{
+	width:84px;
+	height:34px;
+	color:#FFFFFF;
+	background:#5582E4;
+	margin-left:20px;
+}
+#append_mark_cont .table,.lable-comtent .table{
+	margin-top:20px;
+}
+.table thead tr th{
+	font-size:14px;
+}
+.table tbody tr th{
+	font-size:14px;
+	color:#555555;
+}
+/*常规维护-标签管理样式*/
+.lable-comtent{
+	background:#FFFFFF;
+	padding-left:50px;
+}
+.mark_style{
+    padding-top:40px;	
+}
+.append_mark .selsect-type{
+	width:120px;
+	height:34px;
+	margin-right:10px;
+}
+.table-first{
+	width:120px;
+}
+.tagName li{
+	font-size:14px;
+	display: inline-block;
+	margin-right:40px;
+	line-height: 36px;
+	}
+.table tbody tr td.td-left{
+	padding-top:15px;
+}	

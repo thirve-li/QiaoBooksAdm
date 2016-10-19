@@ -1,0 +1,147 @@
+/*----------折线图首页-----------*/
+.page-container{
+	padding: 0 15px;
+}
+.cont-list{
+	width:100%;
+	padding:0 20px;
+}
+.cont-list h3{
+	padding:20px;
+	border-bottom: 1px solid #EEEEEE;
+	margin-bottom:20px;
+}
+.cont-list h3 i{
+	cursor:pointer;
+	position:relative;
+	display: inline-block;
+	width:12px;
+	height:12px;
+	border-radius:50%;
+	margin-left:8px;
+	line-height:12px;
+	text-align:center;
+	font-size:10px;
+	font-style: normal;
+	color:#555555;
+	border:1px solid #555555;
+}
+.cont-list h3 i:hover{
+	color:#5582E4!important;
+	border-color:#5582E4!important;
+}
+.cont-list h3 i:hover .explain{
+	display: block;
+}
+.cont-list h3 .explain{
+	display: none;
+	position:absolute;
+	top:16px;
+	left:-8px;
+	width:320px;
+	height:74px;
+	padding:13px 8px;
+	z-index:999;
+	background: #FFFFFF;
+	border: 1px solid #EEEEEE;
+	box-shadow: 0px 2px 4px 0px rgba(51,51,51,0.50);
+	border-radius: 2px;
+}
+.cont-list h3 .explain li{
+	text-align:left;
+	font-size: 12px;
+	color: #555555;
+	line-height: 22px;
+}
+.cont-list h3 .explain li span{
+	font-weight:bold;
+}
+.cont-list .left-cont{
+	float:left;
+	min-width:280px;
+}
+.cont-list .left-cont li,.cont-list .right-cont li{
+	font-size:12px;
+	cursor:pointer;
+	color:#666666;
+	text-align:center;
+	float:left;
+	width:62px;
+	height:22px;
+	line-height:20px;
+	border:1px solid #eeeeee;
+}
+.wider-left li{
+	width:70px!important;
+}
+.cont-list .left-cont li{
+	border-right:none!important;
+}
+#birthday,#reservation{
+	text-indent: 1em;
+	background:#FFFFFF;
+	text-align:left;
+	height:22px!important;
+	border:1px solid #eeeeee;
+	font-size:12px;
+	padding:0;
+}
+.cont-list .left-cont li:hover,.cont-list .right-cont li:hover{
+	color:#FFFFFF;
+	background:#5582E4;
+	border:1px solid #5582E4;
+}
+.cont-list .right-cont{
+	float:right;
+}
+
+.daterangepicker{
+	display:none;	
+}
+.cont-list h3{
+	font-size:16px;
+}
+#time-cont .well,#trend-cont .well{
+	float:left;
+	padding:0;
+	border:0;
+}
+#time-cont .well{
+	width:144px;
+}
+#trend-cont .well{
+	width:208px;
+}
+.drop-btn,.drop-btn:hover{
+	background:#FFFFFF;
+	padding:0px 8px;
+	border-left:0!important;
+	border:1px solid #EEEEEE;
+}
+.ranges .cancelBtn,.btn-success{
+	border-radius:none!important;
+	background:#FFFFFF;
+	float:right;
+	color:#555555;
+	margin-left:8px;
+	width:48px;
+	height:22px;
+	border:1px solid #EEEEEE;
+	text-align:center;
+	font-size:12px;
+	line-height:18px;
+}
+.ranges .cancelBtn:hover,.btn-success:hover{
+	color:#FFFFFF!important;
+	background:#5582E4!important;
+	border-radius: 0!important;
+	border:1px solid #5582E4!important;
+	
+}
+.selections{
+	display: none;
+	width:112px;
+	height:18px;
+	font-size: 10px;
+	border:1px solid #EEEEEE;
+}

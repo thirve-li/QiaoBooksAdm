@@ -1,0 +1,38 @@
+/*登陆logo样式*/
+.logo_img{
+	width:100px;
+	height:100px;
+	}
+.login-btn{
+	border:none;
+	background:#333333;
+	width:68px;
+	height:34px;
+	color:#cccccc;
+	float:right;
+	}
+.login_border{
+	border 1px solid #EEEEEE!important;
+	}
+.wel-color{
+	color:#5582E4;
+	font-size:16px;
+}	
+.logo_text{
+	width:256px;
+	height:34px;
+	margin-top:16px;
+}
+.change_pass{
+	width:290px;
+	height:34px;
+	border:1px solid #5582E4;
+	color:#5582E4;
+	background:#FFFFFF!important;
+	margin:0 auto!important;
+}
+.change_content{
+	padding-top:150px;
+	width:360px;
+	height:261px;
+}

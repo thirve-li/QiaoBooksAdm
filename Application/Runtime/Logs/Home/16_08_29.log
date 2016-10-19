@@ -1,0 +1,774 @@
+[ 2016-08-29T16:27:07+08:00 ] ::1 /index.php/Book/bookList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000708s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000902s ]
+ERR: SQLSTATE[HY000] [2003] Can't connect to MySQL server on 'qiaoshu001.mysql.rds.aliyuncs.com' (4)
+
+[ 2016-08-29T16:27:46+08:00 ] ::1 /index.php/Book/bookList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000727s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000909s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001034s ]
+ERR: SQLSTATE[HY000] [2003] Can't connect to MySQL server on 'qiaoshu001.mysql.rds.aliyuncs.com' (4)
+
+[ 2016-08-29T16:29:17+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000709s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000940s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001059s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000258s ]
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 84 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 96 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 109 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 139 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 158 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027576s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027704s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000595s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000735s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000846s ]
+
+[ 2016-08-29T16:29:58+08:00 ] ::1 /index.php/Book/bookList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000592s ]
+ERR: SQLSTATE[HY000] [2003] Can't connect to MySQL server on 'qiaoshu001.mysql.rds.aliyuncs.com' (4)
+
+[ 2016-08-29T16:30:28+08:00 ] ::1 /index.php/User/listUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000553s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000534s ]
+ERR: SQLSTATE[HY000] [2003] Can't connect to MySQL server on 'qiaoshu001.mysql.rds.aliyuncs.com' (4)
+
+[ 2016-08-29T16:32:19+08:00 ] ::1 /index.php/Book/bookList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000752s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000984s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001118s ]
+ERR: SQLSTATE[HY000] [2003] Can't connect to MySQL server on 'qiaoshu001.mysql.rds.aliyuncs.com' (4)
+
+[ 2016-08-29T16:32:19+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000621s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 84 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 96 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 109 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 139 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 158 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018285s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018394s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000766s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000879s ]
+
+[ 2016-08-29T16:35:03+08:00 ] ::1 /index.php/Book/bookList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000808s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000980s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001104s ]
+ERR: SQLSTATE[HY000] [2003] Can't connect to MySQL server on 'qiaoshu001.mysql.rds.aliyuncs.com' (4)
+
+[ 2016-08-29T16:35:34+08:00 ] ::1 /index.php/Book/bookList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000802s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000951s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001085s ]
+ERR: SQLSTATE[HY000] [2003] Can't connect to MySQL server on 'qiaoshu001.mysql.rds.aliyuncs.com' (4)
+
+[ 2016-08-29T16:36:36+08:00 ] ::1 /index.php/Login/bookList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000725s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000886s ]
+ERR: 非法操作:bookList
+
+[ 2016-08-29T16:36:42+08:00 ] ::1 /index.php/Login/bookList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+ERR: 非法操作:bookList
+
+[ 2016-08-29T16:36:51+08:00 ] ::1 /index.php/Book/bookList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000565s ]
+SQL: select * from qs_type_list where status=1 and type =4 order by sort_num [ RunTime:0.0022s ]
+SQL: select * from qs_type_list where status=1 and type =2 order by sort_num [ RunTime:0.0005s ]
+SQL:  select b.*,b.utime uptime,u.id authorid,u.nick_name authorname from qs_books b, qs_user_profile u where u.id=b.uid and b.type<>0   [ RunTime:0.0017s ]
+SQL:  select b.*,b.utime uptime,u.id authorid,u.nick_name authorname from qs_books b, qs_user_profile u where u.id=b.uid and b.type<>0   order by b.utime desc limit 0,20 [ RunTime:0.0007s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=662 [ RunTime:0.0004s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  662 group by s.bid,s.lid   [ RunTime:0.0006s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=662 order by time desc   [ RunTime:0.0004s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=661 [ RunTime:0.0004s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  661 group by s.bid,s.lid   [ RunTime:0.0004s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=661 order by time desc   [ RunTime:0.0002s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=659 [ RunTime:0.0002s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  659 group by s.bid,s.lid   [ RunTime:0.0003s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=659 order by time desc   [ RunTime:0.0002s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=658 [ RunTime:0.0002s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  658 group by s.bid,s.lid   [ RunTime:0.0003s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=658 order by time desc   [ RunTime:0.0002s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=573 [ RunTime:0.0002s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  573 group by s.bid,s.lid   [ RunTime:0.0003s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=573 order by time desc   [ RunTime:0.0002s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=656 [ RunTime:0.0002s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  656 group by s.bid,s.lid   [ RunTime:0.0003s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=656 order by time desc   [ RunTime:0.0002s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=657 [ RunTime:0.0002s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  657 group by s.bid,s.lid   [ RunTime:0.0003s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=657 order by time desc   [ RunTime:0.0002s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=654 [ RunTime:0.0002s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  654 group by s.bid,s.lid   [ RunTime:0.0003s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=654 order by time desc   [ RunTime:0.0002s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=643 [ RunTime:0.0002s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  643 group by s.bid,s.lid   [ RunTime:0.0003s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=643 order by time desc   [ RunTime:0.0003s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=649 [ RunTime:0.0002s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  649 group by s.bid,s.lid   [ RunTime:0.0002s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=649 order by time desc   [ RunTime:0.0002s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=648 [ RunTime:0.0002s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  648 group by s.bid,s.lid   [ RunTime:0.0003s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=648 order by time desc   [ RunTime:0.0002s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=535 [ RunTime:0.0002s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  535 group by s.bid,s.lid   [ RunTime:0.0002s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=535 order by time desc   [ RunTime:0.0002s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=624 [ RunTime:0.0002s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  624 group by s.bid,s.lid   [ RunTime:0.0002s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=624 order by time desc   [ RunTime:0.0002s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=451 [ RunTime:0.0003s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  451 group by s.bid,s.lid   [ RunTime:0.0003s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=451 order by time desc   [ RunTime:0.0002s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=362 [ RunTime:0.0002s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  362 group by s.bid,s.lid   [ RunTime:0.0003s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=362 order by time desc   [ RunTime:0.0002s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=502 [ RunTime:0.0002s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  502 group by s.bid,s.lid   [ RunTime:0.0002s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=502 order by time desc   [ RunTime:0.0002s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=474 [ RunTime:0.0003s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  474 group by s.bid,s.lid   [ RunTime:0.0003s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=474 order by time desc   [ RunTime:0.0002s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=644 [ RunTime:0.0002s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  644 group by s.bid,s.lid   [ RunTime:0.0002s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=644 order by time desc   [ RunTime:0.0002s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=614 [ RunTime:0.0002s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  614 group by s.bid,s.lid   [ RunTime:0.0002s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=614 order by time desc   [ RunTime:0.0002s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=620 [ RunTime:0.0002s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  620 group by s.bid,s.lid   [ RunTime:0.0002s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=620 order by time desc   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000159s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000267s ]
+NOTIC: [8] Undefined variable: lidsName /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 189 行.
+NOTIC: [8] Undefined variable: scoreName /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 191 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059705s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059802s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000494s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/LiXin/PhpstormProjects/adm/Application/Home/Controller/BookController.class.php:128) /Users/LiXin/PhpstormProjects/adm/ThinkPHP/Library/Think/View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/LiXin/PhpstormProjects/adm/Application/Home/Controller/BookController.class.php:128) /Users/LiXin/PhpstormProjects/adm/ThinkPHP/Library/Think/View.class.php 第 92 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000850s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000959s ]
+
+[ 2016-08-29T16:37:30+08:00 ] ::1 /index.php/Book/bookList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000694s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000826s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000959s ]
+SQL: select * from qs_type_list where status=1 and type =4 order by sort_num [ RunTime:0.0007s ]
+SQL: select * from qs_type_list where status=1 and type =2 order by sort_num [ RunTime:0.0003s ]
+SQL:  select b.*,b.utime uptime,u.id authorid,u.nick_name authorname from qs_books b, qs_user_profile u where u.id=b.uid and b.type<>0   [ RunTime:0.0011s ]
+SQL:  select b.*,b.utime uptime,u.id authorid,u.nick_name authorname from qs_books b, qs_user_profile u where u.id=b.uid and b.type<>0   order by b.utime desc limit 0,20 [ RunTime:0.0005s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=662 [ RunTime:0.0003s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  662 group by s.bid,s.lid   [ RunTime:0.0003s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=662 order by time desc   [ RunTime:0.0003s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=661 [ RunTime:0.0002s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  661 group by s.bid,s.lid   [ RunTime:0.0003s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=661 order by time desc   [ RunTime:0.0002s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=659 [ RunTime:0.0003s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  659 group by s.bid,s.lid   [ RunTime:0.0003s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=659 order by time desc   [ RunTime:0.0002s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=658 [ RunTime:0.0003s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  658 group by s.bid,s.lid   [ RunTime:0.0003s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=658 order by time desc   [ RunTime:0.0004s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=573 [ RunTime:0.0005s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  573 group by s.bid,s.lid   [ RunTime:0.0003s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=573 order by time desc   [ RunTime:0.0002s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=656 [ RunTime:0.0002s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  656 group by s.bid,s.lid   [ RunTime:0.0003s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=656 order by time desc   [ RunTime:0.0002s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=657 [ RunTime:0.0002s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  657 group by s.bid,s.lid   [ RunTime:0.0003s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=657 order by time desc   [ RunTime:0.0002s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=654 [ RunTime:0.0002s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  654 group by s.bid,s.lid   [ RunTime:0.0003s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=654 order by time desc   [ RunTime:0.0003s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=643 [ RunTime:0.0003s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  643 group by s.bid,s.lid   [ RunTime:0.0003s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=643 order by time desc   [ RunTime:0.0002s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=649 [ RunTime:0.0003s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  649 group by s.bid,s.lid   [ RunTime:0.0003s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=649 order by time desc   [ RunTime:0.0002s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=648 [ RunTime:0.0002s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  648 group by s.bid,s.lid   [ RunTime:0.0003s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=648 order by time desc   [ RunTime:0.0002s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=535 [ RunTime:0.0002s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  535 group by s.bid,s.lid   [ RunTime:0.0003s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=535 order by time desc   [ RunTime:0.0002s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=624 [ RunTime:0.0002s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  624 group by s.bid,s.lid   [ RunTime:0.0003s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=624 order by time desc   [ RunTime:0.0002s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=451 [ RunTime:0.0002s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  451 group by s.bid,s.lid   [ RunTime:0.0003s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=451 order by time desc   [ RunTime:0.0002s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=362 [ RunTime:0.0002s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  362 group by s.bid,s.lid   [ RunTime:0.0003s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=362 order by time desc   [ RunTime:0.0002s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=502 [ RunTime:0.0002s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  502 group by s.bid,s.lid   [ RunTime:0.0003s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=502 order by time desc   [ RunTime:0.0002s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=474 [ RunTime:0.0002s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  474 group by s.bid,s.lid   [ RunTime:0.0002s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=474 order by time desc   [ RunTime:0.0002s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=644 [ RunTime:0.0002s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  644 group by s.bid,s.lid   [ RunTime:0.0002s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=644 order by time desc   [ RunTime:0.0002s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=614 [ RunTime:0.0002s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  614 group by s.bid,s.lid   [ RunTime:0.0002s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=614 order by time desc   [ RunTime:0.0002s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=620 [ RunTime:0.0002s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  620 group by s.bid,s.lid   [ RunTime:0.0002s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=620 order by time desc   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000204s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000329s ]
+NOTIC: [8] Undefined variable: lidsName /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 189 行.
+NOTIC: [8] Undefined variable: scoreName /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 191 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062432s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062532s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000476s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/LiXin/PhpstormProjects/adm/Application/Home/Controller/BookController.class.php:128) /Users/LiXin/PhpstormProjects/adm/ThinkPHP/Library/Think/View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/LiXin/PhpstormProjects/adm/Application/Home/Controller/BookController.class.php:128) /Users/LiXin/PhpstormProjects/adm/ThinkPHP/Library/Think/View.class.php 第 92 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000873s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001005s ]
+
+[ 2016-08-29T16:37:41+08:00 ] ::1 /index.php/User/listUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000755s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000927s ]
+SQL:  select * from qs_invcode where uid > 0 [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `qs_user_profile` [ RunTime:0.0008s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='C8Q2WJ' WHERE ( id = 1 ) [ RunTime:0.0012s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='BHOJJC' WHERE ( id = 46 ) [ RunTime:0.0005s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='KDXZ6E' WHERE ( id = 8 ) [ RunTime:0.0004s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='NPF8TA' WHERE ( id = 6 ) [ RunTime:0.0006s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='ZO2BI9' WHERE ( id = 4 ) [ RunTime:0.0004s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='CHBZ0Z' WHERE ( id = 7 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='9VFRRJ' WHERE ( id = 58 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='6IT8B2' WHERE ( id = 9 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='WOMJ8W' WHERE ( id = 3 ) [ RunTime:0.0004s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='O7II2M' WHERE ( id = 24 ) [ RunTime:0.0004s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='Z57MH6' WHERE ( id = 10 ) [ RunTime:0.0004s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='5186N9' WHERE ( id = 35 ) [ RunTime:0.0004s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='JS03FE' WHERE ( id = 81 ) [ RunTime:0.0004s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='4FEM6T' WHERE ( id = 64 ) [ RunTime:0.0002s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='11GMXU' WHERE ( id = 2 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='HNKFEL' WHERE ( id = 87 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='LRA8K9' WHERE ( id = 339 ) [ RunTime:0.0004s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='PE4AWG' WHERE ( id = 148 ) [ RunTime:0.0004s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='2Z7ZN7' WHERE ( id = 160 ) [ RunTime:0.0004s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='Q7VHQU' WHERE ( id = 163 ) [ RunTime:0.0004s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='RHXS2H' WHERE ( id = 188 ) [ RunTime:0.0004s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='ZQ0ADT' WHERE ( id = 189 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='3F5B7Z' WHERE ( id = 265 ) [ RunTime:0.0004s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='14Q9IO' WHERE ( id = 124 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='AVDXZP' WHERE ( id = 113 ) [ RunTime:0.0004s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='KPG0S5' WHERE ( id = 133 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='DOYPUE' WHERE ( id = 152 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='Y5VU5B' WHERE ( id = 243 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='C7JTV5' WHERE ( id = 335 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='63BO1G' WHERE ( id = 424 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='84B6S8' WHERE ( id = 26 ) [ RunTime:0.0007s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='3USL2Q' WHERE ( id = 15 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='QZZ47A' WHERE ( id = 12 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='NO3OJX' WHERE ( id = 156 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='7UUT90' WHERE ( id = 72 ) [ RunTime:0.0004s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='E1JEFS' WHERE ( id = 19 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='9WLWKU' WHERE ( id = 18 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='MPZ6Z2' WHERE ( id = 42 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='I6RNRV' WHERE ( id = 34 ) [ RunTime:0.0004s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='MQZ1FK' WHERE ( id = 50 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='QSA0DS' WHERE ( id = 51 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='YGE3E7' WHERE ( id = 52 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='ABDC5G' WHERE ( id = 60 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='LRBZW6' WHERE ( id = 57 ) [ RunTime:0.0004s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='ZKR3ZY' WHERE ( id = 59 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='C2NGPH' WHERE ( id = 66 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='UAJ87U' WHERE ( id = 71 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='UA9H7Q' WHERE ( id = 98 ) [ RunTime:0.0004s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='5ZZE86' WHERE ( id = 69 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='DMVXWJ' WHERE ( id = 74 ) [ RunTime:0.0004s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='8E1VIW' WHERE ( id = 77 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='L36SJB' WHERE ( id = 76 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='K72TBQ' WHERE ( id = 337 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='F7MYRO' WHERE ( id = 354 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='8LKIQO' WHERE ( id = 143 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='6GH9PA' WHERE ( id = 282 ) [ RunTime:0.0004s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='WJC52P' WHERE ( id = 172 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='8PMF4V' WHERE ( id = 182 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='NTO9JX' WHERE ( id = 179 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='HMIAVV' WHERE ( id = 196 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='P9Y9ZJ' WHERE ( id = 181 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='WMEO74' WHERE ( id = 178 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='R904PR' WHERE ( id = 187 ) [ RunTime:0.0004s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='FBTDP7' WHERE ( id = 205 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='8V1E2K' WHERE ( id = 201 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='XJF40G' WHERE ( id = 202 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='NJR5LR' WHERE ( id = 212 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='443KXG' WHERE ( id = 211 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='GMQWTT' WHERE ( id = 217 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='5QN2XQ' WHERE ( id = 226 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='CKZYES' WHERE ( id = 225 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='B3J4Z9' WHERE ( id = 220 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='0U312N' WHERE ( id = 227 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='MNISV1' WHERE ( id = 228 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='NAQ80Y' WHERE ( id = 235 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='6KALRV' WHERE ( id = 327 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='JPGEMK' WHERE ( id = 276 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='DBIYW7' WHERE ( id = 263 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='AZ0UNG' WHERE ( id = 277 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='A6DI1A' WHERE ( id = 278 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='UPM9CR' WHERE ( id = 297 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='NPQXAY' WHERE ( id = 299 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='KN52AO' WHERE ( id = 311 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='9LO9NZ' WHERE ( id = 312 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='QACFUD' WHERE ( id = 315 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='C6V4NQ' WHERE ( id = 313 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='HKTGV6' WHERE ( id = 318 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='EQR4UM' WHERE ( id = 307 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='N82TZX' WHERE ( id = 319 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='QX8DX4' WHERE ( id = 323 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='XHY40Z' WHERE ( id = 326 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='BRPXPG' WHERE ( id = 371 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='ZCCHLT' WHERE ( id = 349 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='VSGBOC' WHERE ( id = 350 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='3C5L2F' WHERE ( id = 380 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='JMWJEH' WHERE ( id = 353 ) [ RunTime:0.0004s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='1GNPVD' WHERE ( id = 367 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='TS8LOI' WHERE ( id = 363 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='PA9UI1' WHERE ( id = 397 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='VVPF3S' WHERE ( id = 403 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='ZSG8OG' WHERE ( id = 395 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='SE6Z8L' WHERE ( id = 423 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='6N962M' WHERE ( id = 436 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='ASZK2O' WHERE ( id = 357 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='7BNFHV' WHERE ( id = 356 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='L1GXUY' WHERE ( id = 413 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='9N2K3Y' WHERE ( id = 377 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='S5ONTD' WHERE ( id = 379 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='Q1N3VI' WHERE ( id = 365 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='48Q453' WHERE ( id = 370 ) [ RunTime:0.0006s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='XGWO5D' WHERE ( id = 418 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='9Q98IH' WHERE ( id = 422 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='EFS8HA' WHERE ( id = 434 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='4Z6YPV' WHERE ( id = 261 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='H4ZKU5' WHERE ( id = 269 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='AHUUMI' WHERE ( id = 267 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='POM7OF' WHERE ( id = 284 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='UCTQWB' WHERE ( id = 325 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='TT54JL' WHERE ( id = 427 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='GFTJ70' WHERE ( id = 27 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='R90WHJ' WHERE ( id = 29 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='VV6GET' WHERE ( id = 28 ) [ RunTime:0.0004s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='F1Z63X' WHERE ( id = 37 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='2SV24D' WHERE ( id = 67 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='A6A0Y2' WHERE ( id = 53 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='33RPHG' WHERE ( id = 62 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='AFUC43' WHERE ( id = 83 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='Y9CEJ5' WHERE ( id = 89 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='T9YAIS' WHERE ( id = 120 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='MAX3CA' WHERE ( id = 123 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='1CJLI1' WHERE ( id = 135 ) [ RunTime:0.0002s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='LG9IA6' WHERE ( id = 194 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='HOJJGK' WHERE ( id = 210 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='K8C76E' WHERE ( id = 208 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='YK5C35' WHERE ( id = 241 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='JMU401' WHERE ( id = 239 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='5A5WQ8' WHERE ( id = 251 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='SMDSTN' WHERE ( id = 268 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='LHMVG2' WHERE ( id = 273 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='V1YV9R' WHERE ( id = 283 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='J4R69J' WHERE ( id = 306 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='XO6IXM' WHERE ( id = 320 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='AMNLJB' WHERE ( id = 386 ) [ RunTime:0.0003s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='R38U0D' WHERE ( id = 449 ) [ RunTime:0.0002s ]
+SQL: UPDATE `qs_user_profile` SET `invite_code`='E9CHTI' WHERE ( id = 1 ) [ RunTime:0.0003s ]
+SQL:  select u.id id,u.mobile mobile, p.name name, p.nick_name , p.reg_time , p.login_time,p.logout_time,p.stay_time,p.remark ,p.invite_code ,p.head_img,u.status,p.account_left ,p.remark,p.amt_money from qs_user u, qs_user_profile p  where u.id=p.id and find_in_set(3, u.groups)  [ RunTime:0.0024s ]
+SQL:  select u.id id,u.mobile mobile, p.name name, p.nick_name , p.reg_time , p.login_time,p.logout_time,p.stay_time,p.remark ,p.invite_code ,p.head_img,u.status,p.account_left ,p.remark,p.amt_money from qs_user u, qs_user_profile p  where u.id=p.id and find_in_set(3, u.groups)  order by p.reg_time desc , p.login_time desc limit 0,20 [ RunTime:0.0008s ]
+SQL: select count(*) releaseCnt from qs_books b where b.isup=1 and b.uid=451 [ RunTime:0.0005s ]
+SQL: select count(*) draftCnt from qs_books b where b.isup=0 and b.uid=451 [ RunTime:0.0002s ]
+SQL: select count(*) readCnt from  qs_user_read_history h where h.status=1 and h.type=0 and h.uid=451 [ RunTime:0.0004s ]
+SQL: select count(*) favoriteCnt from  qs_user_read_history h where h.status=1 and h.type=1 and h.uid=451 [ RunTime:0.0003s ]
+SQL: select u.name username, t.name labelname, u.id uid,t.id lid from  qs_user_profile u , qs_user_label l, qs_type_list t where u.id=l.cid  and t.status=1 and l.lid=t.id and l.uid=451 order by t.sort_num [ RunTime:0.0004s ]
+SQL:  SELECT s.uid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_user_score s   on t.id=s.lid   where t.type=3 and t.status=1   and s.uid=  451 group by s.uid,s.lid   [ RunTime:0.0004s ]
+SQL: select count(*) releaseCnt from qs_books b where b.isup=1 and b.uid=450 [ RunTime:0.0002s ]
+SQL: select count(*) draftCnt from qs_books b where b.isup=0 and b.uid=450 [ RunTime:0.0002s ]
+SQL: select count(*) readCnt from  qs_user_read_history h where h.status=1 and h.type=0 and h.uid=450 [ RunTime:0.0002s ]
+SQL: select count(*) favoriteCnt from  qs_user_read_history h where h.status=1 and h.type=1 and h.uid=450 [ RunTime:0.0002s ]
+SQL: select u.name username, t.name labelname, u.id uid,t.id lid from  qs_user_profile u , qs_user_label l, qs_type_list t where u.id=l.cid  and t.status=1 and l.lid=t.id and l.uid=450 order by t.sort_num [ RunTime:0.0003s ]
+SQL:  SELECT s.uid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_user_score s   on t.id=s.lid   where t.type=3 and t.status=1   and s.uid=  450 group by s.uid,s.lid   [ RunTime:0.0003s ]
+SQL: select count(*) releaseCnt from qs_books b where b.isup=1 and b.uid=1 [ RunTime:0.0002s ]
+SQL: select count(*) draftCnt from qs_books b where b.isup=0 and b.uid=1 [ RunTime:0.0002s ]
+SQL: select count(*) readCnt from  qs_user_read_history h where h.status=1 and h.type=0 and h.uid=1 [ RunTime:0.0002s ]
+SQL: select count(*) favoriteCnt from  qs_user_read_history h where h.status=1 and h.type=1 and h.uid=1 [ RunTime:0.0002s ]
+SQL: select u.name username, t.name labelname, u.id uid,t.id lid from  qs_user_profile u , qs_user_label l, qs_type_list t where u.id=l.cid  and t.status=1 and l.lid=t.id and l.uid=1 order by t.sort_num [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: 涉猎广泛 /Users/LiXin/PhpstormProjects/adm/Application/Home/Controller/UserController.class.php 第 275 行.
+NOTIC: [8] Undefined index: 自媒体 /Users/LiXin/PhpstormProjects/adm/Application/Home/Controller/UserController.class.php 第 275 行.
+SQL:  SELECT s.uid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_user_score s   on t.id=s.lid   where t.type=3 and t.status=1   and s.uid=  1 group by s.uid,s.lid   [ RunTime:0.0017s ]
+SQL: select count(*) releaseCnt from qs_books b where b.isup=1 and b.uid=448 [ RunTime:0.0003s ]
+SQL: select count(*) draftCnt from qs_books b where b.isup=0 and b.uid=448 [ RunTime:0.0002s ]
+SQL: select count(*) readCnt from  qs_user_read_history h where h.status=1 and h.type=0 and h.uid=448 [ RunTime:0.0002s ]
+SQL: select count(*) favoriteCnt from  qs_user_read_history h where h.status=1 and h.type=1 and h.uid=448 [ RunTime:0.0002s ]
+SQL: select u.name username, t.name labelname, u.id uid,t.id lid from  qs_user_profile u , qs_user_label l, qs_type_list t where u.id=l.cid  and t.status=1 and l.lid=t.id and l.uid=448 order by t.sort_num [ RunTime:0.0003s ]
+SQL:  SELECT s.uid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_user_score s   on t.id=s.lid   where t.type=3 and t.status=1   and s.uid=  448 group by s.uid,s.lid   [ RunTime:0.0003s ]
+SQL: select count(*) releaseCnt from qs_books b where b.isup=1 and b.uid=447 [ RunTime:0.0002s ]
+SQL: select count(*) draftCnt from qs_books b where b.isup=0 and b.uid=447 [ RunTime:0.0002s ]
+SQL: select count(*) readCnt from  qs_user_read_history h where h.status=1 and h.type=0 and h.uid=447 [ RunTime:0.0002s ]
+SQL: select count(*) favoriteCnt from  qs_user_read_history h where h.status=1 and h.type=1 and h.uid=447 [ RunTime:0.0002s ]
+SQL: select u.name username, t.name labelname, u.id uid,t.id lid from  qs_user_profile u , qs_user_label l, qs_type_list t where u.id=l.cid  and t.status=1 and l.lid=t.id and l.uid=447 order by t.sort_num [ RunTime:0.0002s ]
+SQL:  SELECT s.uid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_user_score s   on t.id=s.lid   where t.type=3 and t.status=1   and s.uid=  447 group by s.uid,s.lid   [ RunTime:0.0003s ]
+SQL: select count(*) releaseCnt from qs_books b where b.isup=1 and b.uid=446 [ RunTime:0.0002s ]
+SQL: select count(*) draftCnt from qs_books b where b.isup=0 and b.uid=446 [ RunTime:0.0002s ]
+SQL: select count(*) readCnt from  qs_user_read_history h where h.status=1 and h.type=0 and h.uid=446 [ RunTime:0.0003s ]
+SQL: select count(*) favoriteCnt from  qs_user_read_history h where h.status=1 and h.type=1 and h.uid=446 [ RunTime:0.0003s ]
+SQL: select u.name username, t.name labelname, u.id uid,t.id lid from  qs_user_profile u , qs_user_label l, qs_type_list t where u.id=l.cid  and t.status=1 and l.lid=t.id and l.uid=446 order by t.sort_num [ RunTime:0.0003s ]
+SQL:  SELECT s.uid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_user_score s   on t.id=s.lid   where t.type=3 and t.status=1   and s.uid=  446 group by s.uid,s.lid   [ RunTime:0.0003s ]
+SQL: select count(*) releaseCnt from qs_books b where b.isup=1 and b.uid=445 [ RunTime:0.0002s ]
+SQL: select count(*) draftCnt from qs_books b where b.isup=0 and b.uid=445 [ RunTime:0.0002s ]
+SQL: select count(*) readCnt from  qs_user_read_history h where h.status=1 and h.type=0 and h.uid=445 [ RunTime:0.0002s ]
+SQL: select count(*) favoriteCnt from  qs_user_read_history h where h.status=1 and h.type=1 and h.uid=445 [ RunTime:0.0002s ]
+SQL: select u.name username, t.name labelname, u.id uid,t.id lid from  qs_user_profile u , qs_user_label l, qs_type_list t where u.id=l.cid  and t.status=1 and l.lid=t.id and l.uid=445 order by t.sort_num [ RunTime:0.0003s ]
+SQL:  SELECT s.uid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_user_score s   on t.id=s.lid   where t.type=3 and t.status=1   and s.uid=  445 group by s.uid,s.lid   [ RunTime:0.0003s ]
+SQL: select count(*) releaseCnt from qs_books b where b.isup=1 and b.uid=256 [ RunTime:0.0002s ]
+SQL: select count(*) draftCnt from qs_books b where b.isup=0 and b.uid=256 [ RunTime:0.0002s ]
+SQL: select count(*) readCnt from  qs_user_read_history h where h.status=1 and h.type=0 and h.uid=256 [ RunTime:0.0003s ]
+SQL: select count(*) favoriteCnt from  qs_user_read_history h where h.status=1 and h.type=1 and h.uid=256 [ RunTime:0.0003s ]
+SQL: select u.name username, t.name labelname, u.id uid,t.id lid from  qs_user_profile u , qs_user_label l, qs_type_list t where u.id=l.cid  and t.status=1 and l.lid=t.id and l.uid=256 order by t.sort_num [ RunTime:0.0003s ]
+SQL:  SELECT s.uid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_user_score s   on t.id=s.lid   where t.type=3 and t.status=1   and s.uid=  256 group by s.uid,s.lid   [ RunTime:0.0013s ]
+SQL: select count(*) releaseCnt from qs_books b where b.isup=1 and b.uid=257 [ RunTime:0.0003s ]
+SQL: select count(*) draftCnt from qs_books b where b.isup=0 and b.uid=257 [ RunTime:0.0002s ]
+SQL: select count(*) readCnt from  qs_user_read_history h where h.status=1 and h.type=0 and h.uid=257 [ RunTime:0.0002s ]
+SQL: select count(*) favoriteCnt from  qs_user_read_history h where h.status=1 and h.type=1 and h.uid=257 [ RunTime:0.0002s ]
+SQL: select u.name username, t.name labelname, u.id uid,t.id lid from  qs_user_profile u , qs_user_label l, qs_type_list t where u.id=l.cid  and t.status=1 and l.lid=t.id and l.uid=257 order by t.sort_num [ RunTime:0.0003s ]
+SQL:  SELECT s.uid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_user_score s   on t.id=s.lid   where t.type=3 and t.status=1   and s.uid=  257 group by s.uid,s.lid   [ RunTime:0.0003s ]
+SQL: select count(*) releaseCnt from qs_books b where b.isup=1 and b.uid=2 [ RunTime:0.0002s ]
+SQL: select count(*) draftCnt from qs_books b where b.isup=0 and b.uid=2 [ RunTime:0.0002s ]
+SQL: select count(*) readCnt from  qs_user_read_history h where h.status=1 and h.type=0 and h.uid=2 [ RunTime:0.0003s ]
+SQL: select count(*) favoriteCnt from  qs_user_read_history h where h.status=1 and h.type=1 and h.uid=2 [ RunTime:0.0002s ]
+SQL: select u.name username, t.name labelname, u.id uid,t.id lid from  qs_user_profile u , qs_user_label l, qs_type_list t where u.id=l.cid  and t.status=1 and l.lid=t.id and l.uid=2 order by t.sort_num [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: 大神  /Users/LiXin/PhpstormProjects/adm/Application/Home/Controller/UserController.class.php 第 275 行.
+SQL:  SELECT s.uid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_user_score s   on t.id=s.lid   where t.type=3 and t.status=1   and s.uid=  2 group by s.uid,s.lid   [ RunTime:0.0003s ]
+SQL: select count(*) releaseCnt from qs_books b where b.isup=1 and b.uid=258 [ RunTime:0.0003s ]
+SQL: select count(*) draftCnt from qs_books b where b.isup=0 and b.uid=258 [ RunTime:0.0002s ]
+SQL: select count(*) readCnt from  qs_user_read_history h where h.status=1 and h.type=0 and h.uid=258 [ RunTime:0.0003s ]
+SQL: select count(*) favoriteCnt from  qs_user_read_history h where h.status=1 and h.type=1 and h.uid=258 [ RunTime:0.0003s ]
+SQL: select u.name username, t.name labelname, u.id uid,t.id lid from  qs_user_profile u , qs_user_label l, qs_type_list t where u.id=l.cid  and t.status=1 and l.lid=t.id and l.uid=258 order by t.sort_num [ RunTime:0.0002s ]
+SQL:  SELECT s.uid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_user_score s   on t.id=s.lid   where t.type=3 and t.status=1   and s.uid=  258 group by s.uid,s.lid   [ RunTime:0.0003s ]
+SQL: select count(*) releaseCnt from qs_books b where b.isup=1 and b.uid=3 [ RunTime:0.0003s ]
+SQL: select count(*) draftCnt from qs_books b where b.isup=0 and b.uid=3 [ RunTime:0.0002s ]
+SQL: select count(*) readCnt from  qs_user_read_history h where h.status=1 and h.type=0 and h.uid=3 [ RunTime:0.0003s ]
+SQL: select count(*) favoriteCnt from  qs_user_read_history h where h.status=1 and h.type=1 and h.uid=3 [ RunTime:0.0002s ]
+SQL: select u.name username, t.name labelname, u.id uid,t.id lid from  qs_user_profile u , qs_user_label l, qs_type_list t where u.id=l.cid  and t.status=1 and l.lid=t.id and l.uid=3 order by t.sort_num [ RunTime:0.0003s ]
+SQL:  SELECT s.uid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_user_score s   on t.id=s.lid   where t.type=3 and t.status=1   and s.uid=  3 group by s.uid,s.lid   [ RunTime:0.0003s ]
+SQL: select count(*) releaseCnt from qs_books b where b.isup=1 and b.uid=259 [ RunTime:0.0002s ]
+SQL: select count(*) draftCnt from qs_books b where b.isup=0 and b.uid=259 [ RunTime:0.0002s ]
+SQL: select count(*) readCnt from  qs_user_read_history h where h.status=1 and h.type=0 and h.uid=259 [ RunTime:0.0002s ]
+SQL: select count(*) favoriteCnt from  qs_user_read_history h where h.status=1 and h.type=1 and h.uid=259 [ RunTime:0.0002s ]
+SQL: select u.name username, t.name labelname, u.id uid,t.id lid from  qs_user_profile u , qs_user_label l, qs_type_list t where u.id=l.cid  and t.status=1 and l.lid=t.id and l.uid=259 order by t.sort_num [ RunTime:0.0002s ]
+SQL:  SELECT s.uid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_user_score s   on t.id=s.lid   where t.type=3 and t.status=1   and s.uid=  259 group by s.uid,s.lid   [ RunTime:0.0003s ]
+SQL: select count(*) releaseCnt from qs_books b where b.isup=1 and b.uid=4 [ RunTime:0.0002s ]
+SQL: select count(*) draftCnt from qs_books b where b.isup=0 and b.uid=4 [ RunTime:0.0002s ]
+SQL: select count(*) readCnt from  qs_user_read_history h where h.status=1 and h.type=0 and h.uid=4 [ RunTime:0.0002s ]
+SQL: select count(*) favoriteCnt from  qs_user_read_history h where h.status=1 and h.type=1 and h.uid=4 [ RunTime:0.0002s ]
+SQL: select u.name username, t.name labelname, u.id uid,t.id lid from  qs_user_profile u , qs_user_label l, qs_type_list t where u.id=l.cid  and t.status=1 and l.lid=t.id and l.uid=4 order by t.sort_num [ RunTime:0.0002s ]
+SQL:  SELECT s.uid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_user_score s   on t.id=s.lid   where t.type=3 and t.status=1   and s.uid=  4 group by s.uid,s.lid   [ RunTime:0.0002s ]
+SQL: select count(*) releaseCnt from qs_books b where b.isup=1 and b.uid=260 [ RunTime:0.0002s ]
+SQL: select count(*) draftCnt from qs_books b where b.isup=0 and b.uid=260 [ RunTime:0.0002s ]
+SQL: select count(*) readCnt from  qs_user_read_history h where h.status=1 and h.type=0 and h.uid=260 [ RunTime:0.0002s ]
+SQL: select count(*) favoriteCnt from  qs_user_read_history h where h.status=1 and h.type=1 and h.uid=260 [ RunTime:0.0002s ]
+SQL: select u.name username, t.name labelname, u.id uid,t.id lid from  qs_user_profile u , qs_user_label l, qs_type_list t where u.id=l.cid  and t.status=1 and l.lid=t.id and l.uid=260 order by t.sort_num [ RunTime:0.0002s ]
+SQL:  SELECT s.uid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_user_score s   on t.id=s.lid   where t.type=3 and t.status=1   and s.uid=  260 group by s.uid,s.lid   [ RunTime:0.0002s ]
+SQL: select count(*) releaseCnt from qs_books b where b.isup=1 and b.uid=5 [ RunTime:0.0002s ]
+SQL: select count(*) draftCnt from qs_books b where b.isup=0 and b.uid=5 [ RunTime:0.0002s ]
+SQL: select count(*) readCnt from  qs_user_read_history h where h.status=1 and h.type=0 and h.uid=5 [ RunTime:0.0002s ]
+SQL: select count(*) favoriteCnt from  qs_user_read_history h where h.status=1 and h.type=1 and h.uid=5 [ RunTime:0.0002s ]
+SQL: select u.name username, t.name labelname, u.id uid,t.id lid from  qs_user_profile u , qs_user_label l, qs_type_list t where u.id=l.cid  and t.status=1 and l.lid=t.id and l.uid=5 order by t.sort_num [ RunTime:0.0002s ]
+SQL:  SELECT s.uid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_user_score s   on t.id=s.lid   where t.type=3 and t.status=1   and s.uid=  5 group by s.uid,s.lid   [ RunTime:0.0003s ]
+SQL: select count(*) releaseCnt from qs_books b where b.isup=1 and b.uid=261 [ RunTime:0.0002s ]
+SQL: select count(*) draftCnt from qs_books b where b.isup=0 and b.uid=261 [ RunTime:0.0002s ]
+SQL: select count(*) readCnt from  qs_user_read_history h where h.status=1 and h.type=0 and h.uid=261 [ RunTime:0.0002s ]
+SQL: select count(*) favoriteCnt from  qs_user_read_history h where h.status=1 and h.type=1 and h.uid=261 [ RunTime:0.0002s ]
+SQL: select u.name username, t.name labelname, u.id uid,t.id lid from  qs_user_profile u , qs_user_label l, qs_type_list t where u.id=l.cid  and t.status=1 and l.lid=t.id and l.uid=261 order by t.sort_num [ RunTime:0.0002s ]
+SQL:  SELECT s.uid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_user_score s   on t.id=s.lid   where t.type=3 and t.status=1   and s.uid=  261 group by s.uid,s.lid   [ RunTime:0.0002s ]
+SQL: select count(*) releaseCnt from qs_books b where b.isup=1 and b.uid=6 [ RunTime:0.0002s ]
+SQL: select count(*) draftCnt from qs_books b where b.isup=0 and b.uid=6 [ RunTime:0.0003s ]
+SQL: select count(*) readCnt from  qs_user_read_history h where h.status=1 and h.type=0 and h.uid=6 [ RunTime:0.0003s ]
+SQL: select count(*) favoriteCnt from  qs_user_read_history h where h.status=1 and h.type=1 and h.uid=6 [ RunTime:0.0002s ]
+SQL: select u.name username, t.name labelname, u.id uid,t.id lid from  qs_user_profile u , qs_user_label l, qs_type_list t where u.id=l.cid  and t.status=1 and l.lid=t.id and l.uid=6 order by t.sort_num [ RunTime:0.0002s ]
+SQL:  SELECT s.uid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_user_score s   on t.id=s.lid   where t.type=3 and t.status=1   and s.uid=  6 group by s.uid,s.lid   [ RunTime:0.0002s ]
+SQL: select count(*) releaseCnt from qs_books b where b.isup=1 and b.uid=262 [ RunTime:0.0002s ]
+SQL: select count(*) draftCnt from qs_books b where b.isup=0 and b.uid=262 [ RunTime:0.0002s ]
+SQL: select count(*) readCnt from  qs_user_read_history h where h.status=1 and h.type=0 and h.uid=262 [ RunTime:0.0002s ]
+SQL: select count(*) favoriteCnt from  qs_user_read_history h where h.status=1 and h.type=1 and h.uid=262 [ RunTime:0.0002s ]
+SQL: select u.name username, t.name labelname, u.id uid,t.id lid from  qs_user_profile u , qs_user_label l, qs_type_list t where u.id=l.cid  and t.status=1 and l.lid=t.id and l.uid=262 order by t.sort_num [ RunTime:0.0002s ]
+SQL:  SELECT s.uid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_user_score s   on t.id=s.lid   where t.type=3 and t.status=1   and s.uid=  262 group by s.uid,s.lid   [ RunTime:0.0003s ]
+SQL: select count(*) releaseCnt from qs_books b where b.isup=1 and b.uid=7 [ RunTime:0.0002s ]
+SQL: select count(*) draftCnt from qs_books b where b.isup=0 and b.uid=7 [ RunTime:0.0002s ]
+SQL: select count(*) readCnt from  qs_user_read_history h where h.status=1 and h.type=0 and h.uid=7 [ RunTime:0.0002s ]
+SQL: select count(*) favoriteCnt from  qs_user_read_history h where h.status=1 and h.type=1 and h.uid=7 [ RunTime:0.0002s ]
+SQL: select u.name username, t.name labelname, u.id uid,t.id lid from  qs_user_profile u , qs_user_label l, qs_type_list t where u.id=l.cid  and t.status=1 and l.lid=t.id and l.uid=7 order by t.sort_num [ RunTime:0.0002s ]
+SQL:  SELECT s.uid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_user_score s   on t.id=s.lid   where t.type=3 and t.status=1   and s.uid=  7 group by s.uid,s.lid   [ RunTime:0.0002s ]
+SQL: select * from qs_type_list where status=1 and type =3 order by sort_num [ RunTime:0.0003s ]
+SQL: select * from qs_type_list where status=1 and type =9 order by sort_num [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000182s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000295s ]
+NOTIC: [8] Undefined variable: scoreName /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/830f322ea4c6b230dd2510342aefccd2.php 第 183 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055973s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056074s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000884s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001048s ]
+
+[ 2016-08-29T16:37:44+08:00 ] ::1 /index.php/Book/bookList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+SQL: select * from qs_type_list where status=1 and type =4 order by sort_num [ RunTime:0.0004s ]
+SQL: select * from qs_type_list where status=1 and type =2 order by sort_num [ RunTime:0.0003s ]
+SQL:  select b.*,b.utime uptime,u.id authorid,u.nick_name authorname from qs_books b, qs_user_profile u where u.id=b.uid and b.type<>0   [ RunTime:0.0011s ]
+SQL:  select b.*,b.utime uptime,u.id authorid,u.nick_name authorname from qs_books b, qs_user_profile u where u.id=b.uid and b.type<>0   order by b.utime desc limit 0,20 [ RunTime:0.0005s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=662 [ RunTime:0.0003s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  662 group by s.bid,s.lid   [ RunTime:0.0003s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=662 order by time desc   [ RunTime:0.0002s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=661 [ RunTime:0.0002s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  661 group by s.bid,s.lid   [ RunTime:0.0003s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=661 order by time desc   [ RunTime:0.0002s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=659 [ RunTime:0.0002s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  659 group by s.bid,s.lid   [ RunTime:0.0002s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=659 order by time desc   [ RunTime:0.0002s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=658 [ RunTime:0.0002s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  658 group by s.bid,s.lid   [ RunTime:0.0003s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=658 order by time desc   [ RunTime:0.0002s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=573 [ RunTime:0.0002s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  573 group by s.bid,s.lid   [ RunTime:0.0002s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=573 order by time desc   [ RunTime:0.0003s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=656 [ RunTime:0.0002s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  656 group by s.bid,s.lid   [ RunTime:0.0003s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=656 order by time desc   [ RunTime:0.0003s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=657 [ RunTime:0.0003s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  657 group by s.bid,s.lid   [ RunTime:0.0003s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=657 order by time desc   [ RunTime:0.0002s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=654 [ RunTime:0.0002s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  654 group by s.bid,s.lid   [ RunTime:0.0004s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=654 order by time desc   [ RunTime:0.0002s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=643 [ RunTime:0.0003s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  643 group by s.bid,s.lid   [ RunTime:0.0004s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=643 order by time desc   [ RunTime:0.0003s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=649 [ RunTime:0.0003s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  649 group by s.bid,s.lid   [ RunTime:0.0003s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=649 order by time desc   [ RunTime:0.0002s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=648 [ RunTime:0.0002s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  648 group by s.bid,s.lid   [ RunTime:0.0003s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=648 order by time desc   [ RunTime:0.0002s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=535 [ RunTime:0.0002s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  535 group by s.bid,s.lid   [ RunTime:0.0003s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=535 order by time desc   [ RunTime:0.0002s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=624 [ RunTime:0.0002s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  624 group by s.bid,s.lid   [ RunTime:0.0003s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=624 order by time desc   [ RunTime:0.0002s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=451 [ RunTime:0.0003s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  451 group by s.bid,s.lid   [ RunTime:0.0003s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=451 order by time desc   [ RunTime:0.0002s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=362 [ RunTime:0.0002s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  362 group by s.bid,s.lid   [ RunTime:0.0003s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=362 order by time desc   [ RunTime:0.0002s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=502 [ RunTime:0.0002s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  502 group by s.bid,s.lid   [ RunTime:0.0003s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=502 order by time desc   [ RunTime:0.0002s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=474 [ RunTime:0.0002s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  474 group by s.bid,s.lid   [ RunTime:0.0003s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=474 order by time desc   [ RunTime:0.0002s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=644 [ RunTime:0.0002s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  644 group by s.bid,s.lid   [ RunTime:0.0002s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=644 order by time desc   [ RunTime:0.0002s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=614 [ RunTime:0.0002s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  614 group by s.bid,s.lid   [ RunTime:0.0002s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=614 order by time desc   [ RunTime:0.0002s ]
+SQL:  SELECT t.id lid, t.name lname, u.id cid ,u.name username   FROM qs_type_list t , qs_book_label l,qs_user_profile u  where t.id=l.lid and l.cid = u.id and t.type=2 and t.status=1 and l.bid=620 [ RunTime:0.0002s ]
+SQL:  SELECT s.bid, s.lid ,round(avg(s.score) ,1) as score,t.name  FROM qs_type_list t left join qs_book_score s   on t.id=s.lid   where t.type=4 and t.status=1   and s.bid=  620 group by s.bid,s.lid   [ RunTime:0.0003s ]
+SQL:  SELECT *  FROM qs_book_price_history   where bid=620 order by time desc   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000257s ]
+NOTIC: [8] Undefined variable: lidsName /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 189 行.
+NOTIC: [8] Undefined variable: scoreName /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 191 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+NOTIC: [8] Undefined index: BookInfo /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/e9ba4ca79b186d0737265aad69b2c1e2.php 第 523 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054417s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054513s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000154s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000241s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/LiXin/PhpstormProjects/adm/Application/Home/Controller/BookController.class.php:128) /Users/LiXin/PhpstormProjects/adm/ThinkPHP/Library/Think/View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/LiXin/PhpstormProjects/adm/Application/Home/Controller/BookController.class.php:128) /Users/LiXin/PhpstormProjects/adm/ThinkPHP/Library/Think/View.class.php 第 92 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000651s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000754s ]
+
+[ 2016-08-29T19:57:59+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000959s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001119s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000183s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000492s ]
+NOTIC: [8] Undefined variable: mobile /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/50c9f5d2ef37c2cf131d5cf1381d3a4b.php 第 27 行.
+NOTIC: [8] Undefined index: err_msg /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/50c9f5d2ef37c2cf131d5cf1381d3a4b.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011867s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012139s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000686s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001463s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001755s ]
+

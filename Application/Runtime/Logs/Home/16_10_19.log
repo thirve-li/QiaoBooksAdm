@@ -1,0 +1,616 @@
+[ 2016-10-19T09:55:39+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001147s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000519s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000858s ]
+NOTIC: [8] Undefined variable: mobile /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/50c9f5d2ef37c2cf131d5cf1381d3a4b.php 第 27 行.
+NOTIC: [8] Undefined index: err_msg /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/50c9f5d2ef37c2cf131d5cf1381d3a4b.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016081s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016339s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000846s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001808s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002051s ]
+
+[ 2016-10-19T12:25:57+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000373s ]
+NOTIC: [8] Undefined variable: mobile /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/50c9f5d2ef37c2cf131d5cf1381d3a4b.php 第 27 行.
+NOTIC: [8] Undefined index: err_msg /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/50c9f5d2ef37c2cf131d5cf1381d3a4b.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013079s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013328s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000701s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000918s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001161s ]
+
+[ 2016-10-19T12:45:44+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000846s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000857s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001121s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000453s ]
+NOTIC: [8] Undefined variable: mobile /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/50c9f5d2ef37c2cf131d5cf1381d3a4b.php 第 27 行.
+NOTIC: [8] Undefined index: err_msg /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/50c9f5d2ef37c2cf131d5cf1381d3a4b.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013052s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013288s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001693s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000818s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001086s ]
+
+[ 2016-10-19T14:52:09+08:00 ] ::1 /index.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000917s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001201s ]
+SQL: SHOW COLUMNS FROM `qs_user` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `qs_books` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `qs_user_pay_history` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `qs_user_read_history` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `qs_user` LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `qs_user` WHERE ( find_in_set(6,groups) ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `qs_books` WHERE (  type!=0 and isup=1 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `qs_books` WHERE (  type!=0  ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT  count(*) cnt,b.name ,b.id bid  FROM   qs_user_read_history  h , qs_books b WHERE h.bid=b.id and h.type=0 and  h.time BETWEEN UNIX_TIMESTAMP('2016-10-18 00:00:00') and UNIX_TIMESTAMP ('2016-10-18 23:59:59') GROUP BY b.id order by cnt desc LIMIT 0,1 [ RunTime:0.0024s ]
+SQL: SELECT  count(*) cnt,b.name,b.id bid FROM qs_user_read_history  h , qs_books b WHERE h.bid=b.id and h.type=0 and  h.time BETWEEN UNIX_TIMESTAMP('2016-10-19 00:00:00') and UNIX_TIMESTAMP ('2016-10-19 23:59:59') GROUP BY b.id order by cnt desc LIMIT 0,1 [ RunTime:0.0016s ]
+SQL: SELECT SUM(h.money) amt ,b.name ,b.id FROM qs_user_pay_history h , qs_books b WHERE  h.bid=b.id and h.status=1 and h.pay_time and h.pay_time  BETWEEN '2016-10-18 00:00:00' and  '2016-10-18 23:59:59'  group by b.id  order by amt desc limit 0,1 [ RunTime:0.0006s ]
+SQL: SELECT SUM(h.money) amt ,b.name ,b.id FROM qs_user_pay_history h , qs_books b WHERE  h.bid=b.id and h.status=1 and h.pay_time and h.pay_time  BETWEEN '2016-10-19 00:00:00' and  '2016-10-19 23:59:59'  group by b.id  order by amt desc limit 0,1 [ RunTime:0.0005s ]
+SQL:  SELECT b.name bookname,u.nick_name nickname, FROM_UNIXTIME(b.utime, '%Y-%m-%d %H:%i:%S') utime ,b.id, u.id uid FROM  qs_books b ,qs_user_profile u WHERE b.uid =u.id and  b.isup =1 and  b.utime BETWEEN UNIX_TIMESTAMP('2016-10-18 00:00:00') and UNIX_TIMESTAMP ('2016-10-18 23:59:59') order by b.ctime desc  [ RunTime:0.0008s ]
+SQL:  SELECT b.name bookname,u.nick_name nickname, FROM_UNIXTIME(b.utime, '%Y-%m-%d %H:%i:%S') utime,b.id , u.id uid FROM  qs_books b ,qs_user_profile u WHERE b.uid =u.id and  b.isup =1 and  b.utime BETWEEN UNIX_TIMESTAMP('2016-10-19 00:00:00') and UNIX_TIMESTAMP ('2016-10-19 23:59:59') order by b.ctime desc  [ RunTime:0.0007s ]
+SQL:  select u.id,p.nick_name, FROM_UNIXTIME(p.reg_time, '%Y-%m-%d %H:%i:%S') regtime from qs_user u,qs_user_profile p where u.id=p.id and find_in_set(6,u.groups) and p.reg_time  BETWEEN UNIX_TIMESTAMP('2016-10-18 00:00:00') and UNIX_TIMESTAMP ('2016-10-18 23:59:59')   [ RunTime:0.0007s ]
+SQL: select u.id,p.nick_name,  FROM_UNIXTIME(p.reg_time, '%Y-%m-%d %H:%i:%S') regtime  from qs_user u,qs_user_profile p where u.id=p.id and find_in_set(6,u.groups) and p.reg_time  BETWEEN UNIX_TIMESTAMP('2016-10-19 00:00:00') and UNIX_TIMESTAMP ('2016-10-19 23:59:59') [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000258s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000520s ]
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 102 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 115 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 131 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 134 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 149 行.
+NOTIC: [8] Undefined variable: showMenu /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+NOTIC: [8] Undefined variable: showMenu /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 171 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 179 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 183 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 187 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 191 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 207 行.
+NOTIC: [8] Undefined variable: showMenu /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 211 行.
+NOTIC: [8] Undefined variable: showMenu /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 215 行.
+NOTIC: [8] Undefined variable: showMenu /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 219 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 288 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 288 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 288 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 299 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 299 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 299 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 321 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 321 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 321 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056377s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056623s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000685s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000813s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001099s ]
+
+[ 2016-10-19T14:53:32+08:00 ] ::1 /index.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000691s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000881s ]
+SQL: SHOW COLUMNS FROM `qs_user` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `qs_books` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `qs_user_pay_history` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `qs_user_read_history` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `qs_user` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `qs_user` WHERE ( find_in_set(6,groups) ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `qs_books` WHERE (  type!=0 and isup=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `qs_books` WHERE (  type!=0  ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT  count(*) cnt,b.name ,b.id bid  FROM   qs_user_read_history  h , qs_books b WHERE h.bid=b.id and h.type=0 and  h.time BETWEEN UNIX_TIMESTAMP('2016-10-18 00:00:00') and UNIX_TIMESTAMP ('2016-10-18 23:59:59') GROUP BY b.id order by cnt desc LIMIT 0,1 [ RunTime:0.0015s ]
+SQL: SELECT  count(*) cnt,b.name,b.id bid FROM qs_user_read_history  h , qs_books b WHERE h.bid=b.id and h.type=0 and  h.time BETWEEN UNIX_TIMESTAMP('2016-10-19 00:00:00') and UNIX_TIMESTAMP ('2016-10-19 23:59:59') GROUP BY b.id order by cnt desc LIMIT 0,1 [ RunTime:0.0013s ]
+SQL: SELECT SUM(h.money) amt ,b.name ,b.id FROM qs_user_pay_history h , qs_books b WHERE  h.bid=b.id and h.status=1 and h.pay_time and h.pay_time  BETWEEN '2016-10-18 00:00:00' and  '2016-10-18 23:59:59'  group by b.id  order by amt desc limit 0,1 [ RunTime:0.0016s ]
+SQL: SELECT SUM(h.money) amt ,b.name ,b.id FROM qs_user_pay_history h , qs_books b WHERE  h.bid=b.id and h.status=1 and h.pay_time and h.pay_time  BETWEEN '2016-10-19 00:00:00' and  '2016-10-19 23:59:59'  group by b.id  order by amt desc limit 0,1 [ RunTime:0.0004s ]
+SQL:  SELECT b.name bookname,u.nick_name nickname, FROM_UNIXTIME(b.utime, '%Y-%m-%d %H:%i:%S') utime ,b.id, u.id uid FROM  qs_books b ,qs_user_profile u WHERE b.uid =u.id and  b.isup =1 and  b.utime BETWEEN UNIX_TIMESTAMP('2016-10-18 00:00:00') and UNIX_TIMESTAMP ('2016-10-18 23:59:59') order by b.ctime desc  [ RunTime:0.0007s ]
+SQL:  SELECT b.name bookname,u.nick_name nickname, FROM_UNIXTIME(b.utime, '%Y-%m-%d %H:%i:%S') utime,b.id , u.id uid FROM  qs_books b ,qs_user_profile u WHERE b.uid =u.id and  b.isup =1 and  b.utime BETWEEN UNIX_TIMESTAMP('2016-10-19 00:00:00') and UNIX_TIMESTAMP ('2016-10-19 23:59:59') order by b.ctime desc  [ RunTime:0.0006s ]
+SQL:  select u.id,p.nick_name, FROM_UNIXTIME(p.reg_time, '%Y-%m-%d %H:%i:%S') regtime from qs_user u,qs_user_profile p where u.id=p.id and find_in_set(6,u.groups) and p.reg_time  BETWEEN UNIX_TIMESTAMP('2016-10-18 00:00:00') and UNIX_TIMESTAMP ('2016-10-18 23:59:59')   [ RunTime:0.0006s ]
+SQL: select u.id,p.nick_name,  FROM_UNIXTIME(p.reg_time, '%Y-%m-%d %H:%i:%S') regtime  from qs_user u,qs_user_profile p where u.id=p.id and find_in_set(6,u.groups) and p.reg_time  BETWEEN UNIX_TIMESTAMP('2016-10-19 00:00:00') and UNIX_TIMESTAMP ('2016-10-19 23:59:59') [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000172s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000445s ]
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 102 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 115 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 131 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 134 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 149 行.
+NOTIC: [8] Undefined variable: showMenu /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+NOTIC: [8] Undefined variable: showMenu /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 171 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 179 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 183 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 187 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 191 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 207 行.
+NOTIC: [8] Undefined variable: showMenu /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 211 行.
+NOTIC: [8] Undefined variable: showMenu /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 215 行.
+NOTIC: [8] Undefined variable: showMenu /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 219 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 288 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 288 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 288 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 299 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 299 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 299 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 321 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 321 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 321 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041060s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041299s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000206s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000690s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001013s ]
+
+[ 2016-10-19T14:54:45+08:00 ] ::1 /index.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000972s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001193s ]
+SQL: SHOW COLUMNS FROM `qs_user` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `qs_books` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `qs_user_pay_history` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `qs_user_read_history` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `qs_user` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `qs_user` WHERE ( find_in_set(6,groups) ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `qs_books` WHERE (  type!=0 and isup=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `qs_books` WHERE (  type!=0  ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT  count(*) cnt,b.name ,b.id bid  FROM   qs_user_read_history  h , qs_books b WHERE h.bid=b.id and h.type=0 and  h.time BETWEEN UNIX_TIMESTAMP('2016-10-18 00:00:00') and UNIX_TIMESTAMP ('2016-10-18 23:59:59') GROUP BY b.id order by cnt desc LIMIT 0,1 [ RunTime:0.0015s ]
+SQL: SELECT  count(*) cnt,b.name,b.id bid FROM qs_user_read_history  h , qs_books b WHERE h.bid=b.id and h.type=0 and  h.time BETWEEN UNIX_TIMESTAMP('2016-10-19 00:00:00') and UNIX_TIMESTAMP ('2016-10-19 23:59:59') GROUP BY b.id order by cnt desc LIMIT 0,1 [ RunTime:0.0014s ]
+SQL: SELECT SUM(h.money) amt ,b.name ,b.id FROM qs_user_pay_history h , qs_books b WHERE  h.bid=b.id and h.status=1 and h.pay_time and h.pay_time  BETWEEN '2016-10-18 00:00:00' and  '2016-10-18 23:59:59'  group by b.id  order by amt desc limit 0,1 [ RunTime:0.0004s ]
+SQL: SELECT SUM(h.money) amt ,b.name ,b.id FROM qs_user_pay_history h , qs_books b WHERE  h.bid=b.id and h.status=1 and h.pay_time and h.pay_time  BETWEEN '2016-10-19 00:00:00' and  '2016-10-19 23:59:59'  group by b.id  order by amt desc limit 0,1 [ RunTime:0.0003s ]
+SQL:  SELECT b.name bookname,u.nick_name nickname, FROM_UNIXTIME(b.utime, '%Y-%m-%d %H:%i:%S') utime ,b.id, u.id uid FROM  qs_books b ,qs_user_profile u WHERE b.uid =u.id and  b.isup =1 and  b.utime BETWEEN UNIX_TIMESTAMP('2016-10-18 00:00:00') and UNIX_TIMESTAMP ('2016-10-18 23:59:59') order by b.ctime desc  [ RunTime:0.0006s ]
+SQL:  SELECT b.name bookname,u.nick_name nickname, FROM_UNIXTIME(b.utime, '%Y-%m-%d %H:%i:%S') utime,b.id , u.id uid FROM  qs_books b ,qs_user_profile u WHERE b.uid =u.id and  b.isup =1 and  b.utime BETWEEN UNIX_TIMESTAMP('2016-10-19 00:00:00') and UNIX_TIMESTAMP ('2016-10-19 23:59:59') order by b.ctime desc  [ RunTime:0.0005s ]
+SQL:  select u.id,p.nick_name, FROM_UNIXTIME(p.reg_time, '%Y-%m-%d %H:%i:%S') regtime from qs_user u,qs_user_profile p where u.id=p.id and find_in_set(6,u.groups) and p.reg_time  BETWEEN UNIX_TIMESTAMP('2016-10-18 00:00:00') and UNIX_TIMESTAMP ('2016-10-18 23:59:59')   [ RunTime:0.0017s ]
+SQL: select u.id,p.nick_name,  FROM_UNIXTIME(p.reg_time, '%Y-%m-%d %H:%i:%S') regtime  from qs_user u,qs_user_profile p where u.id=p.id and find_in_set(6,u.groups) and p.reg_time  BETWEEN UNIX_TIMESTAMP('2016-10-19 00:00:00') and UNIX_TIMESTAMP ('2016-10-19 23:59:59') [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000400s ]
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 102 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 115 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 131 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 134 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 149 行.
+NOTIC: [8] Undefined variable: showMenu /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+NOTIC: [8] Undefined variable: showMenu /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 171 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 179 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 183 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 187 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 191 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 207 行.
+NOTIC: [8] Undefined variable: showMenu /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 211 行.
+NOTIC: [8] Undefined variable: showMenu /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 215 行.
+NOTIC: [8] Undefined variable: showMenu /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 219 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 288 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 288 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 288 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 299 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 299 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 299 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 321 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 321 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 321 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046389s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046621s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000668s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001352s ]
+
+[ 2016-10-19T14:56:49+08:00 ] ::1 /index.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001098s ]
+SQL: SHOW COLUMNS FROM `qs_user` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `qs_books` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `qs_user_pay_history` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `qs_user_read_history` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `qs_user` LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `qs_user` WHERE ( find_in_set(6,groups) ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `qs_books` WHERE (  type!=0 and isup=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `qs_books` WHERE (  type!=0  ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT  count(*) cnt,b.name ,b.id bid  FROM   qs_user_read_history  h , qs_books b WHERE h.bid=b.id and h.type=0 and  h.time BETWEEN UNIX_TIMESTAMP('2016-10-18 00:00:00') and UNIX_TIMESTAMP ('2016-10-18 23:59:59') GROUP BY b.id order by cnt desc LIMIT 0,1 [ RunTime:0.0016s ]
+SQL: SELECT  count(*) cnt,b.name,b.id bid FROM qs_user_read_history  h , qs_books b WHERE h.bid=b.id and h.type=0 and  h.time BETWEEN UNIX_TIMESTAMP('2016-10-19 00:00:00') and UNIX_TIMESTAMP ('2016-10-19 23:59:59') GROUP BY b.id order by cnt desc LIMIT 0,1 [ RunTime:0.0015s ]
+SQL: SELECT SUM(h.money) amt ,b.name ,b.id FROM qs_user_pay_history h , qs_books b WHERE  h.bid=b.id and h.status=1 and h.pay_time and h.pay_time  BETWEEN '2016-10-18 00:00:00' and  '2016-10-18 23:59:59'  group by b.id  order by amt desc limit 0,1 [ RunTime:0.0004s ]
+SQL: SELECT SUM(h.money) amt ,b.name ,b.id FROM qs_user_pay_history h , qs_books b WHERE  h.bid=b.id and h.status=1 and h.pay_time and h.pay_time  BETWEEN '2016-10-19 00:00:00' and  '2016-10-19 23:59:59'  group by b.id  order by amt desc limit 0,1 [ RunTime:0.0004s ]
+SQL:  SELECT b.name bookname,u.nick_name nickname, FROM_UNIXTIME(b.utime, '%Y-%m-%d %H:%i:%S') utime ,b.id, u.id uid FROM  qs_books b ,qs_user_profile u WHERE b.uid =u.id and  b.isup =1 and  b.utime BETWEEN UNIX_TIMESTAMP('2016-10-18 00:00:00') and UNIX_TIMESTAMP ('2016-10-18 23:59:59') order by b.ctime desc  [ RunTime:0.0007s ]
+SQL:  SELECT b.name bookname,u.nick_name nickname, FROM_UNIXTIME(b.utime, '%Y-%m-%d %H:%i:%S') utime,b.id , u.id uid FROM  qs_books b ,qs_user_profile u WHERE b.uid =u.id and  b.isup =1 and  b.utime BETWEEN UNIX_TIMESTAMP('2016-10-19 00:00:00') and UNIX_TIMESTAMP ('2016-10-19 23:59:59') order by b.ctime desc  [ RunTime:0.0006s ]
+SQL:  select u.id,p.nick_name, FROM_UNIXTIME(p.reg_time, '%Y-%m-%d %H:%i:%S') regtime from qs_user u,qs_user_profile p where u.id=p.id and find_in_set(6,u.groups) and p.reg_time  BETWEEN UNIX_TIMESTAMP('2016-10-18 00:00:00') and UNIX_TIMESTAMP ('2016-10-18 23:59:59')   [ RunTime:0.0006s ]
+SQL: select u.id,p.nick_name,  FROM_UNIXTIME(p.reg_time, '%Y-%m-%d %H:%i:%S') regtime  from qs_user u,qs_user_profile p where u.id=p.id and find_in_set(6,u.groups) and p.reg_time  BETWEEN UNIX_TIMESTAMP('2016-10-19 00:00:00') and UNIX_TIMESTAMP ('2016-10-19 23:59:59') [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000181s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000473s ]
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 102 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 115 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 131 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 134 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 149 行.
+NOTIC: [8] Undefined variable: showMenu /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+NOTIC: [8] Undefined variable: showMenu /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 171 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 179 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 183 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 187 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 191 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 207 行.
+NOTIC: [8] Undefined variable: showMenu /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 211 行.
+NOTIC: [8] Undefined variable: showMenu /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 215 行.
+NOTIC: [8] Undefined variable: showMenu /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 219 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 288 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 288 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 288 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 299 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 299 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 299 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 321 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 321 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 321 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093362s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093739s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001032s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011832s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012443s ]
+
+[ 2016-10-19T14:57:22+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000883s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000908s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000411s ]
+NOTIC: [8] Undefined variable: mobile /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/50c9f5d2ef37c2cf131d5cf1381d3a4b.php 第 27 行.
+NOTIC: [8] Undefined index: err_msg /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/50c9f5d2ef37c2cf131d5cf1381d3a4b.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010193s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010477s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000679s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000924s ]
+
+[ 2016-10-19T14:59:22+08:00 ] ::1 /index.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001090s ]
+SQL: SHOW COLUMNS FROM `qs_user` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `qs_books` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `qs_user_pay_history` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `qs_user_read_history` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `qs_user` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `qs_user` WHERE ( find_in_set(6,groups) ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `qs_books` WHERE (  type!=0 and isup=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `qs_books` WHERE (  type!=0  ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT  count(*) cnt,b.name ,b.id bid  FROM   qs_user_read_history  h , qs_books b WHERE h.bid=b.id and h.type=0 and  h.time BETWEEN UNIX_TIMESTAMP('2016-10-18 00:00:00') and UNIX_TIMESTAMP ('2016-10-18 23:59:59') GROUP BY b.id order by cnt desc LIMIT 0,1 [ RunTime:0.0014s ]
+SQL: SELECT  count(*) cnt,b.name,b.id bid FROM qs_user_read_history  h , qs_books b WHERE h.bid=b.id and h.type=0 and  h.time BETWEEN UNIX_TIMESTAMP('2016-10-19 00:00:00') and UNIX_TIMESTAMP ('2016-10-19 23:59:59') GROUP BY b.id order by cnt desc LIMIT 0,1 [ RunTime:0.0014s ]
+SQL: SELECT SUM(h.money) amt ,b.name ,b.id FROM qs_user_pay_history h , qs_books b WHERE  h.bid=b.id and h.status=1 and h.pay_time and h.pay_time  BETWEEN '2016-10-18 00:00:00' and  '2016-10-18 23:59:59'  group by b.id  order by amt desc limit 0,1 [ RunTime:0.0004s ]
+SQL: SELECT SUM(h.money) amt ,b.name ,b.id FROM qs_user_pay_history h , qs_books b WHERE  h.bid=b.id and h.status=1 and h.pay_time and h.pay_time  BETWEEN '2016-10-19 00:00:00' and  '2016-10-19 23:59:59'  group by b.id  order by amt desc limit 0,1 [ RunTime:0.0004s ]
+SQL:  SELECT b.name bookname,u.nick_name nickname, FROM_UNIXTIME(b.utime, '%Y-%m-%d %H:%i:%S') utime ,b.id, u.id uid FROM  qs_books b ,qs_user_profile u WHERE b.uid =u.id and  b.isup =1 and  b.utime BETWEEN UNIX_TIMESTAMP('2016-10-18 00:00:00') and UNIX_TIMESTAMP ('2016-10-18 23:59:59') order by b.ctime desc  [ RunTime:0.0006s ]
+SQL:  SELECT b.name bookname,u.nick_name nickname, FROM_UNIXTIME(b.utime, '%Y-%m-%d %H:%i:%S') utime,b.id , u.id uid FROM  qs_books b ,qs_user_profile u WHERE b.uid =u.id and  b.isup =1 and  b.utime BETWEEN UNIX_TIMESTAMP('2016-10-19 00:00:00') and UNIX_TIMESTAMP ('2016-10-19 23:59:59') order by b.ctime desc  [ RunTime:0.0005s ]
+SQL:  select u.id,p.nick_name, FROM_UNIXTIME(p.reg_time, '%Y-%m-%d %H:%i:%S') regtime from qs_user u,qs_user_profile p where u.id=p.id and find_in_set(6,u.groups) and p.reg_time  BETWEEN UNIX_TIMESTAMP('2016-10-18 00:00:00') and UNIX_TIMESTAMP ('2016-10-18 23:59:59')   [ RunTime:0.0005s ]
+SQL: select u.id,p.nick_name,  FROM_UNIXTIME(p.reg_time, '%Y-%m-%d %H:%i:%S') regtime  from qs_user u,qs_user_profile p where u.id=p.id and find_in_set(6,u.groups) and p.reg_time  BETWEEN UNIX_TIMESTAMP('2016-10-19 00:00:00') and UNIX_TIMESTAMP ('2016-10-19 23:59:59') [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000174s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000418s ]
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 102 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 115 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 131 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 134 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 149 行.
+NOTIC: [8] Undefined variable: showMenu /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+NOTIC: [8] Undefined variable: showMenu /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 171 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 179 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 183 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 187 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 191 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 207 行.
+NOTIC: [8] Undefined variable: showMenu /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 211 行.
+NOTIC: [8] Undefined variable: showMenu /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 215 行.
+NOTIC: [8] Undefined variable: showMenu /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 219 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 288 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 288 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 288 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 299 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 299 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 299 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 321 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 321 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 321 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042464s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042684s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000687s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000951s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001258s ]
+
+[ 2016-10-19T15:00:15+08:00 ] ::1 /index.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000766s ]
+SQL: SHOW COLUMNS FROM `qs_user` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `qs_books` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `qs_user_pay_history` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `qs_user_read_history` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `qs_user` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `qs_user` WHERE ( find_in_set(6,groups) ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `qs_books` WHERE (  type!=0 and isup=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `qs_books` WHERE (  type!=0  ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT  count(*) cnt,b.name ,b.id bid  FROM   qs_user_read_history  h , qs_books b WHERE h.bid=b.id and h.type=0 and  h.time BETWEEN UNIX_TIMESTAMP('2016-10-18 00:00:00') and UNIX_TIMESTAMP ('2016-10-18 23:59:59') GROUP BY b.id order by cnt desc LIMIT 0,1 [ RunTime:0.0015s ]
+SQL: SELECT  count(*) cnt,b.name,b.id bid FROM qs_user_read_history  h , qs_books b WHERE h.bid=b.id and h.type=0 and  h.time BETWEEN UNIX_TIMESTAMP('2016-10-19 00:00:00') and UNIX_TIMESTAMP ('2016-10-19 23:59:59') GROUP BY b.id order by cnt desc LIMIT 0,1 [ RunTime:0.0015s ]
+SQL: SELECT SUM(h.money) amt ,b.name ,b.id FROM qs_user_pay_history h , qs_books b WHERE  h.bid=b.id and h.status=1 and h.pay_time and h.pay_time  BETWEEN '2016-10-18 00:00:00' and  '2016-10-18 23:59:59'  group by b.id  order by amt desc limit 0,1 [ RunTime:0.0004s ]
+SQL: SELECT SUM(h.money) amt ,b.name ,b.id FROM qs_user_pay_history h , qs_books b WHERE  h.bid=b.id and h.status=1 and h.pay_time and h.pay_time  BETWEEN '2016-10-19 00:00:00' and  '2016-10-19 23:59:59'  group by b.id  order by amt desc limit 0,1 [ RunTime:0.0004s ]
+SQL:  SELECT b.name bookname,u.nick_name nickname, FROM_UNIXTIME(b.utime, '%Y-%m-%d %H:%i:%S') utime ,b.id, u.id uid FROM  qs_books b ,qs_user_profile u WHERE b.uid =u.id and  b.isup =1 and  b.utime BETWEEN UNIX_TIMESTAMP('2016-10-18 00:00:00') and UNIX_TIMESTAMP ('2016-10-18 23:59:59') order by b.ctime desc  [ RunTime:0.0006s ]
+SQL:  SELECT b.name bookname,u.nick_name nickname, FROM_UNIXTIME(b.utime, '%Y-%m-%d %H:%i:%S') utime,b.id , u.id uid FROM  qs_books b ,qs_user_profile u WHERE b.uid =u.id and  b.isup =1 and  b.utime BETWEEN UNIX_TIMESTAMP('2016-10-19 00:00:00') and UNIX_TIMESTAMP ('2016-10-19 23:59:59') order by b.ctime desc  [ RunTime:0.0005s ]
+SQL:  select u.id,p.nick_name, FROM_UNIXTIME(p.reg_time, '%Y-%m-%d %H:%i:%S') regtime from qs_user u,qs_user_profile p where u.id=p.id and find_in_set(6,u.groups) and p.reg_time  BETWEEN UNIX_TIMESTAMP('2016-10-18 00:00:00') and UNIX_TIMESTAMP ('2016-10-18 23:59:59')   [ RunTime:0.0005s ]
+SQL: select u.id,p.nick_name,  FROM_UNIXTIME(p.reg_time, '%Y-%m-%d %H:%i:%S') regtime  from qs_user u,qs_user_profile p where u.id=p.id and find_in_set(6,u.groups) and p.reg_time  BETWEEN UNIX_TIMESTAMP('2016-10-19 00:00:00') and UNIX_TIMESTAMP ('2016-10-19 23:59:59') [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000379s ]
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 102 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 115 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 131 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 134 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 149 行.
+NOTIC: [8] Undefined variable: showMenu /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+NOTIC: [8] Undefined variable: showMenu /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 171 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 179 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 183 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 187 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 191 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 207 行.
+NOTIC: [8] Undefined variable: showMenu /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 211 行.
+NOTIC: [8] Undefined variable: showMenu /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 215 行.
+NOTIC: [8] Undefined variable: showMenu /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 219 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 288 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 288 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 288 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 299 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 299 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 299 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 321 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 321 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 321 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039397s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039644s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000566s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000812s ]
+
+[ 2016-10-19T15:02:22+08:00 ] ::1 /index.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000729s ]
+SQL: SHOW COLUMNS FROM `qs_user` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `qs_books` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `qs_user_pay_history` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `qs_user_read_history` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `qs_user` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `qs_user` WHERE ( find_in_set(6,groups) ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `qs_books` WHERE (  type!=0 and isup=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `qs_books` WHERE (  type!=0  ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT  count(*) cnt,b.name ,b.id bid  FROM   qs_user_read_history  h , qs_books b WHERE h.bid=b.id and h.type=0 and  h.time BETWEEN UNIX_TIMESTAMP('2016-10-18 00:00:00') and UNIX_TIMESTAMP ('2016-10-18 23:59:59') GROUP BY b.id order by cnt desc LIMIT 0,1 [ RunTime:0.0014s ]
+SQL: SELECT  count(*) cnt,b.name,b.id bid FROM qs_user_read_history  h , qs_books b WHERE h.bid=b.id and h.type=0 and  h.time BETWEEN UNIX_TIMESTAMP('2016-10-19 00:00:00') and UNIX_TIMESTAMP ('2016-10-19 23:59:59') GROUP BY b.id order by cnt desc LIMIT 0,1 [ RunTime:0.0013s ]
+SQL: SELECT SUM(h.money) amt ,b.name ,b.id FROM qs_user_pay_history h , qs_books b WHERE  h.bid=b.id and h.status=1 and h.pay_time and h.pay_time  BETWEEN '2016-10-18 00:00:00' and  '2016-10-18 23:59:59'  group by b.id  order by amt desc limit 0,1 [ RunTime:0.0003s ]
+SQL: SELECT SUM(h.money) amt ,b.name ,b.id FROM qs_user_pay_history h , qs_books b WHERE  h.bid=b.id and h.status=1 and h.pay_time and h.pay_time  BETWEEN '2016-10-19 00:00:00' and  '2016-10-19 23:59:59'  group by b.id  order by amt desc limit 0,1 [ RunTime:0.0003s ]
+SQL:  SELECT b.name bookname,u.nick_name nickname, FROM_UNIXTIME(b.utime, '%Y-%m-%d %H:%i:%S') utime ,b.id, u.id uid FROM  qs_books b ,qs_user_profile u WHERE b.uid =u.id and  b.isup =1 and  b.utime BETWEEN UNIX_TIMESTAMP('2016-10-18 00:00:00') and UNIX_TIMESTAMP ('2016-10-18 23:59:59') order by b.ctime desc  [ RunTime:0.0005s ]
+SQL:  SELECT b.name bookname,u.nick_name nickname, FROM_UNIXTIME(b.utime, '%Y-%m-%d %H:%i:%S') utime,b.id , u.id uid FROM  qs_books b ,qs_user_profile u WHERE b.uid =u.id and  b.isup =1 and  b.utime BETWEEN UNIX_TIMESTAMP('2016-10-19 00:00:00') and UNIX_TIMESTAMP ('2016-10-19 23:59:59') order by b.ctime desc  [ RunTime:0.0005s ]
+SQL:  select u.id,p.nick_name, FROM_UNIXTIME(p.reg_time, '%Y-%m-%d %H:%i:%S') regtime from qs_user u,qs_user_profile p where u.id=p.id and find_in_set(6,u.groups) and p.reg_time  BETWEEN UNIX_TIMESTAMP('2016-10-18 00:00:00') and UNIX_TIMESTAMP ('2016-10-18 23:59:59')   [ RunTime:0.0005s ]
+SQL: select u.id,p.nick_name,  FROM_UNIXTIME(p.reg_time, '%Y-%m-%d %H:%i:%S') regtime  from qs_user u,qs_user_profile p where u.id=p.id and find_in_set(6,u.groups) and p.reg_time  BETWEEN UNIX_TIMESTAMP('2016-10-19 00:00:00') and UNIX_TIMESTAMP ('2016-10-19 23:59:59') [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000383s ]
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 102 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 115 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 131 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 134 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 149 行.
+NOTIC: [8] Undefined variable: showMenu /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+NOTIC: [8] Undefined variable: showMenu /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 171 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 179 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 183 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 187 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 191 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 207 行.
+NOTIC: [8] Undefined variable: showMenu /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 211 行.
+NOTIC: [8] Undefined variable: showMenu /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 215 行.
+NOTIC: [8] Undefined variable: showMenu /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 219 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 288 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 288 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 288 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 299 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 299 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 299 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 321 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 321 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 321 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041376s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041606s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000695s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001002s ]
+
+[ 2016-10-19T15:18:50+08:00 ] ::1 /index.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+SQL: SHOW COLUMNS FROM `qs_user` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `qs_books` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `qs_user_pay_history` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `qs_user_read_history` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `qs_user` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `qs_user` WHERE ( find_in_set(6,groups) ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `qs_books` WHERE (  type!=0 and isup=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `qs_books` WHERE (  type!=0  ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT  count(*) cnt,b.name ,b.id bid  FROM   qs_user_read_history  h , qs_books b WHERE h.bid=b.id and h.type=0 and  h.time BETWEEN UNIX_TIMESTAMP('2016-10-18 00:00:00') and UNIX_TIMESTAMP ('2016-10-18 23:59:59') GROUP BY b.id order by cnt desc LIMIT 0,1 [ RunTime:0.0015s ]
+SQL: SELECT  count(*) cnt,b.name,b.id bid FROM qs_user_read_history  h , qs_books b WHERE h.bid=b.id and h.type=0 and  h.time BETWEEN UNIX_TIMESTAMP('2016-10-19 00:00:00') and UNIX_TIMESTAMP ('2016-10-19 23:59:59') GROUP BY b.id order by cnt desc LIMIT 0,1 [ RunTime:0.0017s ]
+SQL: SELECT SUM(h.money) amt ,b.name ,b.id FROM qs_user_pay_history h , qs_books b WHERE  h.bid=b.id and h.status=1 and h.pay_time and h.pay_time  BETWEEN '2016-10-18 00:00:00' and  '2016-10-18 23:59:59'  group by b.id  order by amt desc limit 0,1 [ RunTime:0.0005s ]
+SQL: SELECT SUM(h.money) amt ,b.name ,b.id FROM qs_user_pay_history h , qs_books b WHERE  h.bid=b.id and h.status=1 and h.pay_time and h.pay_time  BETWEEN '2016-10-19 00:00:00' and  '2016-10-19 23:59:59'  group by b.id  order by amt desc limit 0,1 [ RunTime:0.0004s ]
+SQL:  SELECT b.name bookname,u.nick_name nickname, FROM_UNIXTIME(b.utime, '%Y-%m-%d %H:%i:%S') utime ,b.id, u.id uid FROM  qs_books b ,qs_user_profile u WHERE b.uid =u.id and  b.isup =1 and  b.utime BETWEEN UNIX_TIMESTAMP('2016-10-18 00:00:00') and UNIX_TIMESTAMP ('2016-10-18 23:59:59') order by b.ctime desc  [ RunTime:0.0007s ]
+SQL:  SELECT b.name bookname,u.nick_name nickname, FROM_UNIXTIME(b.utime, '%Y-%m-%d %H:%i:%S') utime,b.id , u.id uid FROM  qs_books b ,qs_user_profile u WHERE b.uid =u.id and  b.isup =1 and  b.utime BETWEEN UNIX_TIMESTAMP('2016-10-19 00:00:00') and UNIX_TIMESTAMP ('2016-10-19 23:59:59') order by b.ctime desc  [ RunTime:0.0014s ]
+SQL:  select u.id,p.nick_name, FROM_UNIXTIME(p.reg_time, '%Y-%m-%d %H:%i:%S') regtime from qs_user u,qs_user_profile p where u.id=p.id and find_in_set(6,u.groups) and p.reg_time  BETWEEN UNIX_TIMESTAMP('2016-10-18 00:00:00') and UNIX_TIMESTAMP ('2016-10-18 23:59:59')   [ RunTime:0.0016s ]
+SQL: select u.id,p.nick_name,  FROM_UNIXTIME(p.reg_time, '%Y-%m-%d %H:%i:%S') regtime  from qs_user u,qs_user_profile p where u.id=p.id and find_in_set(6,u.groups) and p.reg_time  BETWEEN UNIX_TIMESTAMP('2016-10-19 00:00:00') and UNIX_TIMESTAMP ('2016-10-19 23:59:59') [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000247s ]
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 102 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 115 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 131 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 134 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 149 行.
+NOTIC: [8] Undefined variable: showMenu /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 153 行.
+NOTIC: [8] Undefined variable: showMenu /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 157 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 171 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 179 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 183 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 187 行.
+NOTIC: [8] Undefined variable: type /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 191 行.
+NOTIC: [8] Undefined variable: SHOW_MENU /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 207 行.
+NOTIC: [8] Undefined variable: showMenu /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 211 行.
+NOTIC: [8] Undefined variable: showMenu /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 215 行.
+NOTIC: [8] Undefined variable: showMenu /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 219 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 288 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 288 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 288 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 299 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 299 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 299 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 321 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 321 行.
+NOTIC: [8] Undefined offset: 0 /Users/LiXin/PhpstormProjects/adm/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 321 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045139s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045254s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000213s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000739s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000908s ]
+

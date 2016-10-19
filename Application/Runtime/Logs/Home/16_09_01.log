@@ -1,0 +1,3184 @@
+[ 2016-09-01T18:57:02+08:00 ] 100.109.0.227 /User/online
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000057s ]
+
+[ 2016-09-01T18:57:08+08:00 ] 100.109.0.252 /Alipay/pay/bid/739/from/m
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000074s ]
+NOTIC: [8] Use of undefined constant file - assumed 'file' /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 21 行.
+NOTIC: [2] file_put_contents(file): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 21 行.
+ERR: 1、开始支付支付
+NOTIC: [8] Use of undefined constant file - assumed 'file' /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 29 行.
+NOTIC: [2] file_put_contents(file): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 29 行.
+ERR: 2.购买者ID==>64
+NOTIC: [8] Use of undefined constant file - assumed 'file' /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 39 行.
+NOTIC: [2] file_put_contents(file): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 39 行.
+ERR: 3.购买作品ID=>739
+SQL: SHOW COLUMNS FROM `qs_books` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `qs_books` WHERE `id` = 739 LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant file - assumed 'file' /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 84 行.
+NOTIC: [2] file_put_contents(file): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 84 行.
+ERR: 4.购买作品价格=>0.01
+SQL: SHOW COLUMNS FROM `qs_user_pay_history` [ RunTime:0.0011s ]
+SQL: INSERT INTO `qs_user_pay_history` (`uid`,`bid`,`author_id`,`order_no`,`money`,`or_id`,`pay_type`,`order_time`,`status`) VALUES ('64','739','6','20160901185708-64-739','0.01','0','0','2016-09-01 18:57:08','0') [ RunTime:0.0017s ]
+NOTIC: [8] Use of undefined constant file - assumed 'file' /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 93 行.
+NOTIC: [2] file_put_contents(file): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 93 行.
+ERR: 5.访问页面来自===>m
+NOTIC: [8] Use of undefined constant file - assumed 'file' /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 134 行.
+NOTIC: [2] file_put_contents(file): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 134 行.
+ERR: 6.支付宝请求参数===>{"service":"alipay.wap.create.direct.pay.by.user","partner":"2088121403316829","seller_id":"2088121403316829","payment_type":"1","notify_url":"http:\/\/www.qiaobooks.com\/Alipay\/notifyUrl","return_url":"http:\/\/www.qiaobooks.com\/Alipay\/returnUrl","_input_charset":"utf-8","out_trade_no":"20160901185708-64-739","subject":"321312","total_fee":"0.01","show_url":"http:\/\/www.qiaobooks.com\/read\/739","body":"64 321312 20160901185708-64-739 0.01"}
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000059s ]
+
+[ 2016-09-01T18:57:12+08:00 ] 100.109.0.199 /User/online
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+
+[ 2016-09-01T18:57:52+08:00 ] 100.109.0.228 /User/online
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+
+[ 2016-09-01T18:58:55+08:00 ] 100.109.0.250 /Alipay/notifyUrl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000091s ]
+NOTIC: [2] file_put_contents(log.txt): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 172 行.
+ERR: 1、支付后回调
+NOTIC: [2] file_put_contents(log.txt): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 181 行.
+ERR: 2.通知验证结果= 1
+NOTIC: [2] file_put_contents(log.txt): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 199 行.
+ERR: 3 .buyer_id==>2088002076160327 trade_no===>2016090121001004320287970661 trade_status===>TRADE_SUCCESS out_trade_no==>20160901185708-64-739
+NOTIC: [2] file_put_contents(log.txt): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 209 行.
+ERR: 4. trade_status===>TRADE_SUCCESS
+SQL: SHOW COLUMNS FROM `qs_user_pay_history` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `qs_user_pay_history` WHERE ( order_no='20160901185708-64-739' ) LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2016-09-01T18:58:59+08:00 ] 100.109.0.221 /Alipay/returnUrl?body=64+321312+20160901185708-64-739+0.01&is_success=T&notify_id=RqPnCoPT3K9%252Fvwbh3InWfIEpaDovF6ZGMmnImmJkyDNbHTQUqOWqSvct%252Bt0s64V9r4ZW&notify_time=2016-09-01+18%3A58%3A55&notify_type=trade_status_sync&out_trade_no=20160901185708-64-739&payment_type=1&seller_id=2088121403316829&service=alipay.wap.create.direct.pay.by.user&subject=321312&total_fee=0.01&trade_no=2016090121001004320287970661&trade_status=TRADE_SUCCESS&sign=22bbebeb64552e4a9e1df01c8066a906&sign_type=MD5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000110s ]
+NOTIC: [2] file_put_contents(log.txt): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 272 行.
+ERR: 1、开始回调返回页面
+ERR: 2、通知验证结果--》1
+NOTIC: [2] file_put_contents(log.txt): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 292 行.
+ERR: 3、回调返回页面成功--》--->trade_status=TRADE_SUCCESStrade_no==>2016090121001004320287970661
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000114s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000178s ]
+
+[ 2016-09-01T18:58:59+08:00 ] 100.109.0.216 /read/739
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000062s ]
+SQL: SHOW COLUMNS FROM `qs_or_rec` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `qs_books` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `qs_user_profile` [ RunTime:0.0010s ]
+SQL: SELECT Books.id AS bookid,Books.type AS booktype,Books.uid AS uid,Books.name AS title,Books.indu AS indu,Books.price AS price,Books.price_or_node AS price_or_node,Books.utime AS utime,userProfile.nick_name AS nick_name FROM qs_books Books  JOIN qs_user_profile userProfile ON Books.uid=userProfile.id WHERE Books.id = '739' AND Books.isup = 1 LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: saveData /usr/local/share/www/Application/Home/Controller/ReaddocController.class.php 第 243 行.
+SQL: SHOW COLUMNS FROM `qs_books_mark` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`read`,`type` FROM `qs_books_mark` WHERE `uid` = 64 AND `bid` = 739 LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004222s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004262s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000087s ]
+
+[ 2016-09-01T18:58:59+08:00 ] 100.109.0.214 /User/online
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+
+[ 2016-09-01T18:58:59+08:00 ] 100.109.0.218 /Readdoc/getOrData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+SQL: SHOW COLUMNS FROM `qs_or_rec` [ RunTime:0.0009s ]
+SQL: SELECT `or` FROM `qs_or_rec` WHERE `uid` = 64 AND `bid` = 739 AND `status` = 0 LIMIT 1   [ RunTime:0.0029s ]
+
+[ 2016-09-01T18:59:00+08:00 ] 100.109.0.222 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+
+[ 2016-09-01T18:59:00+08:00 ] 100.109.0.219 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000082s ]
+
+[ 2016-09-01T18:59:00+08:00 ] 100.109.0.221 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+
+[ 2016-09-01T18:59:00+08:00 ] 100.109.0.218 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+
+[ 2016-09-01T18:59:00+08:00 ] 100.109.0.215 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000056s ]
+
+[ 2016-09-01T18:59:18+08:00 ] 100.109.0.248 /User/online
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+
+[ 2016-09-01T18:59:29+08:00 ] 100.109.0.245 /User/online
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+
+[ 2016-09-01T19:00:21+08:00 ] 100.109.0.230 /User/online
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000074s ]
+
+[ 2016-09-01T19:01:07+08:00 ] 100.109.0.214 /User/online
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000054s ]
+
+[ 2016-09-01T19:02:03+08:00 ] 100.109.0.220 /User/online
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000099s ]
+
+[ 2016-09-01T19:02:12+08:00 ] 100.109.0.206 /Alipay/notifyUrl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000095s ]
+NOTIC: [2] file_put_contents(log.txt): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 172 行.
+ERR: 1、支付后回调
+NOTIC: [2] file_put_contents(log.txt): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 181 行.
+ERR: 2.通知验证结果= 1
+NOTIC: [2] file_put_contents(log.txt): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 199 行.
+ERR: 3 .buyer_id==>2088002076160327 trade_no===>2016090121001004320287970661 trade_status===>TRADE_SUCCESS out_trade_no==>20160901185708-64-739
+NOTIC: [2] file_put_contents(log.txt): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 209 行.
+ERR: 4. trade_status===>TRADE_SUCCESS
+SQL: SHOW COLUMNS FROM `qs_user_pay_history` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `qs_user_pay_history` WHERE ( order_no='20160901185708-64-739' ) LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2016-09-01T19:02:13+08:00 ] 100.109.0.222 /User/online
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+
+[ 2016-09-01T19:02:53+08:00 ] 100.109.0.230 /User/online
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+
+[ 2016-09-01T19:03:23+08:00 ] 100.109.0.237 /Alipay/pay/bid/739/from/m
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Use of undefined constant file - assumed 'file' /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 21 行.
+NOTIC: [2] file_put_contents(file): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 21 行.
+ERR: 1、开始支付支付
+NOTIC: [8] Use of undefined constant file - assumed 'file' /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 29 行.
+NOTIC: [2] file_put_contents(file): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 29 行.
+ERR: 2.购买者ID==>64
+NOTIC: [8] Use of undefined constant file - assumed 'file' /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 39 行.
+NOTIC: [2] file_put_contents(file): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 39 行.
+ERR: 3.购买作品ID=>739
+SQL: SHOW COLUMNS FROM `qs_books` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `qs_books` WHERE `id` = 739 LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant file - assumed 'file' /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 84 行.
+NOTIC: [2] file_put_contents(file): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 84 行.
+ERR: 4.购买作品价格=>0.01
+SQL: SHOW COLUMNS FROM `qs_user_pay_history` [ RunTime:0.0009s ]
+SQL: INSERT INTO `qs_user_pay_history` (`uid`,`bid`,`author_id`,`order_no`,`money`,`or_id`,`pay_type`,`order_time`,`status`) VALUES ('64','739','6','20160901190323-64-739','0.01','0','0','2016-09-01 19:03:23','0') [ RunTime:0.0016s ]
+NOTIC: [8] Use of undefined constant file - assumed 'file' /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 93 行.
+NOTIC: [2] file_put_contents(file): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 93 行.
+ERR: 5.访问页面来自===>m
+NOTIC: [8] Use of undefined constant file - assumed 'file' /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 134 行.
+NOTIC: [2] file_put_contents(file): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 134 行.
+ERR: 6.支付宝请求参数===>{"service":"alipay.wap.create.direct.pay.by.user","partner":"2088121403316829","seller_id":"2088121403316829","payment_type":"1","notify_url":"http:\/\/www.qiaobooks.com\/Alipay\/notifyUrl","return_url":"http:\/\/www.qiaobooks.com\/Alipay\/returnUrl","_input_charset":"utf-8","out_trade_no":"20160901190323-64-739","subject":"321312","total_fee":"0.01","show_url":"http:\/\/www.qiaobooks.com\/read\/739","body":"64 321312 20160901190323-64-739 0.01"}
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000072s ]
+
+[ 2016-09-01T19:03:33+08:00 ] 100.109.0.212 /Propay/buySuccess
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+SQL: SHOW COLUMNS FROM `qs_books` [ RunTime:0.0013s ]
+SQL: SELECT `uid`,`name` FROM `qs_books` WHERE ( id=739 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `qs_user_profile` [ RunTime:0.0011s ]
+SQL: SELECT `nick_name` FROM `qs_user_profile` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2] Missing argument 2 for Home\Controller\AccessController::sendPrivateMsg(), called in /usr/local/share/www/Application/Home/Controller/PropayController.class.php on line 130 and defined /usr/local/share/www/Application/Home/Controller/AccessController.class.php 第 107 行.
+SQL: SELECT MAX(id) AS tp_max FROM ( SELECT * FROM qs_message_1 UNION SELECT * FROM qs_message_2 UNION SELECT * FROM qs_message_3 UNION SELECT * FROM qs_message_4 UNION SELECT * FROM qs_message_5 UNION SELECT * FROM qs_message_6 UNION SELECT * FROM qs_message_7 UNION SELECT * FROM qs_message_8 UNION SELECT * FROM qs_message_9 UNION SELECT * FROM qs_message_10) AS Msg LIMIT 1   [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: validate /usr/local/share/core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /usr/local/share/core/Library/Think/Model.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `qs_message_7` [ RunTime:0.0009s ]
+SQL: INSERT INTO `qs_message_7` (`uid`,`msg`,`time`,`id`) VALUES ('6','Cloud购买了您的作品《321312》','2016-09-01 19:03','79') [ RunTime:0.0014s ]
+NOTIC: [8] Undefined variable: type /usr/local/share/www/Application/Home/Controller/AccessController.class.php 第 112 行.
+SQL: SHOW COLUMNS FROM `qs_books` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `qs_pay_hour` [ RunTime:0.0011s ]
+SQL: SELECT `id` FROM `qs_pay_hour` WHERE `bid` = 739 AND `date_hour` = 2016090119 LIMIT 1   [ RunTime:0.0006s ]
+SQL: INSERT INTO `qs_pay_hour` (`bid`,`date_hour`) VALUES ('739','2016090119') [ RunTime:0.0036s ]
+
+[ 2016-09-01T19:03:33+08:00 ] 100.109.0.204 /Alipay/notifyUrl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+NOTIC: [2] file_put_contents(log.txt): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 172 行.
+ERR: 1、支付后回调
+NOTIC: [2] file_put_contents(log.txt): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 181 行.
+ERR: 2.通知验证结果= 1
+NOTIC: [2] file_put_contents(log.txt): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 199 行.
+ERR: 3 .buyer_id==>2088002076160327 trade_no===>2016090121001004320286096449 trade_status===>TRADE_SUCCESS out_trade_no==>20160901190323-64-739
+NOTIC: [2] file_put_contents(log.txt): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `qs_user_pay_history` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `qs_user_pay_history` WHERE ( order_no='20160901190323-64-739' ) LIMIT 1   [ RunTime:0.0007s ]
+ERR: 4. trade_status===>TRADE_SUCCESS 订单状态==0
+NOTIC: [2] file_put_contents(log.txt): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 218 行.
+ERR: 5、 订单状态正常
+SQL: UPDATE `qs_user_pay_history` SET `id`='140',`uid`='64',`bid`='739',`author_id`='6',`order_no`='20160901190323-64-739',`money`='0.01',`or_id`='0',`pay_type`='0',`transaction_no`='$trade_no',`openid`='$buyer_id',`order_time`='2016-09-01 19:03:23',`pay_time`='$now',`status`='1' WHERE ( order_no='20160901190323-64-739' ) [ RunTime:0.0017s ]
+NOTIC: [2] file_put_contents(log.txt): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 232 行.
+ERR: 6.购买成功 通知作者  ==>{"uid":"6","bid":"739","fee":"0.01"}
+NOTIC: [2] file_put_contents(log.txt): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 238 行.
+ERR: 7.增加作品收益、购买数  ==>{"uid":"6","bid":"739","fee":"0.01"}
+SQL: SHOW COLUMNS FROM `qs_books` [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: where /usr/local/share/core/Library/Think/Model.class.php 第 854 行.
+NOTIC: [8] Undefined index: where /usr/local/share/core/Library/Think/Model.class.php 第 854 行.
+NOTIC: [2] file_put_contents(log.txt): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 246 行.
+ERR: 8.增加用户账户收益  ==>{"uid":"6","bid":"739","fee":"0.01"}
+SQL: SHOW COLUMNS FROM `qs_user_profile` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where /usr/local/share/core/Library/Think/Model.class.php 第 854 行.
+NOTIC: [8] Undefined index: where /usr/local/share/core/Library/Think/Model.class.php 第 854 行.
+NOTIC: [2] file_put_contents(log.txt): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 251 行.
+ERR: 9.支付成功！
+ERR: 10.回调成功！success
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000046s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000075s ]
+
+[ 2016-09-01T19:03:36+08:00 ] 100.109.0.232 /Alipay/returnUrl?body=64+321312+20160901190323-64-739+0.01&is_success=T&notify_id=RqPnCoPT3K9%252Fvwbh3InWfIEpaDcY5idhK%252BrN3tIwBnBpGvwHA2JSC04qJqc0nbpiRYCY&notify_time=2016-09-01+19%3A03%3A34&notify_type=trade_status_sync&out_trade_no=20160901190323-64-739&payment_type=1&seller_id=2088121403316829&service=alipay.wap.create.direct.pay.by.user&subject=321312&total_fee=0.01&trade_no=2016090121001004320286096449&trade_status=TRADE_SUCCESS&sign=571eb2a2b7d50375d1aff459d30d798f&sign_type=MD5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+NOTIC: [2] file_put_contents(log.txt): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 274 行.
+ERR: 1、开始回调返回页面
+ERR: 2、通知验证结果--》1
+NOTIC: [2] file_put_contents(log.txt): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 294 行.
+ERR: 3、回调返回页面成功--》--->trade_status=TRADE_SUCCESStrade_no==>2016090121001004320286096449
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000046s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000078s ]
+
+[ 2016-09-01T19:03:36+08:00 ] 100.109.0.238 /read/739
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+SQL: SHOW COLUMNS FROM `qs_or_rec` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `qs_books` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `qs_user_profile` [ RunTime:0.0011s ]
+SQL: SELECT Books.id AS bookid,Books.type AS booktype,Books.uid AS uid,Books.name AS title,Books.indu AS indu,Books.price AS price,Books.price_or_node AS price_or_node,Books.utime AS utime,userProfile.nick_name AS nick_name FROM qs_books Books  JOIN qs_user_profile userProfile ON Books.uid=userProfile.id WHERE Books.id = '739' AND Books.isup = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `qs_books` [ RunTime:0.0014s ]
+SQL: UPDATE `qs_books` SET `read_cnt`=read_cnt+1 WHERE ( id=739 ) [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `qs_book_hour` [ RunTime:0.0009s ]
+SQL: SELECT `id` FROM `qs_book_hour` WHERE `bid` = 739 AND `date_hour` = 2016090119 LIMIT 1   [ RunTime:0.0012s ]
+SQL: INSERT INTO `qs_book_hour` (`bid`,`date_hour`) VALUES ('739','2016090119') [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `qs_books_mark` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`read`,`type` FROM `qs_books_mark` WHERE `uid` = 64 AND `bid` = 739 LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004887s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004928s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000083s ]
+
+[ 2016-09-01T19:03:37+08:00 ] 100.109.0.235 /User/online
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000053s ]
+
+[ 2016-09-01T19:03:37+08:00 ] 100.109.0.195 /Readdoc/getOrData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000051s ]
+SQL: SHOW COLUMNS FROM `qs_or_rec` [ RunTime:0.0010s ]
+SQL: SELECT `or` FROM `qs_or_rec` WHERE `uid` = 64 AND `bid` = 739 AND `status` = 0 LIMIT 1   [ RunTime:0.0030s ]
+
+[ 2016-09-01T19:03:37+08:00 ] 100.109.0.194 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+
+[ 2016-09-01T19:03:37+08:00 ] 100.109.0.200 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+
+[ 2016-09-01T19:03:37+08:00 ] 100.109.0.194 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000053s ]
+
+[ 2016-09-01T19:03:37+08:00 ] 100.109.0.197 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000054s ]
+
+[ 2016-09-01T19:03:38+08:00 ] 100.109.0.194 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+
+[ 2016-09-01T19:04:21+08:00 ] 100.109.0.225 /User/online
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+
+[ 2016-09-01T19:04:30+08:00 ] 100.109.0.192 /User/online
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+
+[ 2016-09-01T19:04:50+08:00 ] 100.109.0.253 /Alipay/pay/bid/739/from/m
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000093s ]
+NOTIC: [8] Use of undefined constant file - assumed 'file' /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 21 行.
+NOTIC: [2] file_put_contents(file): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 21 行.
+ERR: 1、开始支付支付
+NOTIC: [8] Use of undefined constant file - assumed 'file' /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 29 行.
+NOTIC: [2] file_put_contents(file): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 29 行.
+ERR: 2.购买者ID==>64
+NOTIC: [8] Use of undefined constant file - assumed 'file' /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 39 行.
+NOTIC: [2] file_put_contents(file): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 39 行.
+ERR: 3.购买作品ID=>739
+SQL: SHOW COLUMNS FROM `qs_books` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `qs_books` WHERE `id` = 739 LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Use of undefined constant file - assumed 'file' /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 84 行.
+NOTIC: [2] file_put_contents(file): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 84 行.
+ERR: 4.购买作品价格=>0.01
+SQL: SHOW COLUMNS FROM `qs_user_pay_history` [ RunTime:0.0009s ]
+SQL: INSERT INTO `qs_user_pay_history` (`uid`,`bid`,`author_id`,`order_no`,`money`,`or_id`,`pay_type`,`order_time`,`status`) VALUES ('64','739','6','20160901190450-64-739','0.01','0','0','2016-09-01 19:04:50','0') [ RunTime:0.0016s ]
+NOTIC: [8] Use of undefined constant file - assumed 'file' /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 93 行.
+NOTIC: [2] file_put_contents(file): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 93 行.
+ERR: 5.访问页面来自===>m
+NOTIC: [8] Use of undefined constant file - assumed 'file' /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 134 行.
+NOTIC: [2] file_put_contents(file): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 134 行.
+ERR: 6.支付宝请求参数===>{"service":"alipay.wap.create.direct.pay.by.user","partner":"2088121403316829","seller_id":"2088121403316829","payment_type":"1","notify_url":"http:\/\/www.qiaobooks.com\/Alipay\/notifyUrl","return_url":"http:\/\/www.qiaobooks.com\/Alipay\/returnUrl","_input_charset":"utf-8","out_trade_no":"20160901190450-64-739","subject":"321312","total_fee":"0.01","show_url":"http:\/\/www.qiaobooks.com\/read\/739","body":"64 321312 20160901190450-64-739 0.01"}
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000052s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000100s ]
+
+[ 2016-09-01T19:05:00+08:00 ] 100.109.0.226 /Propay/buySuccess
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000056s ]
+SQL: SHOW COLUMNS FROM `qs_books` [ RunTime:0.0011s ]
+SQL: SELECT `uid`,`name` FROM `qs_books` WHERE ( id=739 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `qs_user_profile` [ RunTime:0.0011s ]
+SQL: SELECT `nick_name` FROM `qs_user_profile` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [2] Missing argument 2 for Home\Controller\AccessController::sendPrivateMsg(), called in /usr/local/share/www/Application/Home/Controller/PropayController.class.php on line 130 and defined /usr/local/share/www/Application/Home/Controller/AccessController.class.php 第 107 行.
+SQL: SELECT MAX(id) AS tp_max FROM ( SELECT * FROM qs_message_1 UNION SELECT * FROM qs_message_2 UNION SELECT * FROM qs_message_3 UNION SELECT * FROM qs_message_4 UNION SELECT * FROM qs_message_5 UNION SELECT * FROM qs_message_6 UNION SELECT * FROM qs_message_7 UNION SELECT * FROM qs_message_8 UNION SELECT * FROM qs_message_9 UNION SELECT * FROM qs_message_10) AS Msg LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: validate /usr/local/share/core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /usr/local/share/core/Library/Think/Model.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `qs_message_7` [ RunTime:0.0009s ]
+SQL: INSERT INTO `qs_message_7` (`uid`,`msg`,`time`,`id`) VALUES ('6','Cloud购买了您的作品《321312》','2016-09-01 19:05','80') [ RunTime:0.0014s ]
+NOTIC: [8] Undefined variable: type /usr/local/share/www/Application/Home/Controller/AccessController.class.php 第 112 行.
+SQL: SHOW COLUMNS FROM `qs_books` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `qs_pay_hour` [ RunTime:0.0009s ]
+SQL: SELECT `id` FROM `qs_pay_hour` WHERE `bid` = 739 AND `date_hour` = 2016090119 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2016-09-01T19:05:00+08:00 ] 100.109.0.225 /Alipay/notifyUrl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000062s ]
+NOTIC: [2] file_put_contents(log.txt): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 172 行.
+ERR: 1、支付后回调
+NOTIC: [2] file_put_contents(log.txt): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 181 行.
+ERR: 2.通知验证结果= 1
+NOTIC: [2] file_put_contents(log.txt): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 199 行.
+ERR: 3 .buyer_id==>2088002076160327 trade_no===>2016090121001004320287970814 trade_status===>TRADE_SUCCESS out_trade_no==>20160901190450-64-739
+NOTIC: [2] file_put_contents(log.txt): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `qs_user_pay_history` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `qs_user_pay_history` WHERE ( order_no='20160901190450-64-739' ) LIMIT 1   [ RunTime:0.0008s ]
+ERR: 4. trade_status===>TRADE_SUCCESS 订单状态==0
+NOTIC: [2] file_put_contents(log.txt): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 218 行.
+ERR: 5、 订单状态正常
+SQL: UPDATE `qs_user_pay_history` SET `id`='141',`uid`='64',`bid`='739',`author_id`='6',`order_no`='20160901190450-64-739',`money`='0.01',`or_id`='0',`pay_type`='0',`transaction_no`='2016090121001004320287970814',`openid`='2088002076160327',`order_time`='2016-09-01 19:04:50',`pay_time`='2016-09-01 19:05:00',`status`='1' WHERE ( order_no='20160901190450-64-739' ) [ RunTime:0.0016s ]
+NOTIC: [2] file_put_contents(log.txt): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 232 行.
+ERR: 6.购买成功 通知作者  ==>{"uid":"6","bid":"739","fee":"0.01"}
+NOTIC: [2] file_put_contents(log.txt): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 238 行.
+ERR: 7.增加作品收益、购买数  ==>{"uid":"6","bid":"739","fee":"0.01"}
+SQL: SHOW COLUMNS FROM `qs_books` [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: where /usr/local/share/core/Library/Think/Model.class.php 第 854 行.
+NOTIC: [8] Undefined index: where /usr/local/share/core/Library/Think/Model.class.php 第 854 行.
+NOTIC: [2] file_put_contents(log.txt): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 246 行.
+ERR: 8.增加用户账户收益  ==>{"uid":"6","bid":"739","fee":"0.01"}
+SQL: SHOW COLUMNS FROM `qs_user_profile` [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: where /usr/local/share/core/Library/Think/Model.class.php 第 854 行.
+NOTIC: [8] Undefined index: where /usr/local/share/core/Library/Think/Model.class.php 第 854 行.
+NOTIC: [2] file_put_contents(log.txt): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 251 行.
+ERR: 9.支付成功！
+ERR: 10.回调成功！success
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000059s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000105s ]
+
+[ 2016-09-01T19:05:07+08:00 ] 100.109.0.195 /Alipay/returnUrl?body=64+321312+20160901190450-64-739+0.01&is_success=T&notify_id=RqPnCoPT3K9%252Fvwbh3InWfIEpaDa3Hu7HGKEE2wPPCbxIBTbx1BAeveuF00GhY4Cj5BdL&notify_time=2016-09-01+19%3A05%3A00&notify_type=trade_status_sync&out_trade_no=20160901190450-64-739&payment_type=1&seller_id=2088121403316829&service=alipay.wap.create.direct.pay.by.user&subject=321312&total_fee=0.01&trade_no=2016090121001004320287970814&trade_status=TRADE_SUCCESS&sign=15d40a801d56efe1ff9baed8e87f9df2&sign_type=MD5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+NOTIC: [2] file_put_contents(log.txt): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 274 行.
+ERR: 1、开始回调返回页面
+ERR: 2、通知验证结果--》1
+NOTIC: [2] file_put_contents(log.txt): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 294 行.
+ERR: 3、回调返回页面成功--》--->trade_status=TRADE_SUCCESStrade_no==>2016090121001004320287970814
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000079s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000124s ]
+
+[ 2016-09-01T19:05:07+08:00 ] 100.109.0.206 /read/739
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000068s ]
+SQL: SHOW COLUMNS FROM `qs_or_rec` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `qs_books` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `qs_user_profile` [ RunTime:0.0010s ]
+SQL: SELECT Books.id AS bookid,Books.type AS booktype,Books.uid AS uid,Books.name AS title,Books.indu AS indu,Books.price AS price,Books.price_or_node AS price_or_node,Books.utime AS utime,userProfile.nick_name AS nick_name FROM qs_books Books  JOIN qs_user_profile userProfile ON Books.uid=userProfile.id WHERE Books.id = '739' AND Books.isup = 1 LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: saveData /usr/local/share/www/Application/Home/Controller/ReaddocController.class.php 第 243 行.
+SQL: SHOW COLUMNS FROM `qs_books_mark` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`read`,`type` FROM `qs_books_mark` WHERE `uid` = 64 AND `bid` = 739 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003872s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003913s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000055s ]
+
+[ 2016-09-01T19:05:07+08:00 ] 100.109.0.192 /User/online
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000085s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000146s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000052s ]
+
+[ 2016-09-01T19:05:07+08:00 ] 100.109.0.195 /Readdoc/getOrData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+SQL: SHOW COLUMNS FROM `qs_or_rec` [ RunTime:0.0010s ]
+SQL: SELECT `or` FROM `qs_or_rec` WHERE `uid` = 64 AND `bid` = 739 AND `status` = 0 LIMIT 1   [ RunTime:0.0028s ]
+
+[ 2016-09-01T19:05:07+08:00 ] 100.109.0.206 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+
+[ 2016-09-01T19:05:07+08:00 ] 100.109.0.194 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+
+[ 2016-09-01T19:05:08+08:00 ] 100.109.0.206 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+
+[ 2016-09-01T19:05:08+08:00 ] 100.109.0.201 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+
+[ 2016-09-01T19:05:08+08:00 ] 100.109.0.202 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+
+[ 2016-09-01T19:05:22+08:00 ] 100.109.0.216 /User/online
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000055s ]
+
+[ 2016-09-01T19:05:29+08:00 ] 100.109.0.230 /read/628
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+SQL: SHOW COLUMNS FROM `qs_or_rec` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `qs_books` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `qs_user_profile` [ RunTime:0.0010s ]
+SQL: SELECT Books.id AS bookid,Books.type AS booktype,Books.uid AS uid,Books.name AS title,Books.indu AS indu,Books.price AS price,Books.price_or_node AS price_or_node,Books.utime AS utime,userProfile.nick_name AS nick_name FROM qs_books Books  JOIN qs_user_profile userProfile ON Books.uid=userProfile.id WHERE Books.id = '628' AND Books.isup = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `qs_books` [ RunTime:0.0013s ]
+SQL: UPDATE `qs_books` SET `read_cnt`=read_cnt+1 WHERE ( id=628 ) [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `qs_book_hour` [ RunTime:0.0011s ]
+SQL: SELECT `id` FROM `qs_book_hour` WHERE `bid` = 628 AND `date_hour` = 2016090119 LIMIT 1   [ RunTime:0.0009s ]
+SQL: INSERT INTO `qs_book_hour` (`bid`,`date_hour`) VALUES ('628','2016090119') [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004094s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004132s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000058s ]
+
+[ 2016-09-01T19:05:29+08:00 ] 100.109.0.236 /User/online
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000055s ]
+
+[ 2016-09-01T19:05:29+08:00 ] 100.109.0.195 /Readdoc/getOrData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000050s ]
+SQL: SHOW COLUMNS FROM `qs_or_rec` [ RunTime:0.0009s ]
+SQL: SELECT `or` FROM `qs_or_rec` WHERE `tuid` = 'rdlp1472176732_5606_3510_8522_88' AND `bid` = 628 AND `status` = 0 LIMIT 1   [ RunTime:0.0030s ]
+
+[ 2016-09-01T19:05:29+08:00 ] 100.109.0.225 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000072s ]
+
+[ 2016-09-01T19:05:29+08:00 ] 100.109.0.233 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000055s ]
+
+[ 2016-09-01T19:05:30+08:00 ] 100.109.0.235 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+
+[ 2016-09-01T19:05:30+08:00 ] 100.109.0.232 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000089s ]
+
+[ 2016-09-01T19:05:30+08:00 ] 100.109.0.226 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+
+[ 2016-09-01T19:05:30+08:00 ] 100.109.0.232 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000056s ]
+
+[ 2016-09-01T19:05:31+08:00 ] 100.109.0.236 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000057s ]
+
+[ 2016-09-01T19:05:31+08:00 ] 100.109.0.227 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+
+[ 2016-09-01T19:05:31+08:00 ] 100.109.0.230 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+
+[ 2016-09-01T19:05:31+08:00 ] 100.109.0.230 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+
+[ 2016-09-01T19:05:32+08:00 ] 100.109.0.236 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+
+[ 2016-09-01T19:05:32+08:00 ] 100.109.0.235 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000057s ]
+
+[ 2016-09-01T19:05:32+08:00 ] 100.109.0.227 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+
+[ 2016-09-01T19:05:32+08:00 ] 100.109.0.238 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000091s ]
+
+[ 2016-09-01T19:05:33+08:00 ] 100.109.0.238 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000057s ]
+
+[ 2016-09-01T19:05:33+08:00 ] 100.109.0.225 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000056s ]
+
+[ 2016-09-01T19:05:35+08:00 ] 100.109.0.233 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+
+[ 2016-09-01T19:05:38+08:00 ] 100.109.0.228 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+
+[ 2016-09-01T19:05:39+08:00 ] 100.109.0.224 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000089s ]
+
+[ 2016-09-01T19:05:40+08:00 ] 100.109.0.234 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000055s ]
+
+[ 2016-09-01T19:05:41+08:00 ] 100.109.0.224 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000133s ]
+
+[ 2016-09-01T19:05:42+08:00 ] 100.109.0.225 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000062s ]
+
+[ 2016-09-01T19:05:45+08:00 ] 100.109.0.231 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000062s ]
+
+[ 2016-09-01T19:05:47+08:00 ] 100.109.0.232 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000056s ]
+
+[ 2016-09-01T19:05:48+08:00 ] 100.109.0.224 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000062s ]
+
+[ 2016-09-01T19:05:49+08:00 ] 100.109.0.234 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000055s ]
+
+[ 2016-09-01T19:05:51+08:00 ] 100.109.0.228 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+
+[ 2016-09-01T19:05:52+08:00 ] 100.109.0.236 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000098s ]
+
+[ 2016-09-01T19:05:56+08:00 ] 100.109.0.234 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+
+[ 2016-09-01T19:05:59+08:00 ] 100.109.0.227 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+
+[ 2016-09-01T19:06:10+08:00 ] 100.109.0.228 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000142s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+
+[ 2016-09-01T19:06:12+08:00 ] 100.109.0.244 /User/online
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000053s ]
+
+[ 2016-09-01T19:06:21+08:00 ] 100.109.0.230 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000056s ]
+
+[ 2016-09-01T19:06:22+08:00 ] 100.109.0.228 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+
+[ 2016-09-01T19:06:23+08:00 ] 100.109.0.227 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000080s ]
+
+[ 2016-09-01T19:06:34+08:00 ] 100.109.0.237 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+
+[ 2016-09-01T19:06:45+08:00 ] 100.109.0.224 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+
+[ 2016-09-01T19:06:57+08:00 ] 100.109.0.231 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+
+[ 2016-09-01T19:06:58+08:00 ] 100.109.0.226 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+
+[ 2016-09-01T19:06:59+08:00 ] 100.109.0.231 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000054s ]
+
+[ 2016-09-01T19:07:03+08:00 ] 100.109.0.226 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+
+[ 2016-09-01T19:07:04+08:00 ] 100.109.0.196 /User/online
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000081s ]
+
+[ 2016-09-01T19:07:14+08:00 ] 100.109.0.227 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+
+[ 2016-09-01T19:07:14+08:00 ] 100.109.0.200 /User/online
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000080s ]
+
+[ 2016-09-01T19:07:20+08:00 ] 100.109.0.224 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+
+[ 2016-09-01T19:07:21+08:00 ] 100.109.0.232 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+
+[ 2016-09-01T19:07:22+08:00 ] 100.109.0.225 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+
+[ 2016-09-01T19:07:33+08:00 ] 100.109.0.231 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+
+[ 2016-09-01T19:07:34+08:00 ] 100.109.0.234 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000054s ]
+
+[ 2016-09-01T19:07:35+08:00 ] 100.109.0.227 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000082s ]
+
+[ 2016-09-01T19:07:54+08:00 ] 100.109.0.214 /User/online
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+
+[ 2016-09-01T19:07:56+08:00 ] 100.109.0.205 /read/106.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+SQL: SHOW COLUMNS FROM `qs_or_rec` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `qs_books` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `qs_user_profile` [ RunTime:0.0010s ]
+SQL: SELECT Books.id AS bookid,Books.type AS booktype,Books.uid AS uid,Books.name AS title,Books.indu AS indu,Books.price AS price,Books.price_or_node AS price_or_node,Books.utime AS utime,userProfile.nick_name AS nick_name FROM qs_books Books  JOIN qs_user_profile userProfile ON Books.uid=userProfile.id WHERE Books.id = '106' AND Books.isup = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `qs_books` [ RunTime:0.0010s ]
+SQL: UPDATE `qs_books` SET `read_cnt`=read_cnt+1 WHERE ( id=106 ) [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `qs_book_hour` [ RunTime:0.0009s ]
+SQL: SELECT `id` FROM `qs_book_hour` WHERE `bid` = 106 AND `date_hour` = 2016090119 LIMIT 1   [ RunTime:0.0007s ]
+SQL: INSERT INTO `qs_book_hour` (`bid`,`date_hour`) VALUES ('106','2016090119') [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004133s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004178s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000082s ]
+
+[ 2016-09-01T19:07:57+08:00 ] 100.109.0.201 /User/online
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+
+[ 2016-09-01T19:07:57+08:00 ] 100.109.0.253 /Readdoc/getOrData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000056s ]
+SQL: SHOW COLUMNS FROM `qs_or_rec` [ RunTime:0.0010s ]
+SQL: SELECT `or` FROM `qs_or_rec` WHERE `tuid` = 'rdlp1471671540_1549_6017_7492_69' AND `bid` = 106 AND `status` = 0 LIMIT 1   [ RunTime:0.0019s ]
+
+[ 2016-09-01T19:07:57+08:00 ] 100.109.0.218 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+
+[ 2016-09-01T19:07:58+08:00 ] 100.109.0.215 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+
+[ 2016-09-01T19:07:58+08:00 ] 100.109.0.221 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000072s ]
+
+[ 2016-09-01T19:07:58+08:00 ] 100.109.0.221 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000054s ]
+
+[ 2016-09-01T19:07:59+08:00 ] 100.109.0.218 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+SQL: SHOW COLUMNS FROM `qs_or_rec` [ RunTime:0.0011s ]
+SQL: SELECT `or` FROM `qs_or_rec` WHERE `tuid` = 'rdlp1471671540_1549_6017_7492_69' AND `bid` = 106 AND `status` = 0 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `qs_or_rec` SET `tuid`='rdlp1471671540_1549_6017_7492_69',`or`='3,7,15,20,24,29,35,41,46,54,60,64,74,4',`time`='1472728079' WHERE `tuid` = 'rdlp1471671540_1549_6017_7492_69' AND `bid` = 106 AND `status` = 0 [ RunTime:0.0067s ]
+
+[ 2016-09-01T19:08:00+08:00 ] 100.109.0.209 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000052s ]
+
+[ 2016-09-01T19:08:01+08:00 ] 100.109.0.215 /Readdoc/setReadOver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000096s ]
+SQL: SHOW COLUMNS FROM `qs_or_rec` [ RunTime:0.0015s ]
+SQL: UPDATE `qs_or_rec` SET `status`='1',`time`='1472728081' WHERE `tuid` = 'rdlp1471671540_1549_6017_7492_69' AND `bid` = 106 AND `status` = 0 [ RunTime:0.0053s ]
+
+[ 2016-09-01T19:08:01+08:00 ] 100.109.0.218 /read/106.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+SQL: SHOW COLUMNS FROM `qs_or_rec` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `qs_books` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `qs_user_profile` [ RunTime:0.0011s ]
+SQL: SELECT Books.id AS bookid,Books.type AS booktype,Books.uid AS uid,Books.name AS title,Books.indu AS indu,Books.price AS price,Books.price_or_node AS price_or_node,Books.utime AS utime,userProfile.nick_name AS nick_name FROM qs_books Books  JOIN qs_user_profile userProfile ON Books.uid=userProfile.id WHERE Books.id = '106' AND Books.isup = 1 LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: saveData /usr/local/share/www/Application/Home/Controller/ReaddocController.class.php 第 243 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006742s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006791s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000058s ]
+
+[ 2016-09-01T19:08:01+08:00 ] 100.109.0.210 /User/online
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000055s ]
+
+[ 2016-09-01T19:08:01+08:00 ] 100.109.0.248 /Readdoc/getOrData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000057s ]
+SQL: SHOW COLUMNS FROM `qs_or_rec` [ RunTime:0.0011s ]
+SQL: SELECT `or` FROM `qs_or_rec` WHERE `tuid` = 'rdlp1471671540_1549_6017_7492_69' AND `bid` = 106 AND `status` = 0 LIMIT 1   [ RunTime:0.0032s ]
+
+[ 2016-09-01T19:08:01+08:00 ] 100.109.0.213 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+
+[ 2016-09-01T19:08:01+08:00 ] 100.109.0.220 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+
+[ 2016-09-01T19:08:01+08:00 ] 100.109.0.216 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+
+[ 2016-09-01T19:08:02+08:00 ] 100.109.0.216 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000062s ]
+
+[ 2016-09-01T19:08:02+08:00 ] 100.109.0.209 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000052s ]
+SQL: SHOW COLUMNS FROM `qs_or_rec` [ RunTime:0.0010s ]
+SQL: SELECT `or` FROM `qs_or_rec` WHERE `tuid` = 'rdlp1471671540_1549_6017_7492_69' AND `bid` = 106 AND `status` = 0 LIMIT 1   [ RunTime:0.0032s ]
+SQL: INSERT INTO `qs_or_rec` (`tuid`,`or`,`bid`,`time`,`status`) VALUES ('rdlp1471671540_1549_6017_7492_69','5','106','1472728082','0') [ RunTime:0.0015s ]
+
+[ 2016-09-01T19:08:02+08:00 ] 100.109.0.222 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000054s ]
+
+[ 2016-09-01T19:08:02+08:00 ] 100.109.0.216 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+
+[ 2016-09-01T19:08:03+08:00 ] 100.109.0.212 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000052s ]
+
+[ 2016-09-01T19:08:03+08:00 ] 100.109.0.210 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
+
+[ 2016-09-01T19:08:03+08:00 ] 100.109.0.216 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+
+[ 2016-09-01T19:08:03+08:00 ] 100.109.0.222 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+
+[ 2016-09-01T19:08:04+08:00 ] 100.109.0.218 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000077s ]
+SQL: SHOW COLUMNS FROM `qs_or_rec` [ RunTime:0.0012s ]
+SQL: SELECT `or` FROM `qs_or_rec` WHERE `tuid` = 'rdlp1471671540_1549_6017_7492_69' AND `bid` = 106 AND `status` = 0 LIMIT 1   [ RunTime:0.0031s ]
+SQL: UPDATE `qs_or_rec` SET `tuid`='rdlp1471671540_1549_6017_7492_69',`or`='5,14',`time`='1472728084' WHERE `tuid` = 'rdlp1471671540_1549_6017_7492_69' AND `bid` = 106 AND `status` = 0 [ RunTime:0.0054s ]
+
+[ 2016-09-01T19:08:05+08:00 ] 100.109.0.212 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+
+[ 2016-09-01T19:08:05+08:00 ] 100.109.0.217 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000054s ]
+
+[ 2016-09-01T19:08:05+08:00 ] 100.109.0.208 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000054s ]
+
+[ 2016-09-01T19:08:05+08:00 ] 100.109.0.216 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000054s ]
+
+[ 2016-09-01T19:08:06+08:00 ] 100.109.0.221 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+
+[ 2016-09-01T19:08:06+08:00 ] 100.109.0.212 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000056s ]
+
+[ 2016-09-01T19:08:06+08:00 ] 100.109.0.213 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000055s ]
+
+[ 2016-09-01T19:08:06+08:00 ] 100.109.0.217 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+
+[ 2016-09-01T19:08:07+08:00 ] 100.109.0.215 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+
+[ 2016-09-01T19:08:07+08:00 ] 100.109.0.213 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000093s ]
+
+[ 2016-09-01T19:08:07+08:00 ] 100.109.0.220 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000056s ]
+
+[ 2016-09-01T19:08:07+08:00 ] 100.109.0.217 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+
+[ 2016-09-01T19:08:07+08:00 ] 100.109.0.217 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+
+[ 2016-09-01T19:08:08+08:00 ] 100.109.0.212 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000053s ]
+
+[ 2016-09-01T19:08:08+08:00 ] 100.109.0.219 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000069s ]
+
+[ 2016-09-01T19:08:08+08:00 ] 100.109.0.217 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000081s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000121s ]
+
+[ 2016-09-01T19:08:08+08:00 ] 100.109.0.210 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+
+[ 2016-09-01T19:08:16+08:00 ] 100.109.0.199 /read/106.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+SQL: SHOW COLUMNS FROM `qs_or_rec` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `qs_books` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `qs_user_profile` [ RunTime:0.0010s ]
+SQL: SELECT Books.id AS bookid,Books.type AS booktype,Books.uid AS uid,Books.name AS title,Books.indu AS indu,Books.price AS price,Books.price_or_node AS price_or_node,Books.utime AS utime,userProfile.nick_name AS nick_name FROM qs_books Books  JOIN qs_user_profile userProfile ON Books.uid=userProfile.id WHERE Books.id = '106' AND Books.isup = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `qs_books` [ RunTime:0.0011s ]
+SQL: UPDATE `qs_books` SET `read_cnt`=read_cnt+1 WHERE ( id=106 ) [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `qs_book_hour` [ RunTime:0.0008s ]
+SQL: SELECT `id` FROM `qs_book_hour` WHERE `bid` = 106 AND `date_hour` = 2016090119 LIMIT 1   [ RunTime:0.0007s ]
+SQL: UPDATE `qs_book_hour` SET `num`=num+1 WHERE ( id=1528 ) [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004279s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004328s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000059s ]
+
+[ 2016-09-01T19:08:16+08:00 ] 100.109.0.202 /User/online
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+
+[ 2016-09-01T19:08:16+08:00 ] 100.109.0.246 /Readdoc/getOrData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000050s ]
+SQL: SHOW COLUMNS FROM `qs_or_rec` [ RunTime:0.0012s ]
+SQL: SELECT `or` FROM `qs_or_rec` WHERE `tuid` = 'rdlp1471671540_1549_6017_7492_69' AND `bid` = 106 AND `status` = 0 LIMIT 1   [ RunTime:0.0033s ]
+
+[ 2016-09-01T19:08:16+08:00 ] 100.109.0.193 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000055s ]
+
+[ 2016-09-01T19:08:17+08:00 ] 100.109.0.194 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
+
+[ 2016-09-01T19:08:18+08:00 ] 100.109.0.192 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000057s ]
+
+[ 2016-09-01T19:08:22+08:00 ] 100.109.0.200 /read/121
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+SQL: SHOW COLUMNS FROM `qs_or_rec` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `qs_books` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `qs_user_profile` [ RunTime:0.0010s ]
+SQL: SELECT Books.id AS bookid,Books.type AS booktype,Books.uid AS uid,Books.name AS title,Books.indu AS indu,Books.price AS price,Books.price_or_node AS price_or_node,Books.utime AS utime,userProfile.nick_name AS nick_name FROM qs_books Books  JOIN qs_user_profile userProfile ON Books.uid=userProfile.id WHERE Books.id = '121' AND Books.isup = 1 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2016-09-01T19:08:22+08:00 ] 100.109.0.196 /index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+SQL: SHOW COLUMNS FROM `qs_type_list` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `qs_type_list` WHERE ( type = 8 and status=1 ) ORDER BY sort_num DESC  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+NOTIC: [8] Undefined variable: ngid /usr/local/share/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 343 行.
+NOTIC: [8] Undefined variable: gid /usr/local/share/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 344 行.
+NOTIC: [8] Undefined variable: newMsg /usr/local/share/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 345 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005440s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005472s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000087s ]
+
+[ 2016-09-01T19:08:22+08:00 ] 100.109.0.197 /User/online
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+
+[ 2016-09-01T19:08:22+08:00 ] 100.109.0.195 /Intf/rec
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000056s ]
+SQL: SHOW COLUMNS FROM `qs_type_list` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `qs_books` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `qs_user_profile` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM qs_type_list typeList  JOIN qs_books Books ON typeList.url=Books.id  JOIN qs_user_profile userProfile ON Books.uid=userProfile.id WHERE typeList.type = 10 AND typeList.status = 1 AND Books.isup = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT typeList.type AS listType,typeList.sort_num AS sort_num,typeList.url AS bookid,typeList.status AS status,Books.id AS bookid,Books.type AS bookType,Books.uid AS uid,Books.name AS title,Books.indu AS indu,Books.price AS price,Books.isup AS isup,Books.utime AS utime,Books.read_cnt AS read_cnt,Books.mark_cnt AS mark_cnt,Books.buy_cnt AS buy_cnt,Books.word_cnt AS word_cnt,userProfile.name AS truename,userProfile.nick_name AS nick_name,userProfile.sex AS sex,userProfile.head_img AS head_img FROM qs_type_list typeList  JOIN qs_books Books ON typeList.url=Books.id  JOIN qs_user_profile userProfile ON Books.uid=userProfile.id WHERE typeList.type = 10 AND typeList.status = 1 AND Books.isup = 1 ORDER BY typeList.sort_num DESC LIMIT 0,10   [ RunTime:0.0009s ]
+
+[ 2016-09-01T19:08:22+08:00 ] 100.109.0.205 /read/633
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000069s ]
+SQL: SHOW COLUMNS FROM `qs_or_rec` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `qs_books` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `qs_user_profile` [ RunTime:0.0012s ]
+SQL: SELECT Books.id AS bookid,Books.type AS booktype,Books.uid AS uid,Books.name AS title,Books.indu AS indu,Books.price AS price,Books.price_or_node AS price_or_node,Books.utime AS utime,userProfile.nick_name AS nick_name FROM qs_books Books  JOIN qs_user_profile userProfile ON Books.uid=userProfile.id WHERE Books.id = '633' AND Books.isup = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `qs_books` [ RunTime:0.0010s ]
+SQL: UPDATE `qs_books` SET `read_cnt`=read_cnt+1 WHERE ( id=633 ) [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `qs_book_hour` [ RunTime:0.0008s ]
+SQL: SELECT `id` FROM `qs_book_hour` WHERE `bid` = 633 AND `date_hour` = 2016090119 LIMIT 1   [ RunTime:0.0007s ]
+SQL: INSERT INTO `qs_book_hour` (`bid`,`date_hour`) VALUES ('633','2016090119') [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004527s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004575s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000079s ]
+
+[ 2016-09-01T19:08:22+08:00 ] 100.109.0.201 /User/online
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000089s ]
+
+[ 2016-09-01T19:08:22+08:00 ] 100.109.0.250 /Readdoc/getOrData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+SQL: SHOW COLUMNS FROM `qs_or_rec` [ RunTime:0.0012s ]
+SQL: SELECT `or` FROM `qs_or_rec` WHERE `tuid` = 'rdlp1471671540_1549_6017_7492_69' AND `bid` = 633 AND `status` = 0 LIMIT 1   [ RunTime:0.0061s ]
+
+[ 2016-09-01T19:08:23+08:00 ] 100.109.0.202 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000086s ]
+
+[ 2016-09-01T19:08:23+08:00 ] 100.109.0.209 /read/638
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000077s ]
+SQL: SHOW COLUMNS FROM `qs_or_rec` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `qs_books` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `qs_user_profile` [ RunTime:0.0010s ]
+SQL: SELECT Books.id AS bookid,Books.type AS booktype,Books.uid AS uid,Books.name AS title,Books.indu AS indu,Books.price AS price,Books.price_or_node AS price_or_node,Books.utime AS utime,userProfile.nick_name AS nick_name FROM qs_books Books  JOIN qs_user_profile userProfile ON Books.uid=userProfile.id WHERE Books.id = '638' AND Books.isup = 1 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2016-09-01T19:08:23+08:00 ] 100.109.0.220 /index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000057s ]
+SQL: SHOW COLUMNS FROM `qs_type_list` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `qs_type_list` WHERE ( type = 8 and status=1 ) ORDER BY sort_num DESC  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+NOTIC: [8] Undefined variable: ngid /usr/local/share/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 343 行.
+NOTIC: [8] Undefined variable: gid /usr/local/share/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 344 行.
+NOTIC: [8] Undefined variable: newMsg /usr/local/share/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 345 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005341s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005370s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000053s ]
+
+[ 2016-09-01T19:08:23+08:00 ] 100.109.0.218 /User/online
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000053s ]
+
+[ 2016-09-01T19:08:23+08:00 ] 100.109.0.218 /Intf/rec
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+SQL: SHOW COLUMNS FROM `qs_type_list` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `qs_books` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `qs_user_profile` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM qs_type_list typeList  JOIN qs_books Books ON typeList.url=Books.id  JOIN qs_user_profile userProfile ON Books.uid=userProfile.id WHERE typeList.type = 10 AND typeList.status = 1 AND Books.isup = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT typeList.type AS listType,typeList.sort_num AS sort_num,typeList.url AS bookid,typeList.status AS status,Books.id AS bookid,Books.type AS bookType,Books.uid AS uid,Books.name AS title,Books.indu AS indu,Books.price AS price,Books.isup AS isup,Books.utime AS utime,Books.read_cnt AS read_cnt,Books.mark_cnt AS mark_cnt,Books.buy_cnt AS buy_cnt,Books.word_cnt AS word_cnt,userProfile.name AS truename,userProfile.nick_name AS nick_name,userProfile.sex AS sex,userProfile.head_img AS head_img FROM qs_type_list typeList  JOIN qs_books Books ON typeList.url=Books.id  JOIN qs_user_profile userProfile ON Books.uid=userProfile.id WHERE typeList.type = 10 AND typeList.status = 1 AND Books.isup = 1 ORDER BY typeList.sort_num DESC LIMIT 0,10   [ RunTime:0.0009s ]
+
+[ 2016-09-01T19:08:28+08:00 ] 100.109.0.210 /index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+SQL: SHOW COLUMNS FROM `qs_type_list` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `qs_type_list` WHERE ( type = 8 and status=1 ) ORDER BY sort_num DESC  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+NOTIC: [8] Undefined variable: ngid /usr/local/share/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 343 行.
+NOTIC: [8] Undefined variable: gid /usr/local/share/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 344 行.
+NOTIC: [8] Undefined variable: newMsg /usr/local/share/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 345 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005176s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005206s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000056s ]
+
+[ 2016-09-01T19:08:28+08:00 ] 100.109.0.244 /User/online
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000052s ]
+
+[ 2016-09-01T19:08:28+08:00 ] 100.109.0.246 /Intf/rec
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+SQL: SHOW COLUMNS FROM `qs_type_list` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `qs_books` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `qs_user_profile` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM qs_type_list typeList  JOIN qs_books Books ON typeList.url=Books.id  JOIN qs_user_profile userProfile ON Books.uid=userProfile.id WHERE typeList.type = 10 AND typeList.status = 1 AND Books.isup = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT typeList.type AS listType,typeList.sort_num AS sort_num,typeList.url AS bookid,typeList.status AS status,Books.id AS bookid,Books.type AS bookType,Books.uid AS uid,Books.name AS title,Books.indu AS indu,Books.price AS price,Books.isup AS isup,Books.utime AS utime,Books.read_cnt AS read_cnt,Books.mark_cnt AS mark_cnt,Books.buy_cnt AS buy_cnt,Books.word_cnt AS word_cnt,userProfile.name AS truename,userProfile.nick_name AS nick_name,userProfile.sex AS sex,userProfile.head_img AS head_img FROM qs_type_list typeList  JOIN qs_books Books ON typeList.url=Books.id  JOIN qs_user_profile userProfile ON Books.uid=userProfile.id WHERE typeList.type = 10 AND typeList.status = 1 AND Books.isup = 1 ORDER BY typeList.sort_num DESC LIMIT 0,10   [ RunTime:0.0009s ]
+
+[ 2016-09-01T19:08:32+08:00 ] 100.109.0.217 /read/362
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000068s ]
+SQL: SHOW COLUMNS FROM `qs_or_rec` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `qs_books` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `qs_user_profile` [ RunTime:0.0011s ]
+SQL: SELECT Books.id AS bookid,Books.type AS booktype,Books.uid AS uid,Books.name AS title,Books.indu AS indu,Books.price AS price,Books.price_or_node AS price_or_node,Books.utime AS utime,userProfile.nick_name AS nick_name FROM qs_books Books  JOIN qs_user_profile userProfile ON Books.uid=userProfile.id WHERE Books.id = '362' AND Books.isup = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `qs_books` [ RunTime:0.0010s ]
+SQL: UPDATE `qs_books` SET `read_cnt`=read_cnt+1 WHERE ( id=362 ) [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `qs_book_hour` [ RunTime:0.0009s ]
+SQL: SELECT `id` FROM `qs_book_hour` WHERE `bid` = 362 AND `date_hour` = 2016090119 LIMIT 1   [ RunTime:0.0007s ]
+SQL: INSERT INTO `qs_book_hour` (`bid`,`date_hour`) VALUES ('362','2016090119') [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004209s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004248s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000079s ]
+
+[ 2016-09-01T19:08:32+08:00 ] 100.109.0.222 /User/online
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+
+[ 2016-09-01T19:08:32+08:00 ] 100.109.0.254 /Readdoc/getOrData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000054s ]
+SQL: SHOW COLUMNS FROM `qs_or_rec` [ RunTime:0.0009s ]
+SQL: SELECT `or` FROM `qs_or_rec` WHERE `tuid` = 'rdlp1471671540_1549_6017_7492_69' AND `bid` = 362 AND `status` = 0 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-09-01T19:08:32+08:00 ] 100.109.0.221 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+
+[ 2016-09-01T19:08:32+08:00 ] 100.109.0.220 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000068s ]
+
+[ 2016-09-01T19:08:32+08:00 ] 100.109.0.210 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000112s ]
+
+[ 2016-09-01T19:08:32+08:00 ] 100.109.0.209 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+
+[ 2016-09-01T19:08:33+08:00 ] 100.109.0.213 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+
+[ 2016-09-01T19:08:33+08:00 ] 100.109.0.218 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000080s ]
+
+[ 2016-09-01T19:08:33+08:00 ] 100.109.0.218 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000057s ]
+
+[ 2016-09-01T19:08:33+08:00 ] 100.109.0.218 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+SQL: SHOW COLUMNS FROM `qs_or_rec` [ RunTime:0.0010s ]
+SQL: SELECT `or` FROM `qs_or_rec` WHERE `tuid` = 'rdlp1471671540_1549_6017_7492_69' AND `bid` = 362 AND `status` = 0 LIMIT 1   [ RunTime:0.0019s ]
+SQL: INSERT INTO `qs_or_rec` (`tuid`,`or`,`bid`,`time`,`status`) VALUES ('rdlp1471671540_1549_6017_7492_69','8','362','1472728113','0') [ RunTime:0.0013s ]
+
+[ 2016-09-01T19:08:33+08:00 ] 100.109.0.222 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000053s ]
+
+[ 2016-09-01T19:08:34+08:00 ] 100.109.0.222 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000053s ]
+
+[ 2016-09-01T19:08:34+08:00 ] 100.109.0.215 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+
+[ 2016-09-01T19:08:34+08:00 ] 100.109.0.210 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000054s ]
+
+[ 2016-09-01T19:08:35+08:00 ] 100.109.0.219 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000057s ]
+
+[ 2016-09-01T19:08:35+08:00 ] 100.109.0.216 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000082s ]
+
+[ 2016-09-01T19:08:36+08:00 ] 100.109.0.210 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000062s ]
+SQL: SHOW COLUMNS FROM `qs_or_rec` [ RunTime:0.0010s ]
+SQL: SELECT `or` FROM `qs_or_rec` WHERE `tuid` = 'rdlp1471671540_1549_6017_7492_69' AND `bid` = 362 AND `status` = 0 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `qs_or_rec` SET `tuid`='rdlp1471671540_1549_6017_7492_69',`or`='8,16,39',`time`='1472728116' WHERE `tuid` = 'rdlp1471671540_1549_6017_7492_69' AND `bid` = 362 AND `status` = 0 [ RunTime:0.0053s ]
+
+[ 2016-09-01T19:08:36+08:00 ] 100.109.0.209 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+
+[ 2016-09-01T19:08:37+08:00 ] 100.109.0.214 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+SQL: SHOW COLUMNS FROM `qs_or_rec` [ RunTime:0.0010s ]
+SQL: SELECT `or` FROM `qs_or_rec` WHERE `tuid` = 'rdlp1471671540_1549_6017_7492_69' AND `bid` = 362 AND `status` = 0 LIMIT 1   [ RunTime:0.0019s ]
+SQL: UPDATE `qs_or_rec` SET `tuid`='rdlp1471671540_1549_6017_7492_69',`or`='8,16,39,43',`time`='1472728117' WHERE `tuid` = 'rdlp1471671540_1549_6017_7492_69' AND `bid` = 362 AND `status` = 0 [ RunTime:0.0051s ]
+
+[ 2016-09-01T19:08:37+08:00 ] 100.109.0.220 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+
+[ 2016-09-01T19:08:38+08:00 ] 100.109.0.212 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000098s ]
+SQL: SHOW COLUMNS FROM `qs_or_rec` [ RunTime:0.0010s ]
+SQL: SELECT `or` FROM `qs_or_rec` WHERE `tuid` = 'rdlp1471671540_1549_6017_7492_69' AND `bid` = 362 AND `status` = 0 LIMIT 1   [ RunTime:0.0019s ]
+SQL: UPDATE `qs_or_rec` SET `tuid`='rdlp1471671540_1549_6017_7492_69',`or`='8,16,39,43,66',`time`='1472728118' WHERE `tuid` = 'rdlp1471671540_1549_6017_7492_69' AND `bid` = 362 AND `status` = 0 [ RunTime:0.0051s ]
+
+[ 2016-09-01T19:08:38+08:00 ] 100.109.0.221 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000056s ]
+
+[ 2016-09-01T19:08:39+08:00 ] 100.109.0.211 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+
+[ 2016-09-01T19:08:39+08:00 ] 100.109.0.221 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000053s ]
+
+[ 2016-09-01T19:08:39+08:00 ] 100.109.0.211 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+
+[ 2016-09-01T19:08:39+08:00 ] 100.109.0.219 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000086s ]
+
+[ 2016-09-01T19:08:40+08:00 ] 100.109.0.219 /Readdoc/setReadOver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+SQL: SHOW COLUMNS FROM `qs_or_rec` [ RunTime:0.0011s ]
+SQL: UPDATE `qs_or_rec` SET `status`='1',`time`='1472728120' WHERE `tuid` = 'rdlp1471671540_1549_6017_7492_69' AND `bid` = 362 AND `status` = 0 [ RunTime:0.0052s ]
+
+[ 2016-09-01T19:08:40+08:00 ] 100.109.0.222 /read/362.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+SQL: SHOW COLUMNS FROM `qs_or_rec` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `qs_books` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `qs_user_profile` [ RunTime:0.0010s ]
+SQL: SELECT Books.id AS bookid,Books.type AS booktype,Books.uid AS uid,Books.name AS title,Books.indu AS indu,Books.price AS price,Books.price_or_node AS price_or_node,Books.utime AS utime,userProfile.nick_name AS nick_name FROM qs_books Books  JOIN qs_user_profile userProfile ON Books.uid=userProfile.id WHERE Books.id = '362' AND Books.isup = 1 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: saveData /usr/local/share/www/Application/Home/Controller/ReaddocController.class.php 第 243 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003959s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003998s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000095s ]
+
+[ 2016-09-01T19:08:40+08:00 ] 100.109.0.213 /User/online
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+
+[ 2016-09-01T19:08:41+08:00 ] 100.109.0.247 /Readdoc/getOrData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
+SQL: SHOW COLUMNS FROM `qs_or_rec` [ RunTime:0.0010s ]
+SQL: SELECT `or` FROM `qs_or_rec` WHERE `tuid` = 'rdlp1471671540_1549_6017_7492_69' AND `bid` = 362 AND `status` = 0 LIMIT 1   [ RunTime:0.0030s ]
+
+[ 2016-09-01T19:08:41+08:00 ] 100.109.0.220 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+
+[ 2016-09-01T19:08:41+08:00 ] 100.109.0.211 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000095s ]
+
+[ 2016-09-01T19:08:41+08:00 ] 100.109.0.217 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+
+[ 2016-09-01T19:08:41+08:00 ] 100.109.0.210 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000054s ]
+
+[ 2016-09-01T19:08:42+08:00 ] 100.109.0.212 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000095s ]
+
+[ 2016-09-01T19:08:42+08:00 ] 100.109.0.221 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+
+[ 2016-09-01T19:08:42+08:00 ] 100.109.0.218 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000080s ]
+
+[ 2016-09-01T19:08:43+08:00 ] 100.109.0.212 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+SQL: SHOW COLUMNS FROM `qs_or_rec` [ RunTime:0.0011s ]
+SQL: SELECT `or` FROM `qs_or_rec` WHERE `tuid` = 'rdlp1471671540_1549_6017_7492_69' AND `bid` = 362 AND `status` = 0 LIMIT 1   [ RunTime:0.0032s ]
+SQL: INSERT INTO `qs_or_rec` (`tuid`,`or`,`bid`,`time`,`status`) VALUES ('rdlp1471671540_1549_6017_7492_69','7','362','1472728123','0') [ RunTime:0.0017s ]
+
+[ 2016-09-01T19:08:43+08:00 ] 100.109.0.212 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000093s ]
+
+[ 2016-09-01T19:08:43+08:00 ] 100.109.0.211 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+
+[ 2016-09-01T19:08:44+08:00 ] 100.109.0.221 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+
+[ 2016-09-01T19:08:44+08:00 ] 100.109.0.217 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+
+[ 2016-09-01T19:08:45+08:00 ] 100.109.0.208 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000056s ]
+SQL: SHOW COLUMNS FROM `qs_or_rec` [ RunTime:0.0011s ]
+SQL: SELECT `or` FROM `qs_or_rec` WHERE `tuid` = 'rdlp1471671540_1549_6017_7492_69' AND `bid` = 362 AND `status` = 0 LIMIT 1   [ RunTime:0.0030s ]
+SQL: UPDATE `qs_or_rec` SET `tuid`='rdlp1471671540_1549_6017_7492_69',`or`='7,16',`time`='1472728125' WHERE `tuid` = 'rdlp1471671540_1549_6017_7492_69' AND `bid` = 362 AND `status` = 0 [ RunTime:0.0051s ]
+
+[ 2016-09-01T19:08:45+08:00 ] 100.109.0.213 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+
+[ 2016-09-01T19:08:46+08:00 ] 100.109.0.214 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+SQL: SHOW COLUMNS FROM `qs_or_rec` [ RunTime:0.0011s ]
+SQL: SELECT `or` FROM `qs_or_rec` WHERE `tuid` = 'rdlp1471671540_1549_6017_7492_69' AND `bid` = 362 AND `status` = 0 LIMIT 1   [ RunTime:0.0030s ]
+SQL: UPDATE `qs_or_rec` SET `tuid`='rdlp1471671540_1549_6017_7492_69',`or`='7,16,27',`time`='1472728126' WHERE `tuid` = 'rdlp1471671540_1549_6017_7492_69' AND `bid` = 362 AND `status` = 0 [ RunTime:0.0052s ]
+
+[ 2016-09-01T19:08:46+08:00 ] 100.109.0.218 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000055s ]
+
+[ 2016-09-01T19:08:46+08:00 ] 100.109.0.219 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000055s ]
+
+[ 2016-09-01T19:08:46+08:00 ] 100.109.0.210 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000096s ]
+
+[ 2016-09-01T19:08:47+08:00 ] 100.109.0.219 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000062s ]
+
+[ 2016-09-01T19:08:47+08:00 ] 100.109.0.215 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+
+[ 2016-09-01T19:08:48+08:00 ] 100.109.0.220 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000052s ]
+SQL: SHOW COLUMNS FROM `qs_or_rec` [ RunTime:0.0010s ]
+SQL: SELECT `or` FROM `qs_or_rec` WHERE `tuid` = 'rdlp1471671540_1549_6017_7492_69' AND `bid` = 362 AND `status` = 0 LIMIT 1   [ RunTime:0.0031s ]
+SQL: UPDATE `qs_or_rec` SET `tuid`='rdlp1471671540_1549_6017_7492_69',`or`='7,16,27,39',`time`='1472728128' WHERE `tuid` = 'rdlp1471671540_1549_6017_7492_69' AND `bid` = 362 AND `status` = 0 [ RunTime:0.0052s ]
+
+[ 2016-09-01T19:08:48+08:00 ] 100.109.0.221 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000057s ]
+
+[ 2016-09-01T19:08:49+08:00 ] 100.109.0.221 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+SQL: SHOW COLUMNS FROM `qs_or_rec` [ RunTime:0.0011s ]
+SQL: SELECT `or` FROM `qs_or_rec` WHERE `tuid` = 'rdlp1471671540_1549_6017_7492_69' AND `bid` = 362 AND `status` = 0 LIMIT 1   [ RunTime:0.0030s ]
+SQL: UPDATE `qs_or_rec` SET `tuid`='rdlp1471671540_1549_6017_7492_69',`or`='7,16,27,39,43',`time`='1472728129' WHERE `tuid` = 'rdlp1471671540_1549_6017_7492_69' AND `bid` = 362 AND `status` = 0 [ RunTime:0.0052s ]
+
+[ 2016-09-01T19:08:49+08:00 ] 100.109.0.216 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+
+[ 2016-09-01T19:08:50+08:00 ] 100.109.0.246 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+SQL: SHOW COLUMNS FROM `qs_or_rec` [ RunTime:0.0011s ]
+SQL: SELECT `or` FROM `qs_or_rec` WHERE `tuid` = 'rdlp1471671540_1549_6017_7492_69' AND `bid` = 362 AND `status` = 0 LIMIT 1   [ RunTime:0.0030s ]
+SQL: UPDATE `qs_or_rec` SET `tuid`='rdlp1471671540_1549_6017_7492_69',`or`='7,16,27,39,43,66',`time`='1472728130' WHERE `tuid` = 'rdlp1471671540_1549_6017_7492_69' AND `bid` = 362 AND `status` = 0 [ RunTime:0.0051s ]
+
+[ 2016-09-01T19:08:50+08:00 ] 100.109.0.248 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+
+[ 2016-09-01T19:08:50+08:00 ] 100.109.0.247 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000055s ]
+
+[ 2016-09-01T19:08:50+08:00 ] 100.109.0.244 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+
+[ 2016-09-01T19:08:51+08:00 ] 100.109.0.241 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000052s ]
+
+[ 2016-09-01T19:08:51+08:00 ] 100.109.0.253 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+
+[ 2016-09-01T19:08:52+08:00 ] 100.109.0.240 /Readdoc/setReadOver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+SQL: SHOW COLUMNS FROM `qs_or_rec` [ RunTime:0.0010s ]
+SQL: UPDATE `qs_or_rec` SET `status`='1',`time`='1472728132' WHERE `tuid` = 'rdlp1471671540_1549_6017_7492_69' AND `bid` = 362 AND `status` = 0 [ RunTime:0.0052s ]
+
+[ 2016-09-01T19:08:52+08:00 ] 100.109.0.244 /read/362.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+SQL: SHOW COLUMNS FROM `qs_or_rec` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `qs_books` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `qs_user_profile` [ RunTime:0.0010s ]
+SQL: SELECT Books.id AS bookid,Books.type AS booktype,Books.uid AS uid,Books.name AS title,Books.indu AS indu,Books.price AS price,Books.price_or_node AS price_or_node,Books.utime AS utime,userProfile.nick_name AS nick_name FROM qs_books Books  JOIN qs_user_profile userProfile ON Books.uid=userProfile.id WHERE Books.id = '362' AND Books.isup = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `qs_books` [ RunTime:0.0014s ]
+SQL: UPDATE `qs_books` SET `read_cnt`=read_cnt+1 WHERE ( id=362 ) [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `qs_book_hour` [ RunTime:0.0009s ]
+SQL: SELECT `id` FROM `qs_book_hour` WHERE `bid` = 362 AND `date_hour` = 2016090119 LIMIT 1   [ RunTime:0.0008s ]
+SQL: UPDATE `qs_book_hour` SET `num`=num+1 WHERE ( id=1530 ) [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003999s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004046s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000057s ]
+
+[ 2016-09-01T19:08:52+08:00 ] 100.109.0.250 /User/online
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000056s ]
+
+[ 2016-09-01T19:08:52+08:00 ] 100.109.0.247 /Readdoc/getOrData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000053s ]
+SQL: SHOW COLUMNS FROM `qs_or_rec` [ RunTime:0.0010s ]
+SQL: SELECT `or` FROM `qs_or_rec` WHERE `tuid` = 'rdlp1471671540_1549_6017_7492_69' AND `bid` = 362 AND `status` = 0 LIMIT 1   [ RunTime:0.0033s ]
+
+[ 2016-09-01T19:08:53+08:00 ] 100.109.0.242 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000099s ]
+
+[ 2016-09-01T19:08:53+08:00 ] 100.109.0.241 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000051s ]
+
+[ 2016-09-01T19:08:53+08:00 ] 100.109.0.245 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000073s ]
+
+[ 2016-09-01T19:08:53+08:00 ] 100.109.0.250 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000054s ]
+
+[ 2016-09-01T19:08:53+08:00 ] 100.109.0.253 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+
+[ 2016-09-01T19:08:54+08:00 ] 100.109.0.249 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+
+[ 2016-09-01T19:08:56+08:00 ] 100.109.0.253 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
+SQL: SHOW COLUMNS FROM `qs_or_rec` [ RunTime:0.0010s ]
+SQL: SELECT `or` FROM `qs_or_rec` WHERE `tuid` = 'rdlp1471671540_1549_6017_7492_69' AND `bid` = 106 AND `status` = 0 LIMIT 1   [ RunTime:0.0031s ]
+SQL: UPDATE `qs_or_rec` SET `tuid`='rdlp1471671540_1549_6017_7492_69',`or`='5,14,39',`time`='1472728136' WHERE `tuid` = 'rdlp1471671540_1549_6017_7492_69' AND `bid` = 106 AND `status` = 0 [ RunTime:0.0051s ]
+
+[ 2016-09-01T19:08:57+08:00 ] 100.109.0.246 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000053s ]
+
+[ 2016-09-01T19:08:57+08:00 ] 100.109.0.245 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000053s ]
+
+[ 2016-09-01T19:08:57+08:00 ] 100.109.0.245 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+
+[ 2016-09-01T19:08:57+08:00 ] 100.109.0.240 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+
+[ 2016-09-01T19:08:57+08:00 ] 100.109.0.252 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+
+[ 2016-09-01T19:08:58+08:00 ] 100.109.0.251 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+
+[ 2016-09-01T19:08:58+08:00 ] 100.109.0.242 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000080s ]
+
+[ 2016-09-01T19:08:58+08:00 ] 100.109.0.240 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
+
+[ 2016-09-01T19:08:58+08:00 ] 100.109.0.243 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+
+[ 2016-09-01T19:08:59+08:00 ] 100.109.0.241 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000062s ]
+
+[ 2016-09-01T19:08:59+08:00 ] 100.109.0.245 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000055s ]
+
+[ 2016-09-01T19:08:59+08:00 ] 100.109.0.250 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+
+[ 2016-09-01T19:08:59+08:00 ] 100.109.0.252 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
+
+[ 2016-09-01T19:08:59+08:00 ] 100.109.0.247 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000055s ]
+
+[ 2016-09-01T19:09:00+08:00 ] 100.109.0.245 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000068s ]
+
+[ 2016-09-01T19:09:00+08:00 ] 100.109.0.254 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+
+[ 2016-09-01T19:09:00+08:00 ] 100.109.0.246 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000057s ]
+
+[ 2016-09-01T19:09:00+08:00 ] 100.109.0.240 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+
+[ 2016-09-01T19:09:01+08:00 ] 100.109.0.248 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000082s ]
+
+[ 2016-09-01T19:09:01+08:00 ] 100.109.0.245 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000052s ]
+
+[ 2016-09-01T19:09:01+08:00 ] 100.109.0.249 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
+
+[ 2016-09-01T19:09:01+08:00 ] 100.109.0.244 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000057s ]
+
+[ 2016-09-01T19:09:02+08:00 ] 100.109.0.251 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+
+[ 2016-09-01T19:09:02+08:00 ] 100.109.0.245 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000056s ]
+SQL: SHOW COLUMNS FROM `qs_or_rec` [ RunTime:0.0011s ]
+SQL: SELECT `or` FROM `qs_or_rec` WHERE `tuid` = 'rdlp1471671540_1549_6017_7492_69' AND `bid` = 106 AND `status` = 0 LIMIT 1   [ RunTime:0.0033s ]
+SQL: UPDATE `qs_or_rec` SET `tuid`='rdlp1471671540_1549_6017_7492_69',`or`='5,14,39,66',`time`='1472728142' WHERE `tuid` = 'rdlp1471671540_1549_6017_7492_69' AND `bid` = 106 AND `status` = 0 [ RunTime:0.0053s ]
+
+[ 2016-09-01T19:09:03+08:00 ] 100.109.0.247 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+
+[ 2016-09-01T19:09:03+08:00 ] 100.109.0.252 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000062s ]
+
+[ 2016-09-01T19:09:03+08:00 ] 100.109.0.248 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+
+[ 2016-09-01T19:09:03+08:00 ] 100.109.0.253 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000057s ]
+
+[ 2016-09-01T19:09:04+08:00 ] 100.109.0.246 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+
+[ 2016-09-01T19:09:04+08:00 ] 100.109.0.241 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000068s ]
+
+[ 2016-09-01T19:09:04+08:00 ] 100.109.0.251 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+
+[ 2016-09-01T19:09:04+08:00 ] 100.109.0.243 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+
+[ 2016-09-01T19:09:04+08:00 ] 100.109.0.244 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000052s ]
+
+[ 2016-09-01T19:09:05+08:00 ] 100.109.0.240 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000057s ]
+
+[ 2016-09-01T19:09:05+08:00 ] 100.109.0.247 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000091s ]
+
+[ 2016-09-01T19:09:06+08:00 ] 100.109.0.250 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+SQL: SHOW COLUMNS FROM `qs_or_rec` [ RunTime:0.0011s ]
+SQL: SELECT `or` FROM `qs_or_rec` WHERE `tuid` = 'rdlp1471671540_1549_6017_7492_69' AND `bid` = 106 AND `status` = 0 LIMIT 1   [ RunTime:0.0031s ]
+SQL: UPDATE `qs_or_rec` SET `tuid`='rdlp1471671540_1549_6017_7492_69',`or`='5,14,39,66,79',`time`='1472728146' WHERE `tuid` = 'rdlp1471671540_1549_6017_7492_69' AND `bid` = 106 AND `status` = 0 [ RunTime:0.0051s ]
+
+[ 2016-09-01T19:09:06+08:00 ] 100.109.0.243 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+
+[ 2016-09-01T19:09:06+08:00 ] 100.109.0.244 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000054s ]
+
+[ 2016-09-01T19:09:06+08:00 ] 100.109.0.253 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000057s ]
+
+[ 2016-09-01T19:09:06+08:00 ] 100.109.0.243 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000056s ]
+
+[ 2016-09-01T19:09:07+08:00 ] 100.109.0.247 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000069s ]
+
+[ 2016-09-01T19:09:07+08:00 ] 100.109.0.252 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000062s ]
+
+[ 2016-09-01T19:09:07+08:00 ] 100.109.0.254 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000057s ]
+
+[ 2016-09-01T19:09:07+08:00 ] 100.109.0.254 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+
+[ 2016-09-01T19:09:08+08:00 ] 100.109.0.249 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+
+[ 2016-09-01T19:09:09+08:00 ] 100.109.0.248 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+SQL: SHOW COLUMNS FROM `qs_or_rec` [ RunTime:0.0010s ]
+SQL: SELECT `or` FROM `qs_or_rec` WHERE `tuid` = 'rdlp1471671540_1549_6017_7492_69' AND `bid` = 106 AND `status` = 0 LIMIT 1   [ RunTime:0.0031s ]
+SQL: UPDATE `qs_or_rec` SET `tuid`='rdlp1471671540_1549_6017_7492_69',`or`='5,14,39,66,79,91',`time`='1472728149' WHERE `tuid` = 'rdlp1471671540_1549_6017_7492_69' AND `bid` = 106 AND `status` = 0 [ RunTime:0.0053s ]
+
+[ 2016-09-01T19:09:09+08:00 ] 100.109.0.243 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000051s ]
+
+[ 2016-09-01T19:09:10+08:00 ] 100.109.0.252 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
+
+[ 2016-09-01T19:09:10+08:00 ] 100.109.0.245 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+
+[ 2016-09-01T19:09:10+08:00 ] 100.109.0.249 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+
+[ 2016-09-01T19:09:10+08:00 ] 100.109.0.245 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+
+[ 2016-09-01T19:09:10+08:00 ] 100.109.0.245 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000094s ]
+
+[ 2016-09-01T19:09:11+08:00 ] 100.109.0.250 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000056s ]
+
+[ 2016-09-01T19:09:11+08:00 ] 100.109.0.244 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000057s ]
+
+[ 2016-09-01T19:09:11+08:00 ] 100.109.0.244 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+
+[ 2016-09-01T19:09:11+08:00 ] 100.109.0.248 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000055s ]
+
+[ 2016-09-01T19:09:12+08:00 ] 100.109.0.242 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+
+[ 2016-09-01T19:09:12+08:00 ] 100.109.0.242 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+
+[ 2016-09-01T19:09:12+08:00 ] 100.109.0.251 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+
+[ 2016-09-01T19:09:13+08:00 ] 100.109.0.241 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000056s ]
+SQL: SHOW COLUMNS FROM `qs_or_rec` [ RunTime:0.0011s ]
+SQL: SELECT `or` FROM `qs_or_rec` WHERE `tuid` = 'rdlp1471671540_1549_6017_7492_69' AND `bid` = 106 AND `status` = 0 LIMIT 1   [ RunTime:0.0031s ]
+SQL: UPDATE `qs_or_rec` SET `tuid`='rdlp1471671540_1549_6017_7492_69',`or`='5,14,39,66,79,91,107',`time`='1472728153' WHERE `tuid` = 'rdlp1471671540_1549_6017_7492_69' AND `bid` = 106 AND `status` = 0 [ RunTime:0.0056s ]
+
+[ 2016-09-01T19:09:13+08:00 ] 100.109.0.254 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+
+[ 2016-09-01T19:09:13+08:00 ] 100.109.0.253 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+
+[ 2016-09-01T19:09:13+08:00 ] 100.109.0.249 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000057s ]
+
+[ 2016-09-01T19:09:14+08:00 ] 100.109.0.246 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+
+[ 2016-09-01T19:09:14+08:00 ] 100.109.0.249 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000053s ]
+
+[ 2016-09-01T19:09:14+08:00 ] 100.109.0.244 /Readdoc/getContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+
+[ 2016-09-01T19:09:25+08:00 ] 100.109.0.240 /User/online
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000100s ]
+
+[ 2016-09-01T19:09:31+08:00 ] 100.109.0.195 /User/online
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+
+[ 2016-09-01T19:10:08+08:00 ] 100.109.0.203 /User/online
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000158s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000207s ]
+
+[ 2016-09-01T19:10:23+08:00 ] 100.109.0.217 /User/online
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000057s ]
+
+[ 2016-09-01T19:12:15+08:00 ] 100.109.0.193 /User/online
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000056s ]
+
+[ 2016-09-01T19:13:21+08:00 ] 100.109.0.244 /Propay/buySuccess
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+SQL: SHOW COLUMNS FROM `qs_books` [ RunTime:0.0012s ]
+SQL: SELECT `uid`,`name` FROM `qs_books` WHERE ( id=739 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `qs_user_profile` [ RunTime:0.0015s ]
+SQL: SELECT `nick_name` FROM `qs_user_profile` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [2] Missing argument 2 for Home\Controller\AccessController::sendPrivateMsg(), called in /usr/local/share/www/Application/Home/Controller/PropayController.class.php on line 130 and defined /usr/local/share/www/Application/Home/Controller/AccessController.class.php 第 107 行.
+SQL: SELECT MAX(id) AS tp_max FROM ( SELECT * FROM qs_message_1 UNION SELECT * FROM qs_message_2 UNION SELECT * FROM qs_message_3 UNION SELECT * FROM qs_message_4 UNION SELECT * FROM qs_message_5 UNION SELECT * FROM qs_message_6 UNION SELECT * FROM qs_message_7 UNION SELECT * FROM qs_message_8 UNION SELECT * FROM qs_message_9 UNION SELECT * FROM qs_message_10) AS Msg LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: validate /usr/local/share/core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /usr/local/share/core/Library/Think/Model.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `qs_message_7` [ RunTime:0.0010s ]
+SQL: INSERT INTO `qs_message_7` (`uid`,`msg`,`time`,`id`) VALUES ('6','Cloud购买了您的作品《321312》','2016-09-01 19:13','81') [ RunTime:0.0013s ]
+NOTIC: [8] Undefined variable: type /usr/local/share/www/Application/Home/Controller/AccessController.class.php 第 112 行.
+SQL: SHOW COLUMNS FROM `qs_books` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `qs_pay_hour` [ RunTime:0.0009s ]
+SQL: SELECT `id` FROM `qs_pay_hour` WHERE `bid` = 739 AND `date_hour` = 2016090119 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2016-09-01T19:13:22+08:00 ] 100.109.0.222 /Alipay/notifyUrl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000127s ]
+NOTIC: [2] file_put_contents(log.txt): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 172 行.
+ERR: 1、支付后回调
+NOTIC: [2] file_put_contents(log.txt): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 181 行.
+ERR: 2.通知验证结果= 1
+NOTIC: [2] file_put_contents(log.txt): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 199 行.
+ERR: 3 .buyer_id==>2088002076160327 trade_no===>2016090121001004320287970661 trade_status===>TRADE_SUCCESS out_trade_no==>20160901185708-64-739
+NOTIC: [2] file_put_contents(log.txt): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `qs_user_pay_history` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `qs_user_pay_history` WHERE ( order_no='20160901185708-64-739' ) LIMIT 1   [ RunTime:0.0008s ]
+ERR: 4. trade_status===>TRADE_SUCCESS 订单状态==0
+NOTIC: [2] file_put_contents(log.txt): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 218 行.
+ERR: 5、 订单状态正常
+SQL: UPDATE `qs_user_pay_history` SET `id`='139',`uid`='64',`bid`='739',`author_id`='6',`order_no`='20160901185708-64-739',`money`='0.01',`or_id`='0',`pay_type`='0',`transaction_no`='2016090121001004320287970661',`openid`='2088002076160327',`order_time`='2016-09-01 18:57:08',`pay_time`='2016-09-01 19:13:21',`status`='1' WHERE ( order_no='20160901185708-64-739' ) [ RunTime:0.0018s ]
+NOTIC: [2] file_put_contents(log.txt): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 232 行.
+ERR: 6.购买成功 通知作者  ==>{"uid":"6","bid":"739","fee":"0.01"}
+NOTIC: [2] file_put_contents(log.txt): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 238 行.
+ERR: 7.增加作品收益、购买数  ==>{"uid":"6","bid":"739","fee":"0.01"}
+SQL: SHOW COLUMNS FROM `qs_books` [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: where /usr/local/share/core/Library/Think/Model.class.php 第 854 行.
+NOTIC: [8] Undefined index: where /usr/local/share/core/Library/Think/Model.class.php 第 854 行.
+NOTIC: [2] file_put_contents(log.txt): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 246 行.
+ERR: 8.增加用户账户收益  ==>{"uid":"6","bid":"739","fee":"0.01"}
+SQL: SHOW COLUMNS FROM `qs_user_profile` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where /usr/local/share/core/Library/Think/Model.class.php 第 854 行.
+NOTIC: [8] Undefined index: where /usr/local/share/core/Library/Think/Model.class.php 第 854 行.
+NOTIC: [2] file_put_contents(log.txt): failed to open stream: Permission denied /usr/local/share/www/Application/Home/Controller/AlipayController.class.php 第 251 行.
+ERR: 9.支付成功！
+ERR: 10.回调成功！success
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000046s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000074s ]
+
+[ 2016-09-01T19:14:26+08:00 ] 100.109.0.211 /User/online
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000056s ]
+
+[ 2016-09-01T19:14:32+08:00 ] 100.109.0.246 /User/online
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000073s ]
+
+[ 2016-09-01T19:15:09+08:00 ] 100.109.0.202 /User/online
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000072s ]
+
+[ 2016-09-01T19:17:16+08:00 ] 100.109.0.198 /User/online
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+
+[ 2016-09-01T19:19:26+08:00 ] 100.109.0.241 /User/online
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000107s ]
+
+[ 2016-09-01T19:19:33+08:00 ] 100.109.0.198 /User/online
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+
+[ 2016-09-01T19:20:10+08:00 ] 100.109.0.237 /User/online
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
+
+[ 2016-09-01T19:22:17+08:00 ] 100.109.0.212 /User/online
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+

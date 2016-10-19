@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>巧书后台首页</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="__PUBLIC__/css/bootstrap.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/font-awesome.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/ionicons.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/AdminLTE.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/_all-skins.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/base.css">
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+    <!-------------头部模板 header.html main-header begin-->
+    <include file="./Public/Tpl/header.html" />
+    <!-------------头部模板 header.html main-header end-->
+
+
+    <!------------- 左侧菜单栏 leftMenu.html aside begin-->
+    <include file="./Public/Tpl/leftMenu.html" />
+    <!------------- 左侧菜单栏 leftMenu.html aside end-->
+
+    <!-- 所有内容部分 -->
+    <div class="content-wrapper">
+
+        <!-- 内容顶部模板 topSection.html 开始-->
+        <include file="./Public/Tpl/topSection.html" />
+        <!-- 内容顶部模板 topSection.html 结束-->
+
+        <!-- 主要内容 -->
+        <section class="content">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="box">
+                        <!-- /.box-header -->
+                        <div class="box-body">
+                            <table id="example2" class="table table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>序号</th>
+                                    <th>名称</th>
+                                    <th>备注</th>
+                                    <th>是否可编辑</th>
+                                    <th>状态</th>
+                                    <th width="180">操作&nbsp;<a href="{$Think.config.QS_BASE_PATH}/AuthGroup/entry" class="a0 btn_style btn1">添加</a></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+
+                                <volist name="groupList" id="group">
+                                    <tr>
+                                        <td>{$key+1}</td>
+                                        <td>{$group.name}</td>
+                                        <td>{$group.remark}</td>
+                                        <td>
+                                            <if condition="$group['is_edit'] eq 1">可编辑</if>
+                                            <if condition="$group['is_edit'] eq 0">不编辑</if>
+                                        </td>
+                                        <td>
+                                            <if condition="$group['status'] eq 0">无效<else/>有效</if>
+                                        </td>
+                                        <td>
+                                            <div class="btn-group">
+
+
+
+                                                <if condition="$group['is_edit'] eq 1">
+                                                    <a href="{$Think.config.QS_BASE_PATH}/AuthGroup/entry/id/{$group.id}" class="a0 edit">编辑</a>&nbsp;
+
+                                                    <if condition="$group['status'] eq 0">
+                                                        <a href="#" onclick="if(window.confirm('你确定要启用吗？')){window.location.href='{$Think.config.QS_BASE_PATH}/AuthGroup/del/id/{$group.id}/status/1' }" class="a0 forbid">启用</a>
+                                                    <else/>
+                                                        <a href="#" onclick="if(window.confirm('你确定要禁用吗？')){window.location.href='{$Think.config.QS_BASE_PATH}/AuthGroup/del/id/{$group.id}status/0' }" class="a0 forbid">禁用</a>
+                                                    </if>
+
+                                                </if>
+
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </volist>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- /.box-body -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- /.content -->
+    </div>
+
+    <!--底部文字-->
+    <!--<footer class="main-footer">
+      <div class="pull-right hidden-xs">
+
+      </div>
+
+    </footer>
+    -->
+
+
+    <!------ 设置的滑动菜单 recent.html aside begin------>
+    <include file="./Public/Tpl/recent.html" />
+    <!------- 设置的滑动菜单 recent.html  aside end----->
+
+
+    <div class="control-sidebar-bg"></div>
+
+</div>
+
+<script src="__PUBLIC__/js/jQuery-2.2.0.min.js"></script>
+<script src="__PUBLIC__/js/bootstrap.js"></script>
+<script src="__PUBLIC__/js/app.js"></script>
+<script src="__PUBLIC__/js/jquery.slimscroll.js"></script>
+</body>
+</html>

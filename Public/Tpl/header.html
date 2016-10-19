@@ -1,0 +1,50 @@
+<header class="main-header">
+
+    <a href="{$Think.config.QS_BASE_PATH}/Index/index" class="logo">
+        <span class="logo-mini"><img src="__PUBLIC__/img/Oval 1.png"/></span>
+        <!-- logo for regular state and mobile devices -->
+        <span class="logo-lg"><img src="__PUBLIC__/img/Oval 1.png"/>&nbsp;<b>巧书后台管理</b></span>
+    </a>
+
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+        <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+            <span class="sr-only">Toggle navigation</span>
+        </a>
+
+        <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+                
+               <!--用户信息--> 
+                <li class="dropdown user user-menu">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="current_icon small_user_icon">{$_SESSION["LOGIN_USER"]["Profile"]["name"]|msubstr=0,1,'utf-8',false} </i>
+                        <span class="hidden-xs">{$_SESSION["LOGIN_USER"]["Profile"]["name"]}</span>
+                    </a>
+                    <!--用户信息-->
+                    <ul class="dropdown-menu">
+                        <li class="user-header">
+                            <i class="current_icon user_icon">{$_SESSION["LOGIN_USER"]["Profile"]["name"]|msubstr=0,1,'utf-8',false} </i>
+
+                            <p>
+                                <span>{$_SESSION["LOGIN_USER"]["Profile"]["nick_name"]}</span>
+                                <small>ID:{$_SESSION["LOGIN_USER"]["mobile"]}</small>
+                                <small>权限：{$_SESSION["LOGIN_USER"]["roleName"]}</small>
+                            </p>
+                        </li>
+                        <!-- Menu Footer-->
+                        <li class="user-footer">
+                            <div class="pull-left">
+                                <a href="#" class="setup">设置</a>
+                            </div>
+                            <div class="pull-right">
+                                <a href="{$Think.config.QS_BASE_PATH}/Login/logout" class="setup exit">退出</a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+</header>

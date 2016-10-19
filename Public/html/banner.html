@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>巧书后台作者列表页</title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="../css/select2.css">
+  <link rel="stylesheet" href="../css/AdminLTE.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/_all-skins.css">
+  <link rel="stylesheet" href="../css/banner.css" />
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+  <header class="main-header">
+
+    <a href="index2.html" class="logo">
+      <span class="logo-mini"><img src="../img/Oval 1.png"/></span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><img src="../img/Oval 1.png"/>&nbsp;<b>巧书后台管理</b></span>
+    </a>
+
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+			<a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+     </a>
+     
+     <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <!-- User Account: style can be found in dropdown.less -->
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="../img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <span class="hidden-xs">Alexander Pierce</span>
+            </a>
+            <!--用户信息-->
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="../img/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+                <p>
+                  <span>袁敏</span>
+                  <small>ID:3721</small>
+                  <small>权限：3</small>
+                </p>
+              </li>
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="#" class="btn btn-default btn-flat btn-border">设置</a>
+                </div>
+                <div class="pull-right">
+                  <a href="#" class="btn btn-default btn-flat btn-border">退出</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+  </header>
+  <!-- 左侧菜单栏 -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu">
+        <li class="header">主导航</li>
+        <li class="treeview">
+          <a href="#">
+            <i class="glyphicon glyphicon-user"></i> <span>用户管理</span> <i class="fa fa-angle-left pull-right"></i>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#"><i class="fa fa-circle-o"></i>作者列表</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i>读者列表</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="glyphicon glyphicon-book"></i>
+            <span>作品管理</span>
+            <i class="fa fa-angle-left pull-right"></i>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#"><i class="fa fa-circle-o"></i> 已发布作品</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> 未发布作品</a></li>
+          </ul>
+        </li>
+         <li class="treeview">
+          <a href="#">
+            <i class="glyphicon glyphicon-star"></i>
+            <span>日常推荐</span>
+            <i class="fa fa-angle-left pull-right"></i>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#"><i class="fa fa-circle-o"></i> banner更换</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> 最新推荐</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="glyphicon glyphicon-wrench"></i>
+            <span>常规维护</span>
+            <i class="fa fa-angle-left pull-right"></i>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#"><i class="fa fa-circle-o"></i> 作者评分</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> 作者标签</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> 作品评分</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> 作品标签</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-laptop"></i>
+            <span>网站服务</span>
+            <i class="fa fa-angle-left pull-right"></i>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#"><i class="fa fa-circle-o"></i> 用户反馈</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> 评论</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="glyphicon glyphicon-briefcase"></i> <span>工具中心</span>
+            <i class="fa fa-angle-left pull-right"></i>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#"><i class="fa fa-circle-o"></i> 账号中心</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> 退出</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-pie-chart"></i> <span>数据中心</span>
+            <i class="fa fa-angle-left pull-right"></i>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#"><i class="fa fa-circle-o"></i> 数据1</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> 数据2</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </aside>
+
+  <!-- 所有内容部分 -->
+  <div class="content-wrapper">
+	    <!-- 主要内容 -->
+	  <section class="content" id="banner_cont">
+	  		<div class="news_banner"><button type="button" id="bannerBox" class="bannerBox">添加新的Banner</button></div>
+	  		<!--正在使用的banner-->
+
+	  		<!--<div class="use_banner" id="use_banner">-->
+	  			<!--<h3>正在使用</h3>-->
+
+	  			<h3>正在使用</h3>
+	  			<ul id="sortable2" class="sortable grid row toggleUse drag_box">
+	  				<div class='white'></div>
+	  			</ul>
+
+	  	  <!--已下架的-->
+	  			<h3>已下架</h3>
+	  			<ul id="sortable2" class="sortable grid row drag_box">
+	  				<div class='white'></div>
+	  			</ul>
+			</section>
+</div><!--/.content-wrapper-->
+
+    <!-- /.主要内容 -->
+<script src="../js/jQuery-2.2.0.min.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/app.js"></script>
+<script src="../js/jquery.slimscroll.js"></script>
+<script src="../js/jquery.sortable.js"></script>
+<script src="../js/highlight.js"></script>
+<script src="../js/banner.js"></script>
+</body>
+</html>
